@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | After Six Engraving — Custom Laser Engraving in Fredericksburg, VA</title>
+  <meta name="description" content="Browse our design catalog and recent work. Coasters, cutting boards, charcuterie boards, flasks, golf items, bridal gifts, monograms, and more. Fredericksburg, VA.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gallery | After Six Engraving">
+  <meta property="og:description" content="Browse our design catalog and recent laser engraving work in Fredericksburg, VA.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aftersixengraving.com/gallery">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="nav nav--scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">After Six Engraving</a>
+      <div class="nav__links">
+        <a href="index.html#services">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact" class="btn btn--gold">Get a Quote</a>
+      </div>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav__mobile" id="navMobile">
+    <button class="nav__mobile-close" id="navClose" aria-label="Close menu">&times;</button>
+    <a href="index.html#services" onclick="closeMobileNav()">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="index.html#about" onclick="closeMobileNav()">About</a>
+    <a href="index.html#contact" onclick="closeMobileNav()">Get a Quote</a>
+  </div>
+
+  <!-- ============================================
+       GALLERY HERO
+       ============================================ -->
+  <section class="gallery-hero">
+    <div class="gallery-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1800&q=80');" role="img" aria-label="Close-up of precision engraving work"></div>
+    <div class="gallery-hero__content">
+      <p class="eyebrow" style="margin-bottom: 1rem;">Design Catalog</p>
+      <h1 class="gallery-hero__title">Our Work</h1>
+      <p class="gallery-hero__sub">Browse our designs. See something you like? We'll engrave it for you.</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FILTER BAR
+       ============================================ -->
+  <section class="gallery-filters">
+    <div class="container">
+      <div class="gallery-filters__inner">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="coasters">Coasters</button>
+        <button class="filter-btn" data-filter="cutting-boards">Cutting Boards</button>
+        <button class="filter-btn" data-filter="charcuterie">Charcuterie</button>
+        <button class="filter-btn" data-filter="flasks">Flasks</button>
+        <button class="filter-btn" data-filter="golf">Golf</button>
+        <button class="filter-btn" data-filter="bridal">Bridal</button>
+        <button class="filter-btn" data-filter="monograms">Monograms</button>
+        <button class="filter-btn" data-filter="quotes">Quotes</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       MASONRY GALLERY
+       ============================================ -->
+  <section class="gallery-full">
+    <div class="container">
+      <div class="masonry" id="masonryGrid">
+
+        <!-- ===== COASTERS ===== -->
+        <div class="masonry__item" data-category="coasters" data-title="Don't Ask, Just Pour" data-desc="Fun coaster design perfect for home bars, restaurants, or gift sets. Laser engraved on wood, slate, or cork." data-material="Wood / Slate / Cork" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/Coasters_svgs/Don_t_Ask_Just_Pour.svg" alt="Don't Ask Just Pour coaster design" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Don't Ask, Just Pour</span>
+            <span class="masonry__material">Coasters</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-category="coasters" data-title="Drinks On Me" data-desc="Classic coaster with a playful message. Available in sets of 4 or 6." data-material="Wood / Slate / Cork" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/Coasters_svgs/Drinks_On_Me.svg" alt="Drinks On Me coaster design" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Drinks On Me</span>
+            <span class="masonry__material">Coasters</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-category="coasters" data-title="Don't Mess Up The Table" data-desc="Practical and funny. A subtle reminder that doubles as decor." data-material="Wood / Slate / Cork" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/Coasters_svgs/Don_t_Mess_Up_Table.svg" alt="Don't Mess Up Table coaster design" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Don't Mess Up The Table</span>
+            <span class="masonry__material">Coasters</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-category="coasters" data-title="Good Things Happen Over Tea" data-desc="Elegant design for tea lovers. Perfect gift for hosts and hostesses." data-material="Wood / Slate / Cork" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/Coasters_svgs/Good_Things_Happen_Over_Tea.svg" alt="Good Things Happen Over Tea coaster design" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Good Things Over Tea</span>
+            <span class="masonry__material">Coasters</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <!-- ===== CHARCUTERIE ===== -->
+        <div class="masonry__item" data-category="charcuterie" data-title="Bless The Food Before Us" data-desc="Elegant charcuterie board design. Perfect for housewarming gifts or kitchen decor." data-material="Bamboo / Walnut / Maple" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/Charcuterie_svgs/Bless_The_Food_Before_Us.svg" alt="Bless The Food Before Us charcuterie board design" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Bless The Food Before Us</span>
+            <span class="masonry__material">Charcuterie Boards</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-category="charcuterie" data-title="Fancy Adult Lunchable" data-desc="Charcuterie: a fancy way to say adult lunchable. Fun conversation-starter board." data-material="Bamboo / Walnut / Maple" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/Charcuterie_svgs/Charcuterie_a_fancy_way_to_say_adult_lunchable.svg" alt="Charcuterie fancy adult lunchable design" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Fancy Adult Lunchable</span>
+            <span class="masonry__material">Charcuterie Boards</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-category="charcuterie" data-title="French Word for Cheese" data-desc="French word for cheese and other fancy... stuff. Humorous board that always gets a laugh." data-material="Bamboo / Walnut / Maple" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/Charcuterie_svgs/French_word_for_cheese_and_other_fancy_shit.svg" alt="French word for cheese charcuterie design" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">French Word for Cheese</span>
+            <span class="masonry__material">Charcuterie Boards</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-category="charcuterie" data-title="Sharkoodere" data-desc="Phonetic spelling, maximum charm. A fun take on the classic board." data-material="Bamboo / Walnut / Maple" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/Charcuterie_svgs/Sharkoodere.svg" alt="Sharkoodere charcuterie design" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Sharkoodere</span>
+            <span class="masonry__material">Charcuterie Boards</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <!-- ===== FLASKS ===== -->
+        <div class="masonry__item" data-category="flasks" data-title="Have A Drink On Me" data-desc="Classic flask design. Perfect for groomsmen gifts, birthdays, or milestones." data-material="Stainless Steel" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/flask_svgs/Have_A_Drink_On_Me.svg" alt="Have A Drink On Me flask design" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Have A Drink On Me</span>
+            <span class="masonry__material">Flasks</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-category="flasks" data-title="Liquid Courage" data-desc="Bold flask design for those who need a little courage. Stainless steel, built to last." data-material="Stainless Steel" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/flask_svgs/Liquid_Courage.svg" alt="Liquid Courage flask design" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Liquid Courage</span>
+            <span class="masonry__material">Flasks</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-category="flasks" data-title="Emergency Flask" data-desc="In case of emergency. A humorous take that makes a great gift." data-material="Stainless Steel" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/flask_svgs/Emergency.svg" alt="Emergency flask design" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Emergency Flask</span>
+            <span class="masonry__material">Flasks</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <!-- ===== CUTTING BOARDS ===== -->
+        <div class="masonry__item" data-category="cutting-boards" data-title="Custom Cutting Board" data-desc="Personalized cutting board with family name or custom text. A timeless kitchen piece." data-material="Bamboo / Walnut / Maple" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/cuttingboards_svgs/design-01.svg" alt="Custom cutting board design 1" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Personalized Cutting Board</span>
+            <span class="masonry__material">Cutting Boards</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-category="cutting-boards" data-title="Family Cutting Board" data-desc="A beautiful centerpiece for your kitchen. Engraved with family name and established year." data-material="Bamboo / Walnut / Maple" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/cuttingboards_svgs/design-02.svg" alt="Custom cutting board design 2" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Family Cutting Board</span>
+            <span class="masonry__material">Cutting Boards</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-category="cutting-boards" data-title="Wedding Cutting Board" data-desc="Perfect for couples. Names, wedding date, and decorative design." data-material="Bamboo / Walnut / Maple" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/cuttingboards_svgs/design-03.svg" alt="Wedding cutting board design" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Wedding Cutting Board</span>
+            <span class="masonry__material">Cutting Boards</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <!-- ===== GOLF ===== -->
+        <div class="masonry__item" data-category="golf" data-title="Custom Golf Design" data-desc="Personalized golf markers, divot tools, and accessories with custom engraving." data-material="Metal / Wood" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/Golf_svgs/design-01.svg" alt="Custom golf design 1" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Golf Accessory Design</span>
+            <span class="masonry__material">Golf</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-category="golf" data-title="Golf Tournament Design" data-desc="Custom designs for golf tournaments, corporate outings, and club events." data-material="Metal / Wood" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/Golf_svgs/design-02.svg" alt="Custom golf design 2" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Tournament Design</span>
+            <span class="masonry__material">Golf</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <!-- ===== BRIDAL ===== -->
+        <div class="masonry__item" data-category="bridal" data-title="Bridal Party Design" data-desc="Custom bridal party gifts. Bridesmaid proposals, bachelorette favors, and wedding keepsakes." data-material="Various" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/Bridal Bachelorette_svgs/design-01.svg" alt="Bridal party design 1" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Bridal Party Design</span>
+            <span class="masonry__material">Bridal &amp; Bachelorette</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-category="bridal" data-title="Bachelorette Design" data-desc="Fun bachelorette party favors and gifts. Personalized with names and dates." data-material="Various" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/Bridal Bachelorette_svgs/design-02.svg" alt="Bachelorette design 2" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Bachelorette Favors</span>
+            <span class="masonry__material">Bridal &amp; Bachelorette</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-category="bridal" data-title="Wedding Keepsake" data-desc="Custom wedding date keepsakes and gifts for the couple." data-material="Various" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/Bridal Bachelorette_svgs/design-03.svg" alt="Wedding keepsake design" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Wedding Keepsake</span>
+            <span class="masonry__material">Bridal &amp; Bachelorette</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <!-- ===== MONOGRAMS ===== -->
+        <div class="masonry__item" data-category="monograms" data-title="Family Monogram" data-desc="Classic family monogram design. Engrave on cutting boards, signs, frames, and more." data-material="Wood / Metal / Glass" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/Monograms_family_svgs/design-01.svg" alt="Family monogram design 1" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Family Monogram</span>
+            <span class="masonry__material">Monograms</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-category="monograms" data-title="Elegant Monogram" data-desc="Refined monogram style with decorative elements. Works on any material." data-material="Wood / Metal / Glass" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/Monograms_family_svgs/design-02.svg" alt="Elegant monogram design" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Elegant Monogram</span>
+            <span class="masonry__material">Monograms</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-category="monograms" data-title="Script Monogram" data-desc="Beautiful script-style monogram for a personal, handwritten feel." data-material="Wood / Metal / Glass" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/Monograms_family_svgs/design-03.svg" alt="Script monogram design" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Script Monogram</span>
+            <span class="masonry__material">Monograms</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <!-- ===== INSPIRATIONAL QUOTES ===== -->
+        <div class="masonry__item" data-category="quotes" data-title="Inspirational Engraving" data-desc="Motivational and inspirational quote designs. Perfect for signs, frames, and desk accessories." data-material="Wood / Acrylic / Metal" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/inspirational quotes_svgs/design-01.svg" alt="Inspirational quote design 1" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Inspirational Engraving</span>
+            <span class="masonry__material">Quotes</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-category="quotes" data-title="Quote Design" data-desc="Custom quote engravings for home, office, or gifts." data-material="Wood / Acrylic / Metal" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/inspirational quotes_svgs/design-02.svg" alt="Inspirational quote design 2" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Quote Design</span>
+            <span class="masonry__material">Quotes</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <!-- More coasters to fill out the grid -->
+        <div class="masonry__item" data-category="coasters" data-title="Don't Ask, Just Pour 2" data-desc="Second variation of the popular pour design." data-material="Wood / Slate / Cork" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/Coasters_svgs/Don_t_Ask_Just_Pour2.svg" alt="Don't Ask Just Pour variation coaster design" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Just Pour (Variation)</span>
+            <span class="masonry__material">Coasters</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-category="coasters" data-title="Drinks On Me 2" data-desc="Another take on the classic Drinks On Me design." data-material="Wood / Slate / Cork" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/Coasters_svgs/Drinks_On_Me2.svg" alt="Drinks On Me variation coaster design" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Drinks On Me (Variation)</span>
+            <span class="masonry__material">Coasters</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-category="charcuterie" data-title="Party Board" data-desc="Festive charcuterie board design for party hosts and entertainers." data-material="Bamboo / Walnut / Maple" onclick="openLightbox(this)">
+          <div class="masonry__svg-wrap">
+            <img src="https://strong-zuccutto-ecc087.netlify.app/svgs/Charcuterie_svgs/Party_Charcuterie_Board.svg" alt="Party charcuterie board design" loading="lazy">
+          </div>
+          <div class="masonry__overlay">
+            <span class="masonry__name">Party Board</span>
+            <span class="masonry__material">Charcuterie Boards</span>
+            <span class="masonry__cta">Request a Quote &rarr;</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CTA BANNER
+       ============================================ -->
+  <section class="process" style="padding: 5rem 0;">
+    <div class="container" style="text-align: center;">
+      <p class="eyebrow" style="margin-bottom: 1rem;">Ready to Start?</p>
+      <h2 class="section-title section-title--light" style="margin-bottom: 1rem;">Have a project in mind?</h2>
+      <p style="color: var(--text-dim); margin-bottom: 2rem; max-width: 520px; margin-left: auto; margin-right: auto;">Send us your design or idea and we'll get back to you with a free quote. Most orders are ready in 2-3 business days. Don't see what you're looking for? ASK and we probably can do it.</p>
+      <a href="index.html#contact" class="btn btn--gold btn--lg">Get a Free Quote</a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">After Six Engraving</a>
+          <p class="footer__tagline">Custom laser engraving in Fredericksburg, VA. Coasters, cutting boards, charcuterie boards, flasks, corporate gifts, and more. Most orders ready in 2-3 days.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Services</h4>
+          <a href="index.html#services">Laser Engraving</a>
+          <a href="index.html#services">Coasters &amp; Barware</a>
+          <a href="index.html#services">Cutting Boards</a>
+          <a href="index.html#services">Corporate Gifts</a>
+          <a href="index.html#services">Custom Signage</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Company</h4>
+          <a href="index.html#about">About Us</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="index.html#contact">Get a Quote</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <a href="tel:5403002566">(540) 300-2566</a>
+          <a href="mailto:aftersixengraving@gmail.com">aftersixengraving@gmail.com</a>
+          <a href="#">Fredericksburg, VA</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 After Six Engraving &middot; Fredericksburg, VA</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook">&#9638;</a>
+          <a href="#" aria-label="Instagram">&#9673;</a>
+          <a href="#" aria-label="Google Business">G</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       LIGHTBOX MODAL
+       ============================================ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+    <div class="lightbox__inner">
+      <div class="lightbox__image">
+        <img src="" alt="" id="lightboxImg">
+      </div>
+      <div class="lightbox__info">
+        <h3 class="lightbox__title" id="lightboxTitle"></h3>
+        <p class="lightbox__desc" id="lightboxDesc"></p>
+        <p class="lightbox__meta" id="lightboxMeta"></p>
+        <a href="index.html#contact" class="btn btn--gold">Request a Quote for This</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       SCRIPTS
+       ============================================ -->
+  <script>
+    // ---- Mobile Nav ----
+    const hamburger = document.getElementById('navHamburger');
+    const mobileNav = document.getElementById('navMobile');
+    const navClose = document.getElementById('navClose');
+    hamburger.addEventListener('click', () => { mobileNav.classList.add('active'); });
+    navClose.addEventListener('click', () => { mobileNav.classList.remove('active'); });
+    function closeMobileNav() { mobileNav.classList.remove('active'); }
+
+    // ---- Gallery Filters ----
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const masonryItems = document.querySelectorAll('.masonry__item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+        let visibleIndex = 0;
+
+        masonryItems.forEach((item) => {
+          if (filter === 'all' || item.dataset.category === filter) {
+            item.style.display = 'block';
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(15px)';
+            const delay = visibleIndex * 40;
+            visibleIndex++;
+            setTimeout(() => {
+              item.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+              item.style.opacity = '1';
+              item.style.transform = 'translateY(0)';
+            }, delay);
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // ---- Lightbox ----
+    const lightbox = document.getElementById('lightbox');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxTitle = document.getElementById('lightboxTitle');
+    const lightboxDesc = document.getElementById('lightboxDesc');
+    const lightboxMeta = document.getElementById('lightboxMeta');
+
+    function openLightbox(el) {
+      const img = el.querySelector('img');
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightboxTitle.textContent = el.dataset.title;
+      lightboxDesc.textContent = el.dataset.desc;
+      lightboxMeta.textContent = 'Material: ' + el.dataset.material;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // ---- Scroll Reveal ----
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealElements.forEach(el => revealObserver.observe(el));
+  </script>
+
+</body>
+</html>
