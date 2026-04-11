@@ -1267,3 +1267,181 @@ input, textarea, select { font-family: inherit; }
     overflow-y: auto;
   }
 }
+
+/* ============================================
+   GALLERY CARD GRID (dynamic gallery.html)
+   ============================================ */
+.gallery-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+.gallery-card {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #f5f3ef;
+  border: 2px solid transparent;
+  transition: all var(--transition);
+  animation: cardFadeIn 0.4s ease both;
+}
+@keyframes cardFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.gallery-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 0 20px rgba(196, 149, 58, 0.35), 0 8px 32px rgba(0,0,0,0.3);
+  transform: translateY(-3px);
+}
+.gallery-card__image {
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: #f5f3ef;
+}
+.gallery-card__image img {
+  max-width: 85%;
+  max-height: 85%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+.gallery-card:hover .gallery-card__image img {
+  transform: scale(1.06);
+}
+.gallery-card__info {
+  padding: 0.75rem 1rem 1rem;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+.gallery-card__name {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.gallery-card__hover {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 26, 26, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.gallery-card:hover .gallery-card__hover {
+  opacity: 1;
+}
+.btn--sm {
+  padding: 0.625rem 1.25rem;
+  font-size: 0.75rem;
+}
+
+/* Gallery empty state (Maps coming soon, etc.) */
+.gallery-empty {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.gallery-empty__content {
+  max-width: 480px;
+  margin: 0 auto;
+}
+.gallery-empty__icon {
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+  opacity: 0.5;
+}
+.gallery-empty__content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+.gallery-empty__content p {
+  font-size: 1rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+}
+
+/* Filter button — coming soon variant */
+.filter-btn--coming-soon {
+  position: relative;
+}
+.filter-btn--coming-soon::after {
+  content: 'soon';
+  font-size: 0.5625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  position: absolute;
+  top: -6px;
+  right: -4px;
+}
+
+@media (max-width: 768px) {
+  .gallery-cards {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 0.75rem;
+  }
+  .gallery-card__image { padding: 1rem; }
+}
+
+/* ============================================
+   LASER ENGRAVED MAPS SECTION
+   ============================================ */
+.maps-section {
+  padding: 7rem 0;
+  background: var(--surface);
+}
+.maps-section__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.maps-section__eyebrow {
+  margin-bottom: 1.25rem;
+}
+.maps-section__desc {
+  font-size: 1.0625rem;
+  color: var(--text-dim);
+  line-height: 1.8;
+  margin-top: 1rem;
+}
+.maps-placeholder {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  overflow: hidden;
+}
+.maps-placeholder__svg {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+@media (max-width: 968px) {
+  .maps-section__inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .maps-placeholder {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}

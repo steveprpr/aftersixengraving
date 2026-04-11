@@ -1,22 +1,68 @@
-# After Six Engraving — Website v3
+# After Six Engraving — Website
 
-Custom laser engraving business site for After Six Engraving in Fredericksburg, VA.  
+Custom laser engraving business site for After Six Engraving in Fredericksburg, VA.
 Dark theme, bold typography, gold accents. Every section funnels to a quote request.
 
 ## Files
 
 ```
 aftersixengraving_site/
-  index.html      -- Main page (hero, services, gallery preview, how it works, testimonials, about, contact form)
-  gallery.html    -- Full design catalog with category filters, lightbox, and SVG designs
-  style.css       -- All styles (dark theme, responsive, animations)
-  README.md       -- This file
-  images/         -- Create this folder and add your product photos here
+  index.html              -- Main page (hero, services, featured work, maps, how it works, testimonials, about, contact)
+  gallery.html            -- Full design catalog with category filtering, 426+ designs
+  style.css               -- All styles (dark theme, responsive, animations)
+  README.md               -- This file
+  assets/
+    designs/              -- 442 SVG design files organized by category
+      Autum/
+      Bridal Bachelorette_svgs/
+      Charcuterie_svgs/
+      Coasters_svgs/
+      Golf_svgs/
+      Halloween/
+      Maps/               -- Empty, ready for map SVGs
+      Monograms_family_svgs/
+      Wedding/
+      cuttingboards_svgs/
+      flask_svgs/
+      inspirational quotes_svgs/
+      sunshine/
+      logo.svg
+      Live Laugh Love.svg
+    gallery_data.js       -- Auto-generated catalog (don't edit manually)
+    images/
+      products/           -- Processed product photos (800px + 1600px versions)
+  tools/
+    build_gallery.py      -- Regenerates gallery_data.js from assets/designs/
+    process_images.py     -- Processes raw product photos into web-ready JPEGs
 ```
 
 ## Local Preview
 
 Open `index.html` in any browser. No build step, no server required.
+
+## Updating Your Site Content
+
+### Adding new SVG designs
+
+1. Drop SVG files into the appropriate `assets/designs/[Category]/` folder
+2. Run `python tools/build_gallery.py` from the project root
+3. Gallery page automatically updates — no other changes needed
+4. Commit and push to GitHub — Netlify auto-deploys
+
+### Adding new maps
+
+1. Drop map SVGs into `assets/designs/Maps/`
+2. Run `python tools/build_gallery.py`
+3. The Maps section on the gallery will activate automatically once files are present
+4. The Maps tab will show your designs instead of "Coming Soon"
+
+### Adding new product photos
+
+1. Drop photos into `C:\Users\steve\iCloudDrive\Laser\ASE Images\` (or update the source path in the script)
+2. Run `python tools/process_images.py`
+3. Processed images land in `assets/images/products/`
+4. Update `index.html` image src paths as needed
+5. Commit and push
 
 ## Push to GitHub
 
@@ -25,7 +71,7 @@ cd /path/to/aftersixengraving_site
 
 git init
 git add -A
-git commit -m "feat: After Six Engraving site modernization v3"
+git commit -m "feat: After Six Engraving site with real assets"
 
 # Create a repo on GitHub (github.com/new), then:
 git remote add origin https://github.com/YOUR_GITHUB_USERNAME/aftersixengraving-site.git
@@ -67,7 +113,7 @@ To point `aftersixengraving.com` to Netlify:
    - **Type:** CNAME
    - **Name:** `@`
    - **Target:** `YOUR-NETLIFY-SUBDOMAIN.netlify.app`
-   - **Proxy status:** DNS only (gray cloud) — **Netlify needs direct DNS, not Cloudflare proxy**
+   - **Proxy status:** DNS only (gray cloud) — Netlify needs direct DNS, not Cloudflare proxy
 4. Add `www` CNAME:
    - **Type:** CNAME
    - **Name:** `www`
@@ -77,44 +123,6 @@ To point `aftersixengraving.com` to Netlify:
 6. Netlify provisions SSL automatically (takes a few minutes)
 
 **Important:** Cloudflare proxy (orange cloud) must be OFF. Use gray cloud / DNS-only mode so Netlify can issue its SSL certificate.
-
-## How to Update Photos
-
-The site uses:
-- **SVG designs** from `strong-zuccutto-ecc087.netlify.app` (your actual design catalog) for the gallery
-- **Placeholder photos** from Unsplash for hero, services, and about sections
-
-### Replace placeholder photos with your own:
-
-1. Take photos of your best work (at least 1200px wide, JPG or WebP)
-2. Create an `images/` folder in this directory
-3. In `index.html`, find HTML comments that say `<!-- STEVE: Replace with... -->` and swap the Unsplash URLs:
-
-Change this:
-```html
-<img src="https://images.unsplash.com/photo-XXXXX?w=800&q=80" alt="...">
-```
-
-To this:
-```html
-<img src="images/my-cutting-board.jpg" alt="Custom engraved cutting board by After Six Engraving">
-```
-
-4. Commit and push — Netlify auto-deploys
-
-### Hero background:
-
-In `index.html`, find `.hero__bg` and replace the `background-image` URL:
-```html
-<div class="hero__bg" style="background-image: url('images/hero-photo.jpg');">
-```
-
-Use your most impressive wide product photo. The dark overlay keeps text readable over any image.
-
-### Image tips:
-- Resize to ~800-1200px wide (keeps the site fast)
-- Use `.jpg` for photos, `.png` for logos with transparency
-- Always include descriptive `alt` text for SEO
 
 ## Design System
 
@@ -133,9 +141,8 @@ Use your most impressive wide product photo. The dark overlay keeps text readabl
 
 - **Phone/email:** Search for `(540) 300-2566` or `aftersixengraving@gmail.com` in both HTML files
 - **Testimonials:** Find the `testimonials` section in `index.html` — replace with real Google reviews
-- **Gallery items:** Each card in `gallery.html` has title, description, and category in data attributes
+- **Gallery:** Run `python tools/build_gallery.py` after adding/removing SVGs
 - **Social links:** Find `aria-label="Facebook"` / `aria-label="Instagram"` in footer — replace `#` hrefs with real URLs
-- **Categories:** Filter buttons and gallery items use matching `data-filter` / `data-category` values
 
 ## Contact
 
