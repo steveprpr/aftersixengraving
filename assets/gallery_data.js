@@ -3,1774 +3,1049 @@
 
 const GALLERY_DESIGNS = [
   {
-    "category": "Coasters",
-    "name": "Adulting Time Insession",
-    "file": "assets/designs/Coasters_svgs/SVG_Adultingtimeinsession.svg"
-  },
-  {
-    "category": "Coasters",
+    "category": "Family",
     "name": "All Because Two People Fell in Love",
-    "file": "assets/designs/Coasters_svgs/SVG_Allbecausetwopeoplefellinlove.svg"
+    "file": "assets/designs/Family/SVG_Allbecausetwopeoplefellinlove.svg"
   },
   {
-    "category": "Coasters",
-    "name": "Another Day Completely Ruined by",
-    "file": "assets/designs/Coasters_svgs/SVG_Anotherdaycompletelyruinedby.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Back to the Grind",
-    "file": "assets/designs/Coasters_svgs/SVG_Backtothegrind.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Beergoeshere",
-    "file": "assets/designs/Coasters_svgs/SVG_Beergoeshere.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Being My Colleague is the Only Gift You Need",
-    "file": "assets/designs/Coasters_svgs/SVG_Beingmycolleagueistheonlygiftyouneed.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Being My Coworker is the Only Gift You Need",
-    "file": "assets/designs/Coasters_svgs/SVG_Beingmycoworkeristheonlygiftyouneed.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Bless This Home",
-    "file": "assets/designs/Coasters_svgs/SVG_Blessthishome.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Cheers to Pour Decisions",
-    "file": "assets/designs/Coasters_svgs/SVG_Cheerstopourdecisions.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Coffee Goes Here",
-    "file": "assets/designs/Coasters_svgs/SVG_Coffeegoeshere.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Coffee Ismakingmeawesome",
-    "file": "assets/designs/Coasters_svgs/SVG_Coffeeismakingmeawesome.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Coffee Ismyfavorite Coworker",
-    "file": "assets/designs/Coasters_svgs/SVG_Coffeeismyfavoritecoworker.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Coffee Ismyfavourite Coworker",
-    "file": "assets/designs/Coasters_svgs/SVG_Coffeeismyfavouritecoworker.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Cuddleoclock",
-    "file": "assets/designs/Coasters_svgs/SVG_Cuddleoclock.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Day Drink Ing Made Medoit",
-    "file": "assets/designs/Coasters_svgs/SVG_Daydrinkingmademedoit.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Differentdoes Not Meanwrong",
-    "file": "assets/designs/Coasters_svgs/SVG_Differentdoesnotmeanwrong.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Dinneris Pour Ed",
-    "file": "assets/designs/Coasters_svgs/SVG_Dinnerispoured.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Dinnerisbetter When Weeat Together",
-    "file": "assets/designs/Coasters_svgs/SVG_Dinnerisbetterwhenweeattogether.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Don Otletmeadult",
-    "file": "assets/designs/Coasters_svgs/SVG_Donotletmeadult.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Don T Mess Up the Table",
-    "file": "assets/designs/Coasters_svgs/SVG_Dontmessupthetable.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Don T Mess Upmy Table",
-    "file": "assets/designs/Coasters_svgs/SVG_Dontmessupmytable.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Don Tlet the Silly Things S Tea L Your Happiness",
-    "file": "assets/designs/Coasters_svgs/SVG_Dontletthesillythingsstealyourhappiness.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Don Truinmy Table Useacoaster",
-    "file": "assets/designs/Coasters_svgs/SVG_Dontruinmytableuseacoaster.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Don'T Ask Just Pour",
-    "file": "assets/designs/Coasters_svgs/Don_t_Ask_Just_Pour.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Don'T Ask Just Pour2",
-    "file": "assets/designs/Coasters_svgs/Don_t_Ask_Just_Pour2.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Don'T Mess Up Table",
-    "file": "assets/designs/Coasters_svgs/Don_t_Mess_Up_Table.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Drink Happy Thoughts",
-    "file": "assets/designs/Coasters_svgs/SVG_Drinkhappythoughts.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Drinks on Me",
-    "file": "assets/designs/Coasters_svgs/Drinks_On_Me.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Drinks on Me2",
-    "file": "assets/designs/Coasters_svgs/Drinks_On_Me2.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Every Family Hasastory This Isours",
-    "file": "assets/designs/Coasters_svgs/SVG_Everyfamilyhasastorythisisours.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Everything That Matters Mostis Home",
-    "file": "assets/designs/Coasters_svgs/SVG_Everythingthatmattersmostishome.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Family Ajourney Forever",
-    "file": "assets/designs/Coasters_svgs/SVG_Familyajourneyforever.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Family Anyonewho Love S You",
-    "file": "assets/designs/Coasters_svgs/SVG_Familyanyonewholovesyou.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Family Anyonewho Love S You Uncondition All Y",
-    "file": "assets/designs/Coasters_svgs/SVG_Familyanyonewholovesyouunconditionally.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Family Isanyonewho Love S You Uncondition All Y",
-    "file": "assets/designs/Coasters_svgs/SVG_Familyisanyonewholovesyouunconditionally.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "For This Family We Are Grateful",
-    "file": "assets/designs/Coasters_svgs/SVG_Forthisfamilywearegrateful.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Friends and Family Ga the R Here",
-    "file": "assets/designs/Coasters_svgs/SVG_Friendsandfamilygatherhere.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Gingoeshere",
-    "file": "assets/designs/Coasters_svgs/SVG_Gingoeshere.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Good Things Happen Over Tea",
-    "file": "assets/designs/Coasters_svgs/Good_Things_Happen_Over_Tea.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Hard Time Sc All for Hardliquor",
-    "file": "assets/designs/Coasters_svgs/SVG_Hardtimescallforhardliquor.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Hotcocoahoodies and Home",
-    "file": "assets/designs/Coasters_svgs/SVG_Hotcocoahoodiesandhome.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "I Don T Always Toleratestupid People",
-    "file": "assets/designs/Coasters_svgs/SVG_Idontalwaystoleratestupidpeople.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "I Don T Have the Time to Have the Breakdown",
-    "file": "assets/designs/Coasters_svgs/SVG_Idonthavethetimetohavethebreakdown.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "I Don T Need Amotivationalquote",
-    "file": "assets/designs/Coasters_svgs/SVG_Idontneedamotivationalquote.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "I Drink Beer for Your Protection",
-    "file": "assets/designs/Coasters_svgs/SVG_Idrinkbeerforyourprotection.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "I Drink Coffee for Your Protection",
-    "file": "assets/designs/Coasters_svgs/SVG_Idrinkcoffeeforyourprotection.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "I Drink Gin for Your Protection",
-    "file": "assets/designs/Coasters_svgs/SVG_Idrinkginforyourprotection.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "I Drink Tea for Your Protection",
-    "file": "assets/designs/Coasters_svgs/SVG_Idrinkteaforyourprotection.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "I Drink Wine for Your Protection",
-    "file": "assets/designs/Coasters_svgs/SVG_Idrinkwineforyourprotection.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "I Just Rescuedsome Wine",
-    "file": "assets/designs/Coasters_svgs/SVG_Ijustrescuedsomewine.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "I Live Inacastlec All Ed Home",
-    "file": "assets/designs/Coasters_svgs/SVG_Iliveinacastlecalledhome.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "I Live on Love and Scentedc and Les",
-    "file": "assets/designs/Coasters_svgs/SVG_Iliveonloveandscentedcandles.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "I Never Facemon Day Morningbluesbceauseoffun Colleague Slike You",
-    "file": "assets/designs/Coasters_svgs/SVG_Ineverfacemondaymorningbluesbceauseoffuncolleagueslikeyou.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "I Never Facemon Day Morningbluesbceauseoffun Coworker Slike You",
-    "file": "assets/designs/Coasters_svgs/SVG_Ineverfacemondaymorningbluesbceauseoffuncoworkerslikeyou.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Iam All Ergictostupidity",
-    "file": "assets/designs/Coasters_svgs/SVG_Iamallergictostupidity.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Iamnotmessy Iamcreativelyorganised",
-    "file": "assets/designs/Coasters_svgs/SVG_IamnotmessyIamcreativelyorganised.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Idonthaveenoughenergytopretend Ilikeyou",
-    "file": "assets/designs/Coasters_svgs/SVG_IdonthaveenoughenergytopretendIlikeyou.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Ihaveitalltogether Ijustforgotwhere Iputit",
-    "file": "assets/designs/Coasters_svgs/SVG_IhaveitalltogetherIjustforgotwhereIputit.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Imaybewrongbut Idoubtit",
-    "file": "assets/designs/Coasters_svgs/SVG_ImaybewrongbutIdoubtit.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Imfine but the Restof You Need the Rapy",
-    "file": "assets/designs/Coasters_svgs/SVG_Imfinebuttherestofyouneedtherapy.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Imnotsarcastic Iamjustintelligent",
-    "file": "assets/designs/Coasters_svgs/SVG_ImnotsarcasticIamjustintelligent.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Imonlysarcasticwhen Ispeak",
-    "file": "assets/designs/Coasters_svgs/SVG_ImonlysarcasticwhenIspeak.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Imsarcastic Because Punching People in the Face",
-    "file": "assets/designs/Coasters_svgs/SVG_Imsarcasticbecausepunchingpeopleintheface.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Imsorrydid Irollmyeyesoutloud",
-    "file": "assets/designs/Coasters_svgs/SVG_ImsorrydidIrollmyeyesoutloud.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Ipairwell With Wine",
-    "file": "assets/designs/Coasters_svgs/SVG_Ipairwellwithwine.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Ipretendtowork the Ypretendtopayme",
-    "file": "assets/designs/Coasters_svgs/SVG_Ipretendtoworktheypretendtopayme.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Irefusetobecome What You C All Normal",
-    "file": "assets/designs/Coasters_svgs/SVG_Irefusetobecomewhatyoucallnormal.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Irunon Coffee and Sarcasm",
-    "file": "assets/designs/Coasters_svgs/SVG_Irunoncoffeeandsarcasm.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Irunon Tea and Sarcasm",
-    "file": "assets/designs/Coasters_svgs/SVG_Irunonteaandsarcasm.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Itdoesntgetanybetterthan This",
-    "file": "assets/designs/Coasters_svgs/SVG_Itdoesntgetanybetterthanthis.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Its Not Re All Y Drink Ingaloneif Your Dogis Home",
-    "file": "assets/designs/Coasters_svgs/SVG_Itsnotreallydrinkingaloneifyourdogishome.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Itsa Good Day Tobeannoying",
-    "file": "assets/designs/Coasters_svgs/SVG_Itsagooddaytobeannoying.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Itscosy Season",
-    "file": "assets/designs/Coasters_svgs/SVG_Itscosyseason.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Itwas the Ginsfault",
-    "file": "assets/designs/Coasters_svgs/SVG_Itwastheginsfault.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Itwas the Whiskeysfault",
-    "file": "assets/designs/Coasters_svgs/SVG_Itwasthewhiskeysfault.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Itwas the Whiskysfault",
-    "file": "assets/designs/Coasters_svgs/SVG_Itwasthewhiskysfault.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Itwas the Wine Sfault",
-    "file": "assets/designs/Coasters_svgs/SVG_Itwasthewinesfault.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Iusedtocarebut Itakeapillforthatnow",
-    "file": "assets/designs/Coasters_svgs/SVG_IusedtocarebutItakeapillforthatnow.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Iwish Iwasasthinasmypatience",
-    "file": "assets/designs/Coasters_svgs/SVG_IwishIwasasthinasmypatience.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Iwishmore People Werefluentinsilence",
-    "file": "assets/designs/Coasters_svgs/SVG_Iwishmorepeoplewerefluentinsilence.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Iwontquitbut Iwillcussthewholetime",
-    "file": "assets/designs/Coasters_svgs/SVG_IwontquitbutIwillcussthewholetime.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Just Sitting Here Silentlyjudging",
-    "file": "assets/designs/Coasters_svgs/SVG_Justsittingheresilentlyjudging.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Justknoweveryminute Imatwork",
-    "file": "assets/designs/Coasters_svgs/SVG_JustknoweveryminuteImatwork.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Letmedrop Everything and Workon Your Problem",
-    "file": "assets/designs/Coasters_svgs/SVG_Letmedropeverythingandworkonyourproblem.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Life Begins With Coffee",
-    "file": "assets/designs/Coasters_svgs/SVG_Lifebeginswithcoffee.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Life Isbetterat Home",
-    "file": "assets/designs/Coasters_svgs/SVG_Lifeisbetterathome.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "May Your Coffee Kickinbe for Ereality",
-    "file": "assets/designs/Coasters_svgs/SVG_Mayyourcoffeekickinbeforereality.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Monstera Leaf Coasters 03",
-    "file": "assets/designs/Coasters_svgs/Monstera Leaf Coasters-03.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "My Family Are My Best Friends",
-    "file": "assets/designs/Coasters_svgs/SVG_Myfamilyaremybestfriends.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Myfavorite Coworker Gaveme This",
-    "file": "assets/designs/Coasters_svgs/SVG_Myfavoritecoworkergavemethis.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Myfavourite Coworker Gaveme This",
-    "file": "assets/designs/Coasters_svgs/SVG_Myfavouritecoworkergavemethis.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Myhobbyisannoyingmy Coworker S",
-    "file": "assets/designs/Coasters_svgs/SVG_Myhobbyisannoyingmycoworkers.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Nobodyc Are Sabout Your Drama",
-    "file": "assets/designs/Coasters_svgs/SVG_Nobodycaresaboutyourdrama.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Nope Iamgoingbacktobed",
-    "file": "assets/designs/Coasters_svgs/SVG_NopeIamgoingbacktobed.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Not Goingoutto Day",
-    "file": "assets/designs/Coasters_svgs/SVG_Notgoingouttoday.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Not the Worstemployee",
-    "file": "assets/designs/Coasters_svgs/SVG_Nottheworstemployee.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Our Family is Made With Chaos and Love",
-    "file": "assets/designs/Coasters_svgs/SVG_Ourfamilyismadewithchaosandlove.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Our Family Isrootedin Love",
-    "file": "assets/designs/Coasters_svgs/SVG_Ourfamilyisrootedinlove.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Par Don the Mess Mychildren Are Makingmemories",
-    "file": "assets/designs/Coasters_svgs/SVG_Pardonthemessmychildrenaremakingmemories.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Placecup Here Toavoidmywrath",
-    "file": "assets/designs/Coasters_svgs/SVG_Placecupheretoavoidmywrath.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Pleasecanwecome With You",
-    "file": "assets/designs/Coasters_svgs/SVG_Pleasecanwecomewithyou.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Putmineinabiggirlglass",
-    "file": "assets/designs/Coasters_svgs/SVG_Putmineinabiggirlglass.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Rememberwhen Iwaskedforyouropinion",
-    "file": "assets/designs/Coasters_svgs/SVG_RememberwhenIwaskedforyouropinion.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Rings Are for Fingers Not Table S",
-    "file": "assets/designs/Coasters_svgs/SVG_Ringsareforfingersnottables.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Sarcasticawkwardsweaty",
-    "file": "assets/designs/Coasters_svgs/SVG_Sarcasticawkwardsweaty.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Sip Sabouttogetreal",
-    "file": "assets/designs/Coasters_svgs/SVG_Sipsabouttogetreal.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Somec All Itchaoswec All It Love",
-    "file": "assets/designs/Coasters_svgs/SVG_Somecallitchaoswecallitlove.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Sorry Idontspeakidiot",
-    "file": "assets/designs/Coasters_svgs/SVG_SorryIdontspeakidiot.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Sorryabout the Mess but We Live Here",
-    "file": "assets/designs/Coasters_svgs/SVG_Sorryaboutthemessbutwelivehere.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Soupoftheday",
-    "file": "assets/designs/Coasters_svgs/SVG_Soupoftheday.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Step Aside Coffee This Isajob for Alcohol",
-    "file": "assets/designs/Coasters_svgs/SVG_Stepasidecoffeethisisajobforalcohol.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Take Life One Cup At a Time",
-    "file": "assets/designs/Coasters_svgs/Take_Life_One_Cup_At_A_Time.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Teagoeshere",
-    "file": "assets/designs/Coasters_svgs/SVG_Teagoeshere.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "The Best Beer is an Open Beer",
-    "file": "assets/designs/Coasters_svgs/The_Best_Beer_Is_An_Open_Beer.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "The Best Thingaboutmyjobis That the Chairspins",
-    "file": "assets/designs/Coasters_svgs/SVG_Thebestthingaboutmyjobisthatthechairspins.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "The Res Always Time for Another Drink",
-    "file": "assets/designs/Coasters_svgs/SVG_Theresalwaystimeforanotherdrink.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "This Home Hasendless Love and Laundry",
-    "file": "assets/designs/Coasters_svgs/SVG_Thishomehasendlessloveandlaundry.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "This Home Isf All of Love",
-    "file": "assets/designs/Coasters_svgs/SVG_Thishomeisfalloflove.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "This is Not Apubuseacoaster",
-    "file": "assets/designs/Coasters_svgs/SVG_Thisisnotapubuseacoaster.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Time Spent With Family Iswor the Verysecond",
-    "file": "assets/designs/Coasters_svgs/SVG_Timespentwithfamilyiswortheverysecond.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Time to Wine Down",
-    "file": "assets/designs/Coasters_svgs/SVG_Timetowinedown.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Toomuchtoddler Not Enough Coffee",
-    "file": "assets/designs/Coasters_svgs/SVG_Toomuchtoddlernotenoughcoffee.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Use a Coaster or I Will Poke You in the Eye",
-    "file": "assets/designs/Coasters_svgs/Use_A_Coaster_Or_I_Will_Poke_You_In_The_Eye.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Useacoaster and Noonegetshurt",
-    "file": "assets/designs/Coasters_svgs/SVG_Useacoasterandnoonegetshurt.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Vodka Goes Here",
-    "file": "assets/designs/Coasters_svgs/SVG_Vodkagoeshere.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Welcometo the Chaos",
-    "file": "assets/designs/Coasters_svgs/SVG_Welcometothechaos.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Where There is Tea There is Hope",
-    "file": "assets/designs/Coasters_svgs/Where_There_Is_Tea_There_Is_Hope.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Whiskey Goes Here",
-    "file": "assets/designs/Coasters_svgs/SVG_Whiskeygoeshere.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Whisky Goes Here",
-    "file": "assets/designs/Coasters_svgs/SVG_Whiskygoeshere.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Winegoeshere",
-    "file": "assets/designs/Coasters_svgs/SVG_Winegoeshere.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Work for Minutestakebreaks for Hours",
-    "file": "assets/designs/Coasters_svgs/SVG_Workforminutestakebreaksforhours.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Work Made Us Coworker S",
-    "file": "assets/designs/Coasters_svgs/SVG_Workmadeuscoworkers.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Workuninst All Ing",
-    "file": "assets/designs/Coasters_svgs/SVG_Workuninstalling.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Yayyourehome",
-    "file": "assets/designs/Coasters_svgs/SVG_Yayyourehome.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "You Are Entitledto Your Wrongopinion",
-    "file": "assets/designs/Coasters_svgs/SVG_Youareentitledtoyourwrongopinion.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "You Cantmake Every One Happy You Are Nt Wine",
-    "file": "assets/designs/Coasters_svgs/SVG_Youcantmakeeveryonehappyyouarentwine.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "You Inspiremyinnerserialkiller",
-    "file": "assets/designs/Coasters_svgs/SVG_Youinspiremyinnerserialkiller.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "You Mustbeexhaustedwatchingmedo Everything",
-    "file": "assets/designs/Coasters_svgs/SVG_Youmustbeexhaustedwatchingmedoeverything.svg"
-  },
-  {
-    "category": "Coasters",
-    "name": "Your Edeadtousnow",
-    "file": "assets/designs/Coasters_svgs/SVG_Youredeadtousnow.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I Bless the Food Before Us the Family Beside Us the Love Between Us Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_Bless_the_food_before_us_the_family_beside_us___the_love_between_us_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I Cook Pray Eat Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_cook_pray_eat_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I Cooking is My Passion Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_cooking_is_my_passion_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I Don T Forget to Hug the Cook Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_don_t_forget_to_hug_the_cook_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I Enjoy Life It S Delicious Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_enjoy_life_it_s_delicious_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I Everything Tastes Better When Grandma Makes It Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_everything_tastes_better_when_grandma_makes_it_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I Family Gathers Here Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_family_gathers_here_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I Farm to Table Fresh Food Daily Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_farm_to_table_fresh_food_daily_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I Good Food Good Friends Good Times Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_good_food_good_friends_good_times_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I Grandma S Kitchen Good Food Served Daily With a Heaping Spoon of Love Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_grandma_s_kitchen_good_food_served_daily_with_a_heaping_spoon_of_love_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I Grandma S Kitchen Where Sweet Things Happen Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_grandma_s_kitchen_where_sweet_things_happen_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I Hangry Adj.- a State of Anger Caused by Lack of Food Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_hangry_adj.-_a_state_of_anger_caused_by_lack_of_food_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I Happy Kitchen Happy House Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_happy_kitchen_happy_house_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I Hello is It Me You Re Cooking for Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_hello_is_it_me_you_re_cooking_for_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I I Don T Need an Inspirational Quote I Need Food Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_I_don_t_need_an_inspirational_quote_I_need_food_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I I Love You to the Fridge and Back Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_i_love_you_to_the_fridge_and_back_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I I M Sorry for What I Said When I Was Hungry Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_I_m_sorry_for_what_i_said_when_I_was_hungry_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I I Only Eat Hole Foods Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_I_only_eat_hole_foods_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I If I Have to Stir It It S Homemade Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_if_i_have_to_stir_it_it_s_homemade_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I If You Can Read This You Re Too Close to My Food Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_if_you_can_read_this_you_re_too_close_to_my_food_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I in This Kitchen We Count Memories Not Calories Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_in_this_kitchen_we_count_memories_not_calories_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards B-I in This Kitchen We Make Memories Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_B-I_in_this_kitchen_we_make_memories_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards K-W Kitchen All Food Chopped With Love Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_K-W_kitchen_all_food_chopped_with_love_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards K-W Kitchen the Best of Times Are Always Found When Friends and Family Gather Around Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_K-W_Kitchen_the_best_of_times_are_always_found_when_friends_and_family_gather_around_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards K-W Kitchen the Heart of the Home Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_K-W_kitchen_the_heart_of_the_home_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards K-W Kitchens Are Made for Bringing Families Together Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_K-W_kitchens_are_made_for_bringing_families_together_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards K-W Less Drama More Pizza Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_K-W_less_drama_more_pizza_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards K-W Life is Too Short Dance in the Kitchen Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_K-W_life_is_too_short_dance_in_the_kitchen_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards K-W Love Served Daily Dad S Kitchen Open 24 Hour Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_K-W_love_served_daily_dad_s_kitchen_open_24_hour_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards K-W Love Served Daily Mom S Kitchen Breakfast Lunch Dinner Open 24 Hours Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_K-W_love_served_daily_mom_s_kitchen_breakfast_lunch_dinner_open_24_hours_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards K-W Love Served Daily Mom S Kitchen Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_K-W_love_served_daily_mom_s_kitchen_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards K-W Mama S Kitchen Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_K-W_mama_s_kitchen_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards K-W Many Have Eaten Here Few Have Died Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_K-W_Many_Have_Eaten_Here_Few_Have_Died_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards K-W Meals and Memories Are Made Here Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_K-W_meals_and_memories_are_made_here_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards K-W Meals and Memories Are Made in Mom S Kitche Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_K-W_meals_and_memories_are_made_in_mom_s_kitche_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards K-W Mom S Kitchen All Food Chopped With Love Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_K-W_mom_s_kitchen_all_food_chopped_with_love_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards K-W Mom S Kitchen Open 247 Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_K-W_mom_s_kitchen_open_247_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards K-W My Kitchen is for Dancing Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_K-W_my_kitchen_is_for_dancing_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards K-W My Kitchen My Rules Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_K-W_my_kitchen_my_rules_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards K-W Real Man Cook Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_K-W_real_man_cook_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards K-W Real Man Play With Fire Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_K-W_real_man_play_with_fire_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards T-W the Chef is Always Right Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_T-W_the_chef_is_always_right_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards T-W the Kitchen is the Heart of the Home Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_T-W_the_kitchen_is_the_heart_of_the_home_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards T-W the Oven is Hot but the Cook is Hotter Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_T-W_the_oven_is_hot_but_the_cook_is_hotter_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards T-W the Queen Cooks Here Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_T-W_the_queen_cooks_here_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards T-W This is Where I Murder the Vegetables Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_T-W_this_is_where_i_murder_the_vegetables_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards T-W This Kitchen is Blessed Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_T-W_this_kitchen_is_blessed_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards T-W Today S Menu Eat It or Starve It Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_T-W_today_s_menu_eat_it_or_starve_it_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards T-W Welcome to My Kitchen Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_T-W_welcome_to_my_kitchen_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Cutting Boards T-W When I Said I Do I Didn T Meant the Dishes Svg",
-    "file": "assets/designs/cuttingboards_svgs/cutting_boards_T-W_when_I_said_I_do_I_didn_t_meant_the_dishes_svg.svg"
-  },
-  {
-    "category": "Cutting Boards",
-    "name": "Kitchen Closed Due to Illness",
-    "file": "assets/designs/cuttingboards_svgs/Kitchen_closed_due_to_illness.svg"
-  },
-  {
-    "category": "Charcuterie",
+    "category": "Family",
     "name": "Bless the Food Before Us",
-    "file": "assets/designs/Charcuterie_svgs/Bless_The_Food_Before_Us.svg"
+    "file": "assets/designs/Family/Bless_The_Food_Before_Us.svg"
   },
   {
-    "category": "Charcuterie",
-    "name": "Charcuterie a Fancy Adult Lunch Table",
-    "file": "assets/designs/Charcuterie_svgs/Charcuterie_a_fancy_adult_lunch_table.svg"
+    "category": "Family",
+    "name": "Bless This Home",
+    "file": "assets/designs/Family/SVG_Blessthishome.svg"
   },
   {
-    "category": "Charcuterie",
-    "name": "Charcuterie a Fancy Way to Say Adult Lunchable",
-    "file": "assets/designs/Charcuterie_svgs/Charcuterie_a_fancy_way_to_say_adult_lunchable.svg"
+    "category": "Family",
+    "name": "Cutting Boards B-I Bless the Food Before Us the Family Beside Us the Love Between Us Svg",
+    "file": "assets/designs/Family/cutting_boards_B-I_Bless_the_food_before_us_the_family_beside_us___the_love_between_us_svg.svg"
   },
   {
-    "category": "Charcuterie",
-    "name": "Design 12",
-    "file": "assets/designs/Charcuterie_svgs/12.svg"
+    "category": "Family",
+    "name": "Cutting Boards B-I Everything Tastes Better When Grandma Makes It Svg",
+    "file": "assets/designs/Family/cutting_boards_B-I_everything_tastes_better_when_grandma_makes_it_svg.svg"
   },
   {
-    "category": "Charcuterie",
-    "name": "Design 3",
-    "file": "assets/designs/Charcuterie_svgs/3.svg"
+    "category": "Family",
+    "name": "Cutting Boards B-I Family Gathers Here Svg",
+    "file": "assets/designs/Family/cutting_boards_B-I_family_gathers_here_svg.svg"
   },
   {
-    "category": "Charcuterie",
-    "name": "French Word for Cheese and Other Fancy Shit",
-    "file": "assets/designs/Charcuterie_svgs/French_word_for_cheese_and_other_fancy_shit.svg"
+    "category": "Family",
+    "name": "Cutting Boards B-I Good Food Good Friends Good Times Svg",
+    "file": "assets/designs/Family/cutting_boards_B-I_good_food_good_friends_good_times_svg.svg"
   },
   {
-    "category": "Charcuterie",
-    "name": "Meat Olives Fruit Board",
-    "file": "assets/designs/Charcuterie_svgs/Meat_olives_fruit_board.svg"
+    "category": "Family",
+    "name": "Cutting Boards B-I Grandma S Kitchen Good Food Served Daily With a Heaping Spoon of Love Svg",
+    "file": "assets/designs/Family/cutting_boards_B-I_grandma_s_kitchen_good_food_served_daily_with_a_heaping_spoon_of_love_svg.svg"
   },
   {
-    "category": "Charcuterie",
-    "name": "Party Charcuterie Board",
-    "file": "assets/designs/Charcuterie_svgs/Party_Charcuterie_Board.svg"
+    "category": "Family",
+    "name": "Cutting Boards B-I Grandma S Kitchen Where Sweet Things Happen Svg",
+    "file": "assets/designs/Family/cutting_boards_B-I_grandma_s_kitchen_where_sweet_things_happen_svg.svg"
   },
   {
-    "category": "Charcuterie",
-    "name": "Sharkoodere",
-    "file": "assets/designs/Charcuterie_svgs/Sharkoodere.svg"
+    "category": "Family",
+    "name": "Cutting Boards K-W Kitchen the Best of Times Are Always Found When Friends and Family Gather Around Svg",
+    "file": "assets/designs/Family/cutting_boards_K-W_Kitchen_the_best_of_times_are_always_found_when_friends_and_family_gather_around_svg.svg"
   },
   {
-    "category": "Flasks",
-    "name": "Adventure Fuel",
-    "file": "assets/designs/flask_svgs/Adventure_Fuel.svg"
+    "category": "Family",
+    "name": "Cutting Boards K-W Kitchens Are Made for Bringing Families Together Svg",
+    "file": "assets/designs/Family/cutting_boards_K-W_kitchens_are_made_for_bringing_families_together_svg.svg"
   },
   {
-    "category": "Flasks",
-    "name": "Caution",
-    "file": "assets/designs/flask_svgs/Caution.svg"
+    "category": "Family",
+    "name": "Cutting Boards K-W Love Served Daily Dad S Kitchen Open 24 Hour Svg",
+    "file": "assets/designs/Family/cutting_boards_K-W_love_served_daily_dad_s_kitchen_open_24_hour_svg.svg"
   },
   {
-    "category": "Flasks",
-    "name": "Drink",
-    "file": "assets/designs/flask_svgs/Drink.svg"
+    "category": "Family",
+    "name": "Cutting Boards K-W Love Served Daily Mom S Kitchen Breakfast Lunch Dinner Open 24 Hours Svg",
+    "file": "assets/designs/Family/cutting_boards_K-W_love_served_daily_mom_s_kitchen_breakfast_lunch_dinner_open_24_hours_svg.svg"
   },
   {
-    "category": "Flasks",
-    "name": "Emergency Rations Inside",
-    "file": "assets/designs/flask_svgs/Emergency_Rations_Inside.svg"
+    "category": "Family",
+    "name": "Cutting Boards K-W Love Served Daily Mom S Kitchen Svg",
+    "file": "assets/designs/Family/cutting_boards_K-W_love_served_daily_mom_s_kitchen_svg.svg"
   },
   {
-    "category": "Flasks",
-    "name": "First Aid for Boring Days",
-    "file": "assets/designs/flask_svgs/First_Aid_for_Boring_Days.svg"
+    "category": "Family",
+    "name": "Cutting Boards K-W Mama S Kitchen Svg",
+    "file": "assets/designs/Family/cutting_boards_K-W_mama_s_kitchen_svg.svg"
   },
   {
-    "category": "Flasks",
-    "name": "Fitness",
-    "file": "assets/designs/flask_svgs/Fitness.svg"
+    "category": "Family",
+    "name": "Cutting Boards K-W Meals and Memories Are Made Here Svg",
+    "file": "assets/designs/Family/cutting_boards_K-W_meals_and_memories_are_made_here_svg.svg"
   },
   {
-    "category": "Flasks",
-    "name": "Gym",
-    "file": "assets/designs/flask_svgs/Gym.svg"
+    "category": "Family",
+    "name": "Cutting Boards K-W Meals and Memories Are Made in Mom S Kitche Svg",
+    "file": "assets/designs/Family/cutting_boards_K-W_meals_and_memories_are_made_in_mom_s_kitche_svg.svg"
   },
   {
-    "category": "Flasks",
-    "name": "I Drink and I Know Things",
-    "file": "assets/designs/flask_svgs/I_Drink_and_I_Know_Things.svg"
+    "category": "Family",
+    "name": "Cutting Boards K-W Mom S Kitchen All Food Chopped With Love Svg",
+    "file": "assets/designs/Family/cutting_boards_K-W_mom_s_kitchen_all_food_chopped_with_love_svg.svg"
   },
   {
-    "category": "Flasks",
-    "name": "I Never Drink I Just Disinfect Internal Injuries",
-    "file": "assets/designs/flask_svgs/I_never_drink_I_just_disinfect_internal_injuries.svg"
+    "category": "Family",
+    "name": "Cutting Boards K-W Mom S Kitchen Open 247 Svg",
+    "file": "assets/designs/Family/cutting_boards_K-W_mom_s_kitchen_open_247_svg.svg"
   },
   {
-    "category": "Flasks",
-    "name": "I Thought You Said Flask Chemistry",
-    "file": "assets/designs/flask_svgs/I_Thought_You_Said_Flask_Chemistry.svg"
+    "category": "Family",
+    "name": "Cutting Boards T-W This Kitchen is Blessed Svg",
+    "file": "assets/designs/Family/cutting_boards_T-W_this_kitchen_is_blessed_svg.svg"
   },
   {
-    "category": "Flasks",
-    "name": "In Case of Emergency",
-    "file": "assets/designs/flask_svgs/In_Case_of_Emergency.svg"
+    "category": "Family",
+    "name": "Every Family Hasastory This Isours",
+    "file": "assets/designs/Family/SVG_Everyfamilyhasastorythisisours.svg"
   },
   {
-    "category": "Flasks",
-    "name": "Liquid Courage Dispenser",
-    "file": "assets/designs/flask_svgs/Liquid_Courage_Dispenser.svg"
+    "category": "Family",
+    "name": "Everything That Matters Mostis Home",
+    "file": "assets/designs/Family/SVG_Everythingthatmattersmostishome.svg"
   },
   {
-    "category": "Flasks",
-    "name": "Not Water Not Sorry",
-    "file": "assets/designs/flask_svgs/Not_Water__Not_Sorry.svg"
+    "category": "Family",
+    "name": "Family Ajourney Forever",
+    "file": "assets/designs/Family/SVG_Familyajourneyforever.svg"
   },
   {
-    "category": "Flasks",
-    "name": "One Sip Closer to Happiness",
-    "file": "assets/designs/flask_svgs/One_Sip_Closer_to_Happiness.svg"
+    "category": "Family",
+    "name": "Family Anyonewho Love S You",
+    "file": "assets/designs/Family/SVG_Familyanyonewholovesyou.svg"
   },
   {
-    "category": "Flasks",
-    "name": "Procrastinating Sobriety",
-    "file": "assets/designs/flask_svgs/Procrastinating_Sobriety.svg"
+    "category": "Family",
+    "name": "Family Anyonewho Love S You Uncondition All Y",
+    "file": "assets/designs/Family/SVG_Familyanyonewholovesyouunconditionally.svg"
   },
   {
-    "category": "Flasks",
-    "name": "Save Water Drink Whiskey",
-    "file": "assets/designs/flask_svgs/Save_Water__Drink_Whiskey.svg"
+    "category": "Family",
+    "name": "Family Isanyonewho Love S You Uncondition All Y",
+    "file": "assets/designs/Family/SVG_Familyisanyonewholovesyouunconditionally.svg"
   },
   {
-    "category": "Flasks",
-    "name": "Secretly a Mermaid Potion",
-    "file": "assets/designs/flask_svgs/Secretly_a_Mermaid_Potion.svg"
+    "category": "Family",
+    "name": "For This Family We Are Grateful",
+    "file": "assets/designs/Family/SVG_Forthisfamilywearegrateful.svg"
   },
   {
-    "category": "Flasks",
-    "name": "Sip Me Baby One More Time",
-    "file": "assets/designs/flask_svgs/Sip_Me_Baby_One_More_Time.svg"
+    "category": "Family",
+    "name": "Friends and Family Ga the R Here",
+    "file": "assets/designs/Family/SVG_Friendsandfamilygatherhere.svg"
   },
   {
-    "category": "Flasks",
-    "name": "This Flask is Half Full",
-    "file": "assets/designs/flask_svgs/This_Flask_is_Half_Full.svg"
+    "category": "Family",
+    "name": "I Live on Love and Scentedc and Les",
+    "file": "assets/designs/Family/SVG_Iliveonloveandscentedcandles.svg"
   },
   {
-    "category": "Flasks",
+    "category": "Family",
+    "name": "Ihaveitalltogether Ijustforgotwhere Iputit",
+    "file": "assets/designs/Family/SVG_IhaveitalltogetherIjustforgotwhereIputit.svg"
+  },
+  {
+    "category": "Family",
+    "name": "Life Isbetterat Home",
+    "file": "assets/designs/Family/SVG_Lifeisbetterathome.svg"
+  },
+  {
+    "category": "Family",
+    "name": "Live Laugh Love",
+    "file": "assets/designs/Family/Live Laugh Love.svg"
+  },
+  {
+    "category": "Family",
+    "name": "My Family Are My Best Friends",
+    "file": "assets/designs/Family/SVG_Myfamilyaremybestfriends.svg"
+  },
+  {
+    "category": "Family",
+    "name": "Our Family is Made With Chaos and Love",
+    "file": "assets/designs/Family/SVG_Ourfamilyismadewithchaosandlove.svg"
+  },
+  {
+    "category": "Family",
+    "name": "Our Family Isrootedin Love",
+    "file": "assets/designs/Family/SVG_Ourfamilyisrootedinlove.svg"
+  },
+  {
+    "category": "Family",
+    "name": "Somec All Itchaoswec All It Love",
+    "file": "assets/designs/Family/SVG_Somecallitchaoswecallitlove.svg"
+  },
+  {
+    "category": "Family",
+    "name": "This Home Hasendless Love and Laundry",
+    "file": "assets/designs/Family/SVG_Thishomehasendlessloveandlaundry.svg"
+  },
+  {
+    "category": "Family",
+    "name": "This Home Isf All of Love",
+    "file": "assets/designs/Family/SVG_Thishomeisfalloflove.svg"
+  },
+  {
+    "category": "Family",
+    "name": "Time Spent With Family Iswor the Verysecond",
+    "file": "assets/designs/Family/SVG_Timespentwithfamilyiswortheverysecond.svg"
+  },
+  {
+    "category": "Family",
+    "name": "Yayyourehome",
+    "file": "assets/designs/Family/SVG_Yayyourehome.svg"
+  },
+  {
+    "category": "Work",
+    "name": "Adulting Time Insession",
+    "file": "assets/designs/Work/SVG_Adultingtimeinsession.svg"
+  },
+  {
+    "category": "Work",
+    "name": "Another Day Completely Ruined by",
+    "file": "assets/designs/Work/SVG_Anotherdaycompletelyruinedby.svg"
+  },
+  {
+    "category": "Work",
+    "name": "Back to the Grind",
+    "file": "assets/designs/Work/SVG_Backtothegrind.svg"
+  },
+  {
+    "category": "Work",
+    "name": "Being My Colleague is the Only Gift You Need",
+    "file": "assets/designs/Work/SVG_Beingmycolleagueistheonlygiftyouneed.svg"
+  },
+  {
+    "category": "Work",
+    "name": "Being My Coworker is the Only Gift You Need",
+    "file": "assets/designs/Work/SVG_Beingmycoworkeristheonlygiftyouneed.svg"
+  },
+  {
+    "category": "Work",
+    "name": "Coffee Ismyfavorite Coworker",
+    "file": "assets/designs/Work/SVG_Coffeeismyfavoritecoworker.svg"
+  },
+  {
+    "category": "Work",
+    "name": "Coffee Ismyfavourite Coworker",
+    "file": "assets/designs/Work/SVG_Coffeeismyfavouritecoworker.svg"
+  },
+  {
+    "category": "Work",
+    "name": "I Don T Have the Time to Have the Breakdown",
+    "file": "assets/designs/Work/SVG_Idonthavethetimetohavethebreakdown.svg"
+  },
+  {
+    "category": "Work",
+    "name": "I Never Facemon Day Morningbluesbceauseoffun Coworker Slike You",
+    "file": "assets/designs/Work/SVG_Ineverfacemondaymorningbluesbceauseoffuncoworkerslikeyou.svg"
+  },
+  {
+    "category": "Work",
+    "name": "Idonthaveenoughenergytopretend Ilikeyou",
+    "file": "assets/designs/Work/SVG_IdonthaveenoughenergytopretendIlikeyou.svg"
+  },
+  {
+    "category": "Work",
+    "name": "Ipretendtowork the Ypretendtopayme",
+    "file": "assets/designs/Work/SVG_Ipretendtoworktheypretendtopayme.svg"
+  },
+  {
+    "category": "Work",
+    "name": "Justknoweveryminute Imatwork",
+    "file": "assets/designs/Work/SVG_JustknoweveryminuteImatwork.svg"
+  },
+  {
+    "category": "Work",
+    "name": "Letmedrop Everything and Workon Your Problem",
+    "file": "assets/designs/Work/SVG_Letmedropeverythingandworkonyourproblem.svg"
+  },
+  {
+    "category": "Work",
+    "name": "Myfavorite Coworker Gaveme This",
+    "file": "assets/designs/Work/SVG_Myfavoritecoworkergavemethis.svg"
+  },
+  {
+    "category": "Work",
+    "name": "Myfavourite Coworker Gaveme This",
+    "file": "assets/designs/Work/SVG_Myfavouritecoworkergavemethis.svg"
+  },
+  {
+    "category": "Work",
+    "name": "Myhobbyisannoyingmy Coworker S",
+    "file": "assets/designs/Work/SVG_Myhobbyisannoyingmycoworkers.svg"
+  },
+  {
+    "category": "Work",
+    "name": "Not the Worstemployee",
+    "file": "assets/designs/Work/SVG_Nottheworstemployee.svg"
+  },
+  {
+    "category": "Work",
+    "name": "The Best Thingaboutmyjobis That the Chairspins",
+    "file": "assets/designs/Work/SVG_Thebestthingaboutmyjobisthatthechairspins.svg"
+  },
+  {
+    "category": "Work",
     "name": "This is My Networking Flask",
-    "file": "assets/designs/flask_svgs/This_is_My_Networking_Flask.svg"
+    "file": "assets/designs/Work/This_is_My_Networking_Flask.svg"
   },
   {
-    "category": "Flasks",
-    "name": "This is Probably None of Your Business",
-    "file": "assets/designs/flask_svgs/This_is_probably_none_of_your_business.svg"
+    "category": "Work",
+    "name": "Work for Minutestakebreaks for Hours",
+    "file": "assets/designs/Work/SVG_Workforminutestakebreaksforhours.svg"
   },
   {
-    "category": "Flasks",
-    "name": "This Might Be Vodka",
-    "file": "assets/designs/flask_svgs/This_Might_Be_Vodka.svg"
+    "category": "Work",
+    "name": "Work Made Us Coworker S",
+    "file": "assets/designs/Work/SVG_Workmadeuscoworkers.svg"
   },
   {
-    "category": "Flasks",
-    "name": "Undercover Party Agent",
-    "file": "assets/designs/flask_svgs/Undercover_Party_Agent.svg"
+    "category": "Work",
+    "name": "Workuninst All Ing",
+    "file": "assets/designs/Work/SVG_Workuninstalling.svg"
   },
   {
-    "category": "Golf",
+    "category": "Humor",
     "name": "Born to Golf Forced to Work",
-    "file": "assets/designs/Golf_svgs/Born_To_Golf_Forced_To_Work.svg"
+    "file": "assets/designs/Humor/Born_To_Golf_Forced_To_Work.svg"
   },
   {
-    "category": "Golf",
+    "category": "Humor",
     "name": "Cant Work Today Im Feeling a Little Under Par",
-    "file": "assets/designs/Golf_svgs/Cant_Work_Today_Im_Feeling_A_Little_Under_Par.svg"
+    "file": "assets/designs/Humor/Cant_Work_Today_Im_Feeling_A_Little_Under_Par.svg"
   },
   {
-    "category": "Golf",
+    "category": "Humor",
+    "name": "Caution",
+    "file": "assets/designs/Humor/Caution.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Charcuterie a Fancy Adult Lunch Table",
+    "file": "assets/designs/Humor/Charcuterie_a_fancy_adult_lunch_table.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Charcuterie a Fancy Way to Say Adult Lunchable",
+    "file": "assets/designs/Humor/Charcuterie_a_fancy_way_to_say_adult_lunchable.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Cutting Boards B-I Don T Forget to Hug the Cook Svg",
+    "file": "assets/designs/Humor/cutting_boards_B-I_don_t_forget_to_hug_the_cook_svg.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Cutting Boards B-I Hangry Adj.- a State of Anger Caused by Lack of Food Svg",
+    "file": "assets/designs/Humor/cutting_boards_B-I_hangry_adj.-_a_state_of_anger_caused_by_lack_of_food_svg.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Cutting Boards B-I Hello is It Me You Re Cooking for Svg",
+    "file": "assets/designs/Humor/cutting_boards_B-I_hello_is_it_me_you_re_cooking_for_svg.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Cutting Boards B-I I Don T Need an Inspirational Quote I Need Food Svg",
+    "file": "assets/designs/Humor/cutting_boards_B-I_I_don_t_need_an_inspirational_quote_I_need_food_svg.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Cutting Boards B-I I M Sorry for What I Said When I Was Hungry Svg",
+    "file": "assets/designs/Humor/cutting_boards_B-I_I_m_sorry_for_what_i_said_when_I_was_hungry_svg.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Cutting Boards B-I I Only Eat Hole Foods Svg",
+    "file": "assets/designs/Humor/cutting_boards_B-I_I_only_eat_hole_foods_svg.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Cutting Boards K-W Less Drama More Pizza Svg",
+    "file": "assets/designs/Humor/cutting_boards_K-W_less_drama_more_pizza_svg.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Cutting Boards K-W Many Have Eaten Here Few Have Died Svg",
+    "file": "assets/designs/Humor/cutting_boards_K-W_Many_Have_Eaten_Here_Few_Have_Died_svg.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Cutting Boards K-W My Kitchen My Rules Svg",
+    "file": "assets/designs/Humor/cutting_boards_K-W_my_kitchen_my_rules_svg.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Cutting Boards K-W Real Man Cook Svg",
+    "file": "assets/designs/Humor/cutting_boards_K-W_real_man_cook_svg.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Cutting Boards K-W Real Man Play With Fire Svg",
+    "file": "assets/designs/Humor/cutting_boards_K-W_real_man_play_with_fire_svg.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Cutting Boards T-W the Chef is Always Right Svg",
+    "file": "assets/designs/Humor/cutting_boards_T-W_the_chef_is_always_right_svg.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Cutting Boards T-W the Oven is Hot but the Cook is Hotter Svg",
+    "file": "assets/designs/Humor/cutting_boards_T-W_the_oven_is_hot_but_the_cook_is_hotter_svg.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Cutting Boards T-W the Queen Cooks Here Svg",
+    "file": "assets/designs/Humor/cutting_boards_T-W_the_queen_cooks_here_svg.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Cutting Boards T-W This is Where I Murder the Vegetables Svg",
+    "file": "assets/designs/Humor/cutting_boards_T-W_this_is_where_i_murder_the_vegetables_svg.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Cutting Boards T-W Today S Menu Eat It or Starve It Svg",
+    "file": "assets/designs/Humor/cutting_boards_T-W_today_s_menu_eat_it_or_starve_it_svg.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Cutting Boards T-W When I Said I Do I Didn T Meant the Dishes Svg",
+    "file": "assets/designs/Humor/cutting_boards_T-W_when_I_said_I_do_I_didn_t_meant_the_dishes_svg.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Don Otletmeadult",
+    "file": "assets/designs/Humor/SVG_Donotletmeadult.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Don T Mess Up the Table",
+    "file": "assets/designs/Humor/SVG_Dontmessupthetable.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Don T Mess Upmy Table",
+    "file": "assets/designs/Humor/SVG_Dontmessupmytable.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Don Truinmy Table Useacoaster",
+    "file": "assets/designs/Humor/SVG_Dontruinmytableuseacoaster.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Don'T Mess Up Table",
+    "file": "assets/designs/Humor/Don_t_Mess_Up_Table.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "First Aid for Boring Days",
+    "file": "assets/designs/Humor/First_Aid_for_Boring_Days.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "French Word for Cheese and Other Fancy Shit",
+    "file": "assets/designs/Humor/French_word_for_cheese_and_other_fancy_shit.svg"
+  },
+  {
+    "category": "Humor",
     "name": "Golf and Beer Thats Why Im Here",
-    "file": "assets/designs/Golf_svgs/Golf_And_Beer_Thats_Why_Im_Here.svg"
+    "file": "assets/designs/Humor/Golf_And_Beer_Thats_Why_Im_Here.svg"
   },
   {
-    "category": "Golf",
-    "name": "Golf Dad Like a Regular Dad but Cooler",
-    "file": "assets/designs/Golf_svgs/Golf_Dad_Like_A_Regular_Dad_But_Cooler.svg"
+    "category": "Humor",
+    "name": "I Drink and I Know Things",
+    "file": "assets/designs/Humor/I_Drink_and_I_Know_Things.svg"
   },
   {
-    "category": "Golf",
-    "name": "Golfing is My Favourite Season",
-    "file": "assets/designs/Golf_svgs/Golfing_Is_My_Favourite_Season.svg"
+    "category": "Humor",
+    "name": "I Drink Beer for Your Protection",
+    "file": "assets/designs/Humor/SVG_Idrinkbeerforyourprotection.svg"
   },
   {
-    "category": "Golf",
-    "name": "I Like Bourbon and Golf and Maybe 3 People",
-    "file": "assets/designs/Golf_svgs/I_Like_Bourbon_And_Golf_And_Maybe_3_People.svg"
+    "category": "Humor",
+    "name": "I Drink Coffee for Your Protection",
+    "file": "assets/designs/Humor/SVG_Idrinkcoffeeforyourprotection.svg"
   },
   {
-    "category": "Golf",
+    "category": "Humor",
+    "name": "I Drink Gin for Your Protection",
+    "file": "assets/designs/Humor/SVG_Idrinkginforyourprotection.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "I Drink Tea for Your Protection",
+    "file": "assets/designs/Humor/SVG_Idrinkteaforyourprotection.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "I Drink Wine for Your Protection",
+    "file": "assets/designs/Humor/SVG_Idrinkwineforyourprotection.svg"
+  },
+  {
+    "category": "Humor",
     "name": "I Made a Bogey on Every Hole",
-    "file": "assets/designs/Golf_svgs/I_Made_A_Bogey_On_Every_Hole.svg"
+    "file": "assets/designs/Humor/I_Made_A_Bogey_On_Every_Hole.svg"
   },
   {
-    "category": "Golf",
+    "category": "Humor",
+    "name": "I Never Drink I Just Disinfect Internal Injuries",
+    "file": "assets/designs/Humor/I_never_drink_I_just_disinfect_internal_injuries.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "I Thought You Said Flask Chemistry",
+    "file": "assets/designs/Humor/I_Thought_You_Said_Flask_Chemistry.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Iam All Ergictostupidity",
+    "file": "assets/designs/Humor/SVG_Iamallergictostupidity.svg"
+  },
+  {
+    "category": "Humor",
     "name": "Im Just Here to Hit Trees and Curse",
-    "file": "assets/designs/Golf_svgs/Im_Just_Here_To_Hit_Trees_And_Curse.svg"
+    "file": "assets/designs/Humor/Im_Just_Here_To_Hit_Trees_And_Curse.svg"
   },
   {
-    "category": "Golf",
+    "category": "Humor",
+    "name": "Imaybewrongbut Idoubtit",
+    "file": "assets/designs/Humor/SVG_ImaybewrongbutIdoubtit.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Imfine but the Restof You Need the Rapy",
+    "file": "assets/designs/Humor/SVG_Imfinebuttherestofyouneedtherapy.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Imnotsarcastic Iamjustintelligent",
+    "file": "assets/designs/Humor/SVG_ImnotsarcasticIamjustintelligent.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Imonlysarcasticwhen Ispeak",
+    "file": "assets/designs/Humor/SVG_ImonlysarcasticwhenIspeak.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Imsarcastic Because Punching People in the Face",
+    "file": "assets/designs/Humor/SVG_Imsarcasticbecausepunchingpeopleintheface.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Imsorrydid Irollmyeyesoutloud",
+    "file": "assets/designs/Humor/SVG_ImsorrydidIrollmyeyesoutloud.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "In Case of Emergency",
+    "file": "assets/designs/Humor/In_Case_of_Emergency.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Irefusetobecome What You C All Normal",
+    "file": "assets/designs/Humor/SVG_Irefusetobecomewhatyoucallnormal.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Irunon Coffee and Sarcasm",
+    "file": "assets/designs/Humor/SVG_Irunoncoffeeandsarcasm.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Irunon Tea and Sarcasm",
+    "file": "assets/designs/Humor/SVG_Irunonteaandsarcasm.svg"
+  },
+  {
+    "category": "Humor",
     "name": "It Takes a Lot of Balls to Golf Like I Do",
-    "file": "assets/designs/Golf_svgs/It_Takes_A_Lot_Of_Balls_To_Golf_Like_I_Do.svg"
+    "file": "assets/designs/Humor/It_Takes_A_Lot_Of_Balls_To_Golf_Like_I_Do.svg"
   },
   {
-    "category": "Golf",
+    "category": "Humor",
     "name": "It Takes a Lot of Balls to Golf Like I Do 2",
-    "file": "assets/designs/Golf_svgs/It_Takes_A_Lot_Of_Balls_To_Golf_Like_I_Do_2.svg"
+    "file": "assets/designs/Humor/It_Takes_A_Lot_Of_Balls_To_Golf_Like_I_Do_2.svg"
   },
   {
-    "category": "Golf",
+    "category": "Humor",
+    "name": "Itsa Good Day Tobeannoying",
+    "file": "assets/designs/Humor/SVG_Itsagooddaytobeannoying.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Iwish Iwasasthinasmypatience",
+    "file": "assets/designs/Humor/SVG_IwishIwasasthinasmypatience.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Iwishmore People Werefluentinsilence",
+    "file": "assets/designs/Humor/SVG_Iwishmorepeoplewerefluentinsilence.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Iwontquitbut Iwillcussthewholetime",
+    "file": "assets/designs/Humor/SVG_IwontquitbutIwillcussthewholetime.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Kitchen Closed Due to Illness",
+    "file": "assets/designs/Humor/Kitchen_closed_due_to_illness.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Liquid Courage Dispenser",
+    "file": "assets/designs/Humor/Liquid_Courage_Dispenser.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Nobodyc Are Sabout Your Drama",
+    "file": "assets/designs/Humor/SVG_Nobodycaresaboutyourdrama.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Nope Iamgoingbacktobed",
+    "file": "assets/designs/Humor/SVG_NopeIamgoingbacktobed.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Not Goingoutto Day",
+    "file": "assets/designs/Humor/SVG_Notgoingouttoday.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Not Water Not Sorry",
+    "file": "assets/designs/Humor/Not_Water__Not_Sorry.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "One Sip Closer to Happiness",
+    "file": "assets/designs/Humor/One_Sip_Closer_to_Happiness.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Placecup Here Toavoidmywrath",
+    "file": "assets/designs/Humor/SVG_Placecupheretoavoidmywrath.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Procrastinating Sobriety",
+    "file": "assets/designs/Humor/Procrastinating_Sobriety.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Rememberwhen Iwaskedforyouropinion",
+    "file": "assets/designs/Humor/SVG_RememberwhenIwaskedforyouropinion.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Rings Are for Fingers Not Table S",
+    "file": "assets/designs/Humor/SVG_Ringsareforfingersnottables.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Sarcasticawkwardsweaty",
+    "file": "assets/designs/Humor/SVG_Sarcasticawkwardsweaty.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Secretly a Mermaid Potion",
+    "file": "assets/designs/Humor/Secretly_a_Mermaid_Potion.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Sharkoodere",
+    "file": "assets/designs/Humor/Sharkoodere.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Sip Me Baby One More Time",
+    "file": "assets/designs/Humor/Sip_Me_Baby_One_More_Time.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Sorry Idontspeakidiot",
+    "file": "assets/designs/Humor/SVG_SorryIdontspeakidiot.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Sorryabout the Mess but We Live Here",
+    "file": "assets/designs/Humor/SVG_Sorryaboutthemessbutwelivehere.svg"
+  },
+  {
+    "category": "Humor",
     "name": "Swing Swear Drink Repeat",
-    "file": "assets/designs/Golf_svgs/Swing_Swear_Drink_Repeat.svg"
+    "file": "assets/designs/Humor/Swing_Swear_Drink_Repeat.svg"
   },
   {
-    "category": "Golf",
-    "name": "The Golf Father",
-    "file": "assets/designs/Golf_svgs/The_Golf_Father.svg"
+    "category": "Humor",
+    "name": "This Flask is Half Full",
+    "file": "assets/designs/Humor/This_Flask_is_Half_Full.svg"
   },
   {
-    "category": "Golf",
-    "name": "The Most Important Shot in Golf is the Next One",
-    "file": "assets/designs/Golf_svgs/The_Most_Important_Shot_In_Golf_Is_The_Next_One.svg"
+    "category": "Humor",
+    "name": "This is Not Apubuseacoaster",
+    "file": "assets/designs/Humor/SVG_Thisisnotapubuseacoaster.svg"
   },
   {
-    "category": "Golf",
+    "category": "Humor",
+    "name": "This is Probably None of Your Business",
+    "file": "assets/designs/Humor/This_is_probably_none_of_your_business.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "This Might Be Vodka",
+    "file": "assets/designs/Humor/This_Might_Be_Vodka.svg"
+  },
+  {
+    "category": "Humor",
     "name": "Time to Whip Out the Big Stick",
-    "file": "assets/designs/Golf_svgs/Time_To_Whip_Out_The_Big_Stick.svg"
+    "file": "assets/designs/Humor/Time_To_Whip_Out_The_Big_Stick.svg"
   },
   {
-    "category": "Golf",
+    "category": "Humor",
+    "name": "Undercover Party Agent",
+    "file": "assets/designs/Humor/Undercover_Party_Agent.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Use a Coaster or I Will Poke You in the Eye",
+    "file": "assets/designs/Humor/Use_A_Coaster_Or_I_Will_Poke_You_In_The_Eye.svg"
+  },
+  {
+    "category": "Humor",
+    "name": "Useacoaster and Noonegetshurt",
+    "file": "assets/designs/Humor/SVG_Useacoasterandnoonegetshurt.svg"
+  },
+  {
+    "category": "Humor",
     "name": "Weapons of Grass Destruction",
-    "file": "assets/designs/Golf_svgs/Weapons_Of_Grass_Destruction.svg"
+    "file": "assets/designs/Humor/Weapons_Of_Grass_Destruction.svg"
   },
   {
-    "category": "Golf",
-    "name": "Weekend Forecast Golfing With a Chance of Beer",
-    "file": "assets/designs/Golf_svgs/Weekend_Forecast_Golfing_With_A_Chance_Of_Beer.svg"
+    "category": "Humor",
+    "name": "You Are Entitledto Your Wrongopinion",
+    "file": "assets/designs/Humor/SVG_Youareentitledtoyourwrongopinion.svg"
   },
   {
-    "category": "Bridal & Bachelorette",
-    "name": "Design 01",
-    "file": "assets/designs/Bridal Bachelorette_svgs/design-01.svg"
+    "category": "Humor",
+    "name": "You Cantmake Every One Happy You Are Nt Wine",
+    "file": "assets/designs/Humor/SVG_Youcantmakeeveryonehappyyouarentwine.svg"
   },
   {
-    "category": "Bridal & Bachelorette",
-    "name": "Design 02",
-    "file": "assets/designs/Bridal Bachelorette_svgs/design-02.svg"
+    "category": "Humor",
+    "name": "You Inspiremyinnerserialkiller",
+    "file": "assets/designs/Humor/SVG_Youinspiremyinnerserialkiller.svg"
   },
   {
-    "category": "Bridal & Bachelorette",
-    "name": "Design 03",
-    "file": "assets/designs/Bridal Bachelorette_svgs/design-03.svg"
+    "category": "Humor",
+    "name": "You Mustbeexhaustedwatchingmedo Everything",
+    "file": "assets/designs/Humor/SVG_Youmustbeexhaustedwatchingmedoeverything.svg"
   },
   {
-    "category": "Bridal & Bachelorette",
-    "name": "Design 04",
-    "file": "assets/designs/Bridal Bachelorette_svgs/design-04.svg"
+    "category": "Humor",
+    "name": "Your Edeadtousnow",
+    "file": "assets/designs/Humor/SVG_Youredeadtousnow.svg"
   },
   {
-    "category": "Bridal & Bachelorette",
-    "name": "Design 05",
-    "file": "assets/designs/Bridal Bachelorette_svgs/design-05.svg"
+    "category": "Drinks",
+    "name": "Adventure Fuel",
+    "file": "assets/designs/Drinks/Adventure_Fuel.svg"
   },
   {
-    "category": "Bridal & Bachelorette",
-    "name": "Design 06",
-    "file": "assets/designs/Bridal Bachelorette_svgs/design-06.svg"
+    "category": "Drinks",
+    "name": "Beergoeshere",
+    "file": "assets/designs/Drinks/SVG_Beergoeshere.svg"
   },
   {
-    "category": "Bridal & Bachelorette",
-    "name": "Design 07",
-    "file": "assets/designs/Bridal Bachelorette_svgs/design-07.svg"
+    "category": "Drinks",
+    "name": "Cheers to Pour Decisions",
+    "file": "assets/designs/Drinks/SVG_Cheerstopourdecisions.svg"
   },
   {
-    "category": "Bridal & Bachelorette",
-    "name": "Design 08",
-    "file": "assets/designs/Bridal Bachelorette_svgs/design-08.svg"
+    "category": "Drinks",
+    "name": "Coffee Goes Here",
+    "file": "assets/designs/Drinks/SVG_Coffeegoeshere.svg"
   },
   {
-    "category": "Bridal & Bachelorette",
-    "name": "Design 09",
-    "file": "assets/designs/Bridal Bachelorette_svgs/design-09.svg"
+    "category": "Drinks",
+    "name": "Coffee Ismakingmeawesome",
+    "file": "assets/designs/Drinks/SVG_Coffeeismakingmeawesome.svg"
   },
   {
-    "category": "Bridal & Bachelorette",
+    "category": "Drinks",
+    "name": "Day Drink Ing Made Medoit",
+    "file": "assets/designs/Drinks/SVG_Daydrinkingmademedoit.svg"
+  },
+  {
+    "category": "Drinks",
+    "name": "Design 1",
+    "file": "assets/designs/Drinks/1.svg"
+  },
+  {
+    "category": "Drinks",
     "name": "Design 10",
-    "file": "assets/designs/Bridal Bachelorette_svgs/design-10.svg"
+    "file": "assets/designs/Drinks/10.svg"
   },
   {
-    "category": "Bridal & Bachelorette",
+    "category": "Drinks",
     "name": "Design 11",
-    "file": "assets/designs/Bridal Bachelorette_svgs/design-11.svg"
+    "file": "assets/designs/Drinks/11.svg"
   },
   {
-    "category": "Bridal & Bachelorette",
+    "category": "Drinks",
     "name": "Design 12",
-    "file": "assets/designs/Bridal Bachelorette_svgs/design-12.svg"
+    "file": "assets/designs/Drinks/12.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 01",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-01.svg"
+    "category": "Drinks",
+    "name": "Design 13",
+    "file": "assets/designs/Drinks/13.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 02",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-02.svg"
+    "category": "Drinks",
+    "name": "Design 14",
+    "file": "assets/designs/Drinks/14.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 03",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-03.svg"
+    "category": "Drinks",
+    "name": "Design 15",
+    "file": "assets/designs/Drinks/15.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 04",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-04.svg"
+    "category": "Drinks",
+    "name": "Design 2",
+    "file": "assets/designs/Drinks/2.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 05",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-05.svg"
+    "category": "Drinks",
+    "name": "Design 3",
+    "file": "assets/designs/Drinks/3.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 06",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-06.svg"
+    "category": "Drinks",
+    "name": "Design 4",
+    "file": "assets/designs/Drinks/4.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 07",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-07.svg"
+    "category": "Drinks",
+    "name": "Design 5",
+    "file": "assets/designs/Drinks/5.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 08",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-08.svg"
+    "category": "Drinks",
+    "name": "Design 6",
+    "file": "assets/designs/Drinks/6.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 09",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-09.svg"
+    "category": "Drinks",
+    "name": "Design 7",
+    "file": "assets/designs/Drinks/7.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 10",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-10.svg"
+    "category": "Drinks",
+    "name": "Design 8",
+    "file": "assets/designs/Drinks/8.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 11",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-11.svg"
+    "category": "Drinks",
+    "name": "Design 9",
+    "file": "assets/designs/Drinks/9.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 12",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-12.svg"
+    "category": "Drinks",
+    "name": "Dinneris Pour Ed",
+    "file": "assets/designs/Drinks/SVG_Dinnerispoured.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 13",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-13.svg"
+    "category": "Drinks",
+    "name": "Don'T Ask Just Pour",
+    "file": "assets/designs/Drinks/Don_t_Ask_Just_Pour.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 14",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-14.svg"
+    "category": "Drinks",
+    "name": "Don'T Ask Just Pour2",
+    "file": "assets/designs/Drinks/Don_t_Ask_Just_Pour2.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 15",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-15.svg"
+    "category": "Drinks",
+    "name": "Drink",
+    "file": "assets/designs/Drinks/Drink.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 16",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-16.svg"
+    "category": "Drinks",
+    "name": "Drink Happy Thoughts",
+    "file": "assets/designs/Drinks/SVG_Drinkhappythoughts.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 17",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-17.svg"
+    "category": "Drinks",
+    "name": "Drinks on Me",
+    "file": "assets/designs/Drinks/Drinks_On_Me.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 18",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-18.svg"
+    "category": "Drinks",
+    "name": "Drinks on Me2",
+    "file": "assets/designs/Drinks/Drinks_On_Me2.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 19",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-19.svg"
+    "category": "Drinks",
+    "name": "Emergency Rations Inside",
+    "file": "assets/designs/Drinks/Emergency_Rations_Inside.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 20",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-20.svg"
+    "category": "Drinks",
+    "name": "Gingoeshere",
+    "file": "assets/designs/Drinks/SVG_Gingoeshere.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 21",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-21.svg"
+    "category": "Drinks",
+    "name": "Good Things Happen Over Tea",
+    "file": "assets/designs/Drinks/Good_Things_Happen_Over_Tea.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 22",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-22.svg"
+    "category": "Drinks",
+    "name": "Hard Time Sc All for Hardliquor",
+    "file": "assets/designs/Drinks/SVG_Hardtimescallforhardliquor.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 23",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-23.svg"
+    "category": "Drinks",
+    "name": "I Just Rescuedsome Wine",
+    "file": "assets/designs/Drinks/SVG_Ijustrescuedsomewine.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 24",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-24.svg"
+    "category": "Drinks",
+    "name": "Ipairwell With Wine",
+    "file": "assets/designs/Drinks/SVG_Ipairwellwithwine.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 25",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-25.svg"
+    "category": "Drinks",
+    "name": "Its Not Re All Y Drink Ingaloneif Your Dogis Home",
+    "file": "assets/designs/Drinks/SVG_Itsnotreallydrinkingaloneifyourdogishome.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 26",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-26.svg"
+    "category": "Drinks",
+    "name": "Itwas the Ginsfault",
+    "file": "assets/designs/Drinks/SVG_Itwastheginsfault.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 27",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-27.svg"
+    "category": "Drinks",
+    "name": "Itwas the Whiskeysfault",
+    "file": "assets/designs/Drinks/SVG_Itwasthewhiskeysfault.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 28",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-28.svg"
+    "category": "Drinks",
+    "name": "Itwas the Whiskysfault",
+    "file": "assets/designs/Drinks/SVG_Itwasthewhiskysfault.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 29",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-29.svg"
+    "category": "Drinks",
+    "name": "Itwas the Wine Sfault",
+    "file": "assets/designs/Drinks/SVG_Itwasthewinesfault.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 30",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-30.svg"
+    "category": "Drinks",
+    "name": "Iusedtocarebut Itakeapillforthatnow",
+    "file": "assets/designs/Drinks/SVG_IusedtocarebutItakeapillforthatnow.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 31",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-31.svg"
+    "category": "Drinks",
+    "name": "Just Sitting Here Silentlyjudging",
+    "file": "assets/designs/Drinks/SVG_Justsittingheresilentlyjudging.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 32",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-32.svg"
+    "category": "Drinks",
+    "name": "Life Begins With Coffee",
+    "file": "assets/designs/Drinks/SVG_Lifebeginswithcoffee.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 33",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-33.svg"
+    "category": "Drinks",
+    "name": "May Your Coffee Kickinbe for Ereality",
+    "file": "assets/designs/Drinks/SVG_Mayyourcoffeekickinbeforereality.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 34",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-34.svg"
+    "category": "Drinks",
+    "name": "Putmineinabiggirlglass",
+    "file": "assets/designs/Drinks/SVG_Putmineinabiggirlglass.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 35",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-35.svg"
+    "category": "Drinks",
+    "name": "Save Water Drink Whiskey",
+    "file": "assets/designs/Drinks/Save_Water__Drink_Whiskey.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 36",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-36.svg"
+    "category": "Drinks",
+    "name": "Sip Sabouttogetreal",
+    "file": "assets/designs/Drinks/SVG_Sipsabouttogetreal.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 37",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-37.svg"
+    "category": "Drinks",
+    "name": "Step Aside Coffee This Isajob for Alcohol",
+    "file": "assets/designs/Drinks/SVG_Stepasidecoffeethisisajobforalcohol.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 38",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-38.svg"
+    "category": "Drinks",
+    "name": "Take Life One Cup At a Time",
+    "file": "assets/designs/Drinks/Take_Life_One_Cup_At_A_Time.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 39",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-39.svg"
+    "category": "Drinks",
+    "name": "Teagoeshere",
+    "file": "assets/designs/Drinks/SVG_Teagoeshere.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 40",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-40.svg"
+    "category": "Drinks",
+    "name": "The Best Beer is an Open Beer",
+    "file": "assets/designs/Drinks/The_Best_Beer_Is_An_Open_Beer.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 41",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-41.svg"
+    "category": "Drinks",
+    "name": "The Res Always Time for Another Drink",
+    "file": "assets/designs/Drinks/SVG_Theresalwaystimeforanotherdrink.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 42",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-42.svg"
+    "category": "Drinks",
+    "name": "Time to Wine Down",
+    "file": "assets/designs/Drinks/SVG_Timetowinedown.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 43",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-43.svg"
+    "category": "Drinks",
+    "name": "Toomuchtoddler Not Enough Coffee",
+    "file": "assets/designs/Drinks/SVG_Toomuchtoddlernotenoughcoffee.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 44",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-44.svg"
+    "category": "Drinks",
+    "name": "Vodka Goes Here",
+    "file": "assets/designs/Drinks/SVG_Vodkagoeshere.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 45",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-45.svg"
+    "category": "Drinks",
+    "name": "Where There is Tea There is Hope",
+    "file": "assets/designs/Drinks/Where_There_Is_Tea_There_Is_Hope.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 48",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-48.svg"
+    "category": "Drinks",
+    "name": "Whiskey Goes Here",
+    "file": "assets/designs/Drinks/SVG_Whiskeygoeshere.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 49",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-49.svg"
+    "category": "Drinks",
+    "name": "Whisky Goes Here",
+    "file": "assets/designs/Drinks/SVG_Whiskygoeshere.svg"
   },
   {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 50",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-50.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 51",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-51.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 52",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-52.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 53",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-53.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 54",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-54.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 55",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-55.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 56",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-56.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 58",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-58.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 59",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-59.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 60",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-60.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 61",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-61.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 62",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-62.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 63",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-63.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 64",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-64.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 65",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-65.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 66",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-66.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 67",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-67.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 68",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-68.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 69",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-69.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 70",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-70.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 71",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-71.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 72",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-72.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 73",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-73.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 74",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-74.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 75",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-75.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 76",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-76.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 77",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-77.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 78",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-78.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 79",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-79.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 80",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-80.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 81",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-81.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 82",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-82.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 83",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-83.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 84",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-84.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 85",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-85.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 86",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-86.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 87",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-87.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 88",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-88.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 89",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-89.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 90",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-90.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 91",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-91.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 92",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-92.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 93",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-93.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 94",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-94.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 95",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-95.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 96",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-96.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 97",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-97.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 98",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-98.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "Svg Family Monogram Svg 99",
-    "file": "assets/designs/Monograms_family_svgs/svg_FAMILY_MONOGRAM_SVG-99.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "The Anderson Family",
-    "file": "assets/designs/Monograms_family_svgs/The_Anderson_Family.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "The Brown Family",
-    "file": "assets/designs/Monograms_family_svgs/The_Brown_Family.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "The Hernandez Family",
-    "file": "assets/designs/Monograms_family_svgs/The_Hernandez_Family.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "The Johnson Family",
-    "file": "assets/designs/Monograms_family_svgs/The_Johnson_Family.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "The Miller Family",
-    "file": "assets/designs/Monograms_family_svgs/The_Miller_Family_.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "The Nguyen Family",
-    "file": "assets/designs/Monograms_family_svgs/The_Nguyen_Family.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "The Patel Family",
-    "file": "assets/designs/Monograms_family_svgs/The_Patel_Family.svg"
-  },
-  {
-    "category": "Monograms & Family",
-    "name": "The Ramirez Family",
-    "file": "assets/designs/Monograms_family_svgs/The_Ramirez_Family.svg"
+    "category": "Drinks",
+    "name": "Winegoeshere",
+    "file": "assets/designs/Drinks/SVG_Winegoeshere.svg"
   },
   {
     "category": "Wedding",
@@ -1963,225 +1238,1008 @@ const GALLERY_DESIGNS = [
     "file": "assets/designs/Wedding/You will Forever be my always.svg"
   },
   {
+    "category": "Bachelorette",
+    "name": "Design 01",
+    "file": "assets/designs/Bachelorette/design-01.svg"
+  },
+  {
+    "category": "Bachelorette",
+    "name": "Design 02",
+    "file": "assets/designs/Bachelorette/design-02.svg"
+  },
+  {
+    "category": "Bachelorette",
+    "name": "Design 03",
+    "file": "assets/designs/Bachelorette/design-03.svg"
+  },
+  {
+    "category": "Bachelorette",
+    "name": "Design 04",
+    "file": "assets/designs/Bachelorette/design-04.svg"
+  },
+  {
+    "category": "Bachelorette",
+    "name": "Design 05",
+    "file": "assets/designs/Bachelorette/design-05.svg"
+  },
+  {
+    "category": "Bachelorette",
+    "name": "Design 06",
+    "file": "assets/designs/Bachelorette/design-06.svg"
+  },
+  {
+    "category": "Bachelorette",
+    "name": "Design 07",
+    "file": "assets/designs/Bachelorette/design-07.svg"
+  },
+  {
+    "category": "Bachelorette",
+    "name": "Design 08",
+    "file": "assets/designs/Bachelorette/design-08.svg"
+  },
+  {
+    "category": "Bachelorette",
+    "name": "Design 09",
+    "file": "assets/designs/Bachelorette/design-09.svg"
+  },
+  {
+    "category": "Bachelorette",
+    "name": "Design 10",
+    "file": "assets/designs/Bachelorette/design-10.svg"
+  },
+  {
+    "category": "Bachelorette",
+    "name": "Design 11",
+    "file": "assets/designs/Bachelorette/design-11.svg"
+  },
+  {
+    "category": "Bachelorette",
+    "name": "Design 12",
+    "file": "assets/designs/Bachelorette/design-12.svg"
+  },
+  {
+    "category": "Golf",
+    "name": "Golf Dad Like a Regular Dad but Cooler",
+    "file": "assets/designs/Golf/Golf_Dad_Like_A_Regular_Dad_But_Cooler.svg"
+  },
+  {
+    "category": "Golf",
+    "name": "Golfing is My Favourite Season",
+    "file": "assets/designs/Golf/Golfing_Is_My_Favourite_Season.svg"
+  },
+  {
+    "category": "Golf",
+    "name": "I Like Bourbon and Golf and Maybe 3 People",
+    "file": "assets/designs/Golf/I_Like_Bourbon_And_Golf_And_Maybe_3_People.svg"
+  },
+  {
+    "category": "Golf",
+    "name": "The Golf Father",
+    "file": "assets/designs/Golf/The_Golf_Father.svg"
+  },
+  {
+    "category": "Golf",
+    "name": "The Most Important Shot in Golf is the Next One",
+    "file": "assets/designs/Golf/The_Most_Important_Shot_In_Golf_Is_The_Next_One.svg"
+  },
+  {
+    "category": "Golf",
+    "name": "Weekend Forecast Golfing With a Chance of Beer",
+    "file": "assets/designs/Golf/Weekend_Forecast_Golfing_With_A_Chance_Of_Beer.svg"
+  },
+  {
     "category": "Inspirational Quotes",
     "name": "Design 1",
-    "file": "assets/designs/inspirational quotes_svgs/1.svg"
+    "file": "assets/designs/Inspirational_Quotes/1.svg"
   },
   {
     "category": "Inspirational Quotes",
     "name": "Design 10",
-    "file": "assets/designs/inspirational quotes_svgs/10.svg"
+    "file": "assets/designs/Inspirational_Quotes/10.svg"
   },
   {
     "category": "Inspirational Quotes",
     "name": "Design 11",
-    "file": "assets/designs/inspirational quotes_svgs/11.svg"
+    "file": "assets/designs/Inspirational_Quotes/11.svg"
   },
   {
     "category": "Inspirational Quotes",
     "name": "Design 12",
-    "file": "assets/designs/inspirational quotes_svgs/12.svg"
+    "file": "assets/designs/Inspirational_Quotes/12.svg"
   },
   {
     "category": "Inspirational Quotes",
     "name": "Design 13",
-    "file": "assets/designs/inspirational quotes_svgs/13.svg"
+    "file": "assets/designs/Inspirational_Quotes/13.svg"
   },
   {
     "category": "Inspirational Quotes",
     "name": "Design 14",
-    "file": "assets/designs/inspirational quotes_svgs/14.svg"
+    "file": "assets/designs/Inspirational_Quotes/14.svg"
   },
   {
     "category": "Inspirational Quotes",
     "name": "Design 15",
-    "file": "assets/designs/inspirational quotes_svgs/15.svg"
+    "file": "assets/designs/Inspirational_Quotes/15.svg"
   },
   {
     "category": "Inspirational Quotes",
     "name": "Design 16",
-    "file": "assets/designs/inspirational quotes_svgs/16.svg"
+    "file": "assets/designs/Inspirational_Quotes/16.svg"
   },
   {
     "category": "Inspirational Quotes",
     "name": "Design 17",
-    "file": "assets/designs/inspirational quotes_svgs/17.svg"
+    "file": "assets/designs/Inspirational_Quotes/17.svg"
   },
   {
     "category": "Inspirational Quotes",
     "name": "Design 18",
-    "file": "assets/designs/inspirational quotes_svgs/18.svg"
+    "file": "assets/designs/Inspirational_Quotes/18.svg"
   },
   {
     "category": "Inspirational Quotes",
     "name": "Design 19",
-    "file": "assets/designs/inspirational quotes_svgs/19.svg"
+    "file": "assets/designs/Inspirational_Quotes/19.svg"
   },
   {
     "category": "Inspirational Quotes",
     "name": "Design 2",
-    "file": "assets/designs/inspirational quotes_svgs/2.svg"
+    "file": "assets/designs/Inspirational_Quotes/2.svg"
   },
   {
     "category": "Inspirational Quotes",
     "name": "Design 20",
-    "file": "assets/designs/inspirational quotes_svgs/20.svg"
+    "file": "assets/designs/Inspirational_Quotes/20.svg"
   },
   {
     "category": "Inspirational Quotes",
     "name": "Design 3",
-    "file": "assets/designs/inspirational quotes_svgs/3.svg"
+    "file": "assets/designs/Inspirational_Quotes/3.svg"
   },
   {
     "category": "Inspirational Quotes",
     "name": "Design 4",
-    "file": "assets/designs/inspirational quotes_svgs/4.svg"
+    "file": "assets/designs/Inspirational_Quotes/4.svg"
   },
   {
     "category": "Inspirational Quotes",
     "name": "Design 5",
-    "file": "assets/designs/inspirational quotes_svgs/5.svg"
+    "file": "assets/designs/Inspirational_Quotes/5.svg"
   },
   {
     "category": "Inspirational Quotes",
     "name": "Design 6",
-    "file": "assets/designs/inspirational quotes_svgs/6.svg"
+    "file": "assets/designs/Inspirational_Quotes/6.svg"
   },
   {
     "category": "Inspirational Quotes",
     "name": "Design 7",
-    "file": "assets/designs/inspirational quotes_svgs/7.svg"
+    "file": "assets/designs/Inspirational_Quotes/7.svg"
   },
   {
     "category": "Inspirational Quotes",
     "name": "Design 8",
-    "file": "assets/designs/inspirational quotes_svgs/8.svg"
+    "file": "assets/designs/Inspirational_Quotes/8.svg"
   },
   {
     "category": "Inspirational Quotes",
     "name": "Design 9",
-    "file": "assets/designs/inspirational quotes_svgs/9.svg"
+    "file": "assets/designs/Inspirational_Quotes/9.svg"
   },
   {
     "category": "Inspirational Quotes",
-    "name": "Live Laugh Love",
-    "file": "assets/designs/Live Laugh Love.svg"
+    "name": "Differentdoes Not Meanwrong",
+    "file": "assets/designs/Inspirational_Quotes/SVG_Differentdoesnotmeanwrong.svg"
   },
   {
-    "category": "Halloween",
+    "category": "Inspirational Quotes",
+    "name": "Don Tlet the Silly Things S Tea L Your Happiness",
+    "file": "assets/designs/Inspirational_Quotes/SVG_Dontletthesillythingsstealyourhappiness.svg"
+  },
+  {
+    "category": "Inspirational Quotes",
+    "name": "I Don T Need Amotivationalquote",
+    "file": "assets/designs/Inspirational_Quotes/SVG_Idontneedamotivationalquote.svg"
+  },
+  {
+    "category": "Inspirational Quotes",
+    "name": "Itdoesntgetanybetterthan This",
+    "file": "assets/designs/Inspirational_Quotes/SVG_Itdoesntgetanybetterthanthis.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 01",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-01.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 02",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-02.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 03",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-03.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 04",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-04.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 05",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-05.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 06",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-06.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 07",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-07.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 08",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-08.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 09",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-09.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 10",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-10.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 11",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-11.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 12",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-12.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 13",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-13.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 14",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-14.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 15",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-15.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 16",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-16.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 17",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-17.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 18",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-18.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 19",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-19.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 20",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-20.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 21",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-21.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 22",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-22.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 23",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-23.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 24",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-24.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 25",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-25.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 26",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-26.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 27",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-27.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 28",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-28.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 29",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-29.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 30",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-30.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 31",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-31.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 32",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-32.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 33",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-33.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 34",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-34.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 35",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-35.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 36",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-36.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 37",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-37.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 38",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-38.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 39",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-39.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 40",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-40.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 41",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-41.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 42",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-42.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 43",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-43.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 44",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-44.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 45",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-45.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 48",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-48.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 49",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-49.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 50",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-50.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 51",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-51.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 52",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-52.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 53",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-53.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 54",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-54.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 55",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-55.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 56",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-56.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 58",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-58.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 59",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-59.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 60",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-60.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 61",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-61.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 62",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-62.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 63",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-63.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 64",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-64.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 65",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-65.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 66",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-66.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 67",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-67.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 68",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-68.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 69",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-69.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 70",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-70.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 71",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-71.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 72",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-72.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 73",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-73.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 74",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-74.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 75",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-75.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 76",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-76.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 77",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-77.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 78",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-78.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 79",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-79.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 80",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-80.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 81",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-81.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 82",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-82.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 83",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-83.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 84",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-84.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 85",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-85.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 86",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-86.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 87",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-87.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 88",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-88.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 89",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-89.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 90",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-90.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 91",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-91.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 92",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-92.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 93",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-93.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 94",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-94.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 95",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-95.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 96",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-96.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 97",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-97.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 98",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-98.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "Svg Family Monogram Svg 99",
+    "file": "assets/designs/Family_Monograms/svg_FAMILY_MONOGRAM_SVG-99.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "The Anderson Family",
+    "file": "assets/designs/Family_Monograms/The_Anderson_Family.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "The Brown Family",
+    "file": "assets/designs/Family_Monograms/The_Brown_Family.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "The Hernandez Family",
+    "file": "assets/designs/Family_Monograms/The_Hernandez_Family.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "The Johnson Family",
+    "file": "assets/designs/Family_Monograms/The_Johnson_Family.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "The Miller Family",
+    "file": "assets/designs/Family_Monograms/The_Miller_Family_.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "The Nguyen Family",
+    "file": "assets/designs/Family_Monograms/The_Nguyen_Family.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "The Patel Family",
+    "file": "assets/designs/Family_Monograms/The_Patel_Family.svg"
+  },
+  {
+    "category": "Family Monograms",
+    "name": "The Ramirez Family",
+    "file": "assets/designs/Family_Monograms/The_Ramirez_Family.svg"
+  },
+  {
+    "category": "Charcuterie",
+    "name": "Cutting Boards B-I Happy Kitchen Happy House Svg",
+    "file": "assets/designs/Charcuterie/cutting_boards_B-I_happy_kitchen_happy_house_svg.svg"
+  },
+  {
+    "category": "Charcuterie",
+    "name": "Design 12",
+    "file": "assets/designs/Charcuterie/12.svg"
+  },
+  {
+    "category": "Charcuterie",
+    "name": "Design 3",
+    "file": "assets/designs/Charcuterie/3.svg"
+  },
+  {
+    "category": "Charcuterie",
+    "name": "Meat Olives Fruit Board",
+    "file": "assets/designs/Charcuterie/Meat_olives_fruit_board.svg"
+  },
+  {
+    "category": "Charcuterie",
+    "name": "Party Charcuterie Board",
+    "file": "assets/designs/Charcuterie/Party_Charcuterie_Board.svg"
+  },
+  {
+    "category": "Cutting Boards & Kitchen",
+    "name": "Cutting Boards B-I Cook Pray Eat Svg",
+    "file": "assets/designs/Cutting_Boards_Kitchen/cutting_boards_B-I_cook_pray_eat_svg.svg"
+  },
+  {
+    "category": "Cutting Boards & Kitchen",
+    "name": "Cutting Boards B-I Cooking is My Passion Svg",
+    "file": "assets/designs/Cutting_Boards_Kitchen/cutting_boards_B-I_cooking_is_my_passion_svg.svg"
+  },
+  {
+    "category": "Cutting Boards & Kitchen",
+    "name": "Cutting Boards B-I Enjoy Life It S Delicious Svg",
+    "file": "assets/designs/Cutting_Boards_Kitchen/cutting_boards_B-I_enjoy_life_it_s_delicious_svg.svg"
+  },
+  {
+    "category": "Cutting Boards & Kitchen",
+    "name": "Cutting Boards B-I Farm to Table Fresh Food Daily Svg",
+    "file": "assets/designs/Cutting_Boards_Kitchen/cutting_boards_B-I_farm_to_table_fresh_food_daily_svg.svg"
+  },
+  {
+    "category": "Cutting Boards & Kitchen",
+    "name": "Cutting Boards B-I I Love You to the Fridge and Back Svg",
+    "file": "assets/designs/Cutting_Boards_Kitchen/cutting_boards_B-I_i_love_you_to_the_fridge_and_back_svg.svg"
+  },
+  {
+    "category": "Cutting Boards & Kitchen",
+    "name": "Cutting Boards B-I If I Have to Stir It It S Homemade Svg",
+    "file": "assets/designs/Cutting_Boards_Kitchen/cutting_boards_B-I_if_i_have_to_stir_it_it_s_homemade_svg.svg"
+  },
+  {
+    "category": "Cutting Boards & Kitchen",
+    "name": "Cutting Boards B-I If You Can Read This You Re Too Close to My Food Svg",
+    "file": "assets/designs/Cutting_Boards_Kitchen/cutting_boards_B-I_if_you_can_read_this_you_re_too_close_to_my_food_svg.svg"
+  },
+  {
+    "category": "Cutting Boards & Kitchen",
+    "name": "Cutting Boards B-I in This Kitchen We Count Memories Not Calories Svg",
+    "file": "assets/designs/Cutting_Boards_Kitchen/cutting_boards_B-I_in_this_kitchen_we_count_memories_not_calories_svg.svg"
+  },
+  {
+    "category": "Cutting Boards & Kitchen",
+    "name": "Cutting Boards B-I in This Kitchen We Make Memories Svg",
+    "file": "assets/designs/Cutting_Boards_Kitchen/cutting_boards_B-I_in_this_kitchen_we_make_memories_svg.svg"
+  },
+  {
+    "category": "Cutting Boards & Kitchen",
+    "name": "Cutting Boards K-W Kitchen All Food Chopped With Love Svg",
+    "file": "assets/designs/Cutting_Boards_Kitchen/cutting_boards_K-W_kitchen_all_food_chopped_with_love_svg.svg"
+  },
+  {
+    "category": "Cutting Boards & Kitchen",
+    "name": "Cutting Boards K-W Kitchen the Heart of the Home Svg",
+    "file": "assets/designs/Cutting_Boards_Kitchen/cutting_boards_K-W_kitchen_the_heart_of_the_home_svg.svg"
+  },
+  {
+    "category": "Cutting Boards & Kitchen",
+    "name": "Cutting Boards K-W Life is Too Short Dance in the Kitchen Svg",
+    "file": "assets/designs/Cutting_Boards_Kitchen/cutting_boards_K-W_life_is_too_short_dance_in_the_kitchen_svg.svg"
+  },
+  {
+    "category": "Cutting Boards & Kitchen",
+    "name": "Cutting Boards K-W My Kitchen is for Dancing Svg",
+    "file": "assets/designs/Cutting_Boards_Kitchen/cutting_boards_K-W_my_kitchen_is_for_dancing_svg.svg"
+  },
+  {
+    "category": "Cutting Boards & Kitchen",
+    "name": "Cutting Boards T-W the Kitchen is the Heart of the Home Svg",
+    "file": "assets/designs/Cutting_Boards_Kitchen/cutting_boards_T-W_the_kitchen_is_the_heart_of_the_home_svg.svg"
+  },
+  {
+    "category": "Cutting Boards & Kitchen",
+    "name": "Cutting Boards T-W Welcome to My Kitchen Svg",
+    "file": "assets/designs/Cutting_Boards_Kitchen/cutting_boards_T-W_welcome_to_my_kitchen_svg.svg"
+  },
+  {
+    "category": "Cutting Boards & Kitchen",
+    "name": "Iamnotmessy Iamcreativelyorganised",
+    "file": "assets/designs/Cutting_Boards_Kitchen/SVG_IamnotmessyIamcreativelyorganised.svg"
+  },
+  {
+    "category": "Seasonal & Holiday",
     "name": "Halloween Retro Signs 1 Svg",
-    "file": "assets/designs/Halloween/Halloween retro signs 1 SVG.svg"
+    "file": "assets/designs/Seasonal_Holiday/Halloween retro signs 1 SVG.svg"
   },
   {
-    "category": "Halloween",
+    "category": "Seasonal & Holiday",
     "name": "Halloween Retro Signs 10 Svg",
-    "file": "assets/designs/Halloween/Halloween retro signs 10 SVG.svg"
+    "file": "assets/designs/Seasonal_Holiday/Halloween retro signs 10 SVG.svg"
   },
   {
-    "category": "Halloween",
+    "category": "Seasonal & Holiday",
     "name": "Halloween Retro Signs 2 Svg",
-    "file": "assets/designs/Halloween/Halloween retro signs 2 SVG.svg"
+    "file": "assets/designs/Seasonal_Holiday/Halloween retro signs 2 SVG.svg"
   },
   {
-    "category": "Halloween",
+    "category": "Seasonal & Holiday",
     "name": "Halloween Retro Signs 3 Svg",
-    "file": "assets/designs/Halloween/Halloween retro signs 3 SVG.svg"
+    "file": "assets/designs/Seasonal_Holiday/Halloween retro signs 3 SVG.svg"
   },
   {
-    "category": "Halloween",
+    "category": "Seasonal & Holiday",
     "name": "Halloween Retro Signs 4 Svg",
-    "file": "assets/designs/Halloween/Halloween retro signs 4 SVG.svg"
+    "file": "assets/designs/Seasonal_Holiday/Halloween retro signs 4 SVG.svg"
   },
   {
-    "category": "Halloween",
+    "category": "Seasonal & Holiday",
     "name": "Halloween Retro Signs 5 Svg",
-    "file": "assets/designs/Halloween/Halloween retro signs 5 SVG.svg"
+    "file": "assets/designs/Seasonal_Holiday/Halloween retro signs 5 SVG.svg"
   },
   {
-    "category": "Halloween",
+    "category": "Seasonal & Holiday",
     "name": "Halloween Retro Signs 6 Svg",
-    "file": "assets/designs/Halloween/Halloween retro signs 6 SVG.svg"
+    "file": "assets/designs/Seasonal_Holiday/Halloween retro signs 6 SVG.svg"
   },
   {
-    "category": "Halloween",
+    "category": "Seasonal & Holiday",
     "name": "Halloween Retro Signs 7 Svg",
-    "file": "assets/designs/Halloween/Halloween retro signs 7 SVG.svg"
+    "file": "assets/designs/Seasonal_Holiday/Halloween retro signs 7 SVG.svg"
   },
   {
-    "category": "Halloween",
+    "category": "Seasonal & Holiday",
     "name": "Halloween Retro Signs 8 Svg",
-    "file": "assets/designs/Halloween/Halloween retro signs 8 SVG.svg"
+    "file": "assets/designs/Seasonal_Holiday/Halloween retro signs 8 SVG.svg"
   },
   {
-    "category": "Halloween",
+    "category": "Seasonal & Holiday",
     "name": "Halloween Retro Signs 9 Svg",
-    "file": "assets/designs/Halloween/Halloween retro signs 9 SVG.svg"
+    "file": "assets/designs/Seasonal_Holiday/Halloween retro signs 9 SVG.svg"
   },
   {
-    "category": "Autumn",
+    "category": "Seasonal & Holiday",
     "name": "Stacked Flower Pumpkins 01",
-    "file": "assets/designs/Autum/Stacked Flower Pumpkins-01.svg"
+    "file": "assets/designs/Seasonal_Holiday/Stacked Flower Pumpkins-01.svg"
   },
   {
-    "category": "Autumn",
+    "category": "Seasonal & Holiday",
     "name": "Stacked Flower Pumpkins 02",
-    "file": "assets/designs/Autum/Stacked Flower Pumpkins-02.svg"
+    "file": "assets/designs/Seasonal_Holiday/Stacked Flower Pumpkins-02.svg"
   },
   {
-    "category": "Sunshine",
+    "category": "Seasonal & Holiday",
     "name": "You Are My Sunshine Cutting Board",
-    "file": "assets/designs/sunshine/You are my Sunshine Cutting Board.svg"
+    "file": "assets/designs/Seasonal_Holiday/You are my Sunshine Cutting Board.svg"
+  },
+  {
+    "category": "Home & Cozy",
+    "name": "Hotcocoahoodies and Home",
+    "file": "assets/designs/Home_Cozy/SVG_Hotcocoahoodiesandhome.svg"
+  },
+  {
+    "category": "Home & Cozy",
+    "name": "Itscosy Season",
+    "file": "assets/designs/Home_Cozy/SVG_Itscosyseason.svg"
+  },
+  {
+    "category": "Home & Cozy",
+    "name": "Monstera Leaf Coasters 03",
+    "file": "assets/designs/Home_Cozy/Monstera Leaf Coasters-03.svg"
+  },
+  {
+    "category": "Home & Cozy",
+    "name": "Par Don the Mess Mychildren Are Makingmemories",
+    "file": "assets/designs/Home_Cozy/SVG_Pardonthemessmychildrenaremakingmemories.svg"
+  },
+  {
+    "category": "Home & Cozy",
+    "name": "Pleasecanwecome With You",
+    "file": "assets/designs/Home_Cozy/SVG_Pleasecanwecomewithyou.svg"
+  },
+  {
+    "category": "Home & Cozy",
+    "name": "Soupoftheday",
+    "file": "assets/designs/Home_Cozy/SVG_Soupoftheday.svg"
+  },
+  {
+    "category": "Home & Cozy",
+    "name": "Welcometo the Chaos",
+    "file": "assets/designs/Home_Cozy/SVG_Welcometothechaos.svg"
+  },
+  {
+    "category": "Fitness",
+    "name": "Fitness",
+    "file": "assets/designs/Fitness/Fitness.svg"
+  },
+  {
+    "category": "Fitness",
+    "name": "Gym",
+    "file": "assets/designs/Fitness/Gym.svg"
   }
 ];
 
 const GALLERY_CATEGORIES = [
   {
-    "name": "Coasters",
-    "count": 139
+    "name": "Family",
+    "count": 40
   },
   {
-    "name": "Cutting Boards",
-    "count": 51
+    "name": "Work",
+    "count": 22
   },
   {
-    "name": "Charcuterie",
-    "count": 9
+    "name": "Humor",
+    "count": 89
   },
   {
-    "name": "Flasks",
-    "count": 23
-  },
-  {
-    "name": "Golf",
-    "count": 16
-  },
-  {
-    "name": "Bridal & Bachelorette",
-    "count": 12
-  },
-  {
-    "name": "Monograms & Family",
-    "count": 104
+    "name": "Drinks",
+    "count": 58
   },
   {
     "name": "Wedding",
     "count": 38
   },
   {
+    "name": "Bachelorette",
+    "count": 12
+  },
+  {
+    "name": "Golf",
+    "count": 6
+  },
+  {
     "name": "Inspirational Quotes",
-    "count": 21
+    "count": 24
   },
   {
-    "name": "Halloween",
-    "count": 10
+    "name": "Family Monograms",
+    "count": 104
   },
   {
-    "name": "Autumn",
+    "name": "Charcuterie",
+    "count": 5
+  },
+  {
+    "name": "Cutting Boards & Kitchen",
+    "count": 16
+  },
+  {
+    "name": "Seasonal & Holiday",
+    "count": 13
+  },
+  {
+    "name": "Home & Cozy",
+    "count": 7
+  },
+  {
+    "name": "Fitness",
     "count": 2
-  },
-  {
-    "name": "Sunshine",
-    "count": 1
   },
   {
     "name": "Maps",
