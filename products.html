@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products We Engrave | After Six Engraving — Fredericksburg, VA</title>
+  <meta name="description" content="Browse our engraveable product catalog — tumblers, cutting boards, coasters, flasks, charcuterie boards, bottle openers, notebooks, and more. Custom laser engraving in Fredericksburg, VA.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Products We Engrave | After Six Engraving">
+  <meta property="og:description" content="Browse our engraveable product catalog. Tumblers, cutting boards, coasters, flasks, and more. Custom laser engraving in Fredericksburg, VA.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aftersixengraving.com/products">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="nav nav--scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">After Six Engraving</a>
+      <div class="nav__links">
+        <a href="index.html#services">Services</a>
+        <a href="products.html">Products</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact" class="btn btn--gold">Get a Quote</a>
+      </div>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav__mobile" id="navMobile">
+    <button class="nav__mobile-close" id="navClose" aria-label="Close menu">&times;</button>
+    <a href="index.html#services" onclick="closeMobileNav()">Services</a>
+    <a href="products.html">Products</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="index.html#about" onclick="closeMobileNav()">About</a>
+    <a href="index.html#contact" onclick="closeMobileNav()">Get a Quote</a>
+  </div>
+
+  <!-- ============================================
+       HERO
+       ============================================ -->
+  <section class="products-hero">
+    <div class="products-hero__bg" style="background-image: url('assets/images/products/hero-large.jpg');" role="img" aria-label="Custom laser engraving craftsmanship"></div>
+    <div class="products-hero__content">
+      <p class="eyebrow" style="margin-bottom: 1rem;">Product Catalog</p>
+      <h1 class="products-hero__title">Products We Engrave</h1>
+      <p class="products-hero__sub">We source the product, you choose the design, we engrave it. Simple.</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       INTRO
+       ============================================ -->
+  <section class="products-intro">
+    <div class="container">
+      <p>Every item below is a blank canvas waiting for your design, logo, or message. We source quality products so you don't have to worry about materials or compatibility &mdash; just tell us what you want engraved and we handle the rest. Most orders are ready in 2&ndash;3 business days.</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PRODUCT CATALOG GRID
+       ============================================ -->
+  <section class="products-catalog">
+    <div class="container">
+      <div class="products-catalog__grid">
+
+        <!-- 20oz Tumbler -->
+        <div class="catalog-card reveal">
+          <div class="catalog-card__image">
+            <img src="assets/images/products/tumblers.jpg" alt="20oz Stainless Steel Tumbler with magnetic sliding lid" loading="lazy">
+          </div>
+          <div class="catalog-card__body">
+            <h2 class="catalog-card__name">20oz Tumbler</h2>
+            <p class="catalog-card__material">Stainless Steel</p>
+            <p class="catalog-card__desc">20oz stainless steel tumbler with magnetic sliding lid. Available in multiple colors. Perfect for custom gifts, corporate giveaways, and personal use. The powder-coated finish takes laser engraving beautifully, revealing the brushed steel beneath.</p>
+            <p class="catalog-card__note">Available in Navy, Black, White, and more</p>
+            <a href="index.html#contact?product=tumbler" class="btn btn--gold">Request a Quote for This</a>
+          </div>
+        </div>
+
+        <!-- Cutting Board -->
+        <div class="catalog-card reveal">
+          <div class="catalog-card__image">
+            <img src="assets/images/products/cutting-boards.jpg" alt="Premium hardwood cutting board for laser engraving" loading="lazy">
+          </div>
+          <div class="catalog-card__body">
+            <h2 class="catalog-card__name">Cutting Board</h2>
+            <p class="catalog-card__material">Premium Hardwood</p>
+            <p class="catalog-card__desc">Premium hardwood cutting boards in multiple sizes. A kitchen staple that becomes a personalized heirloom. Perfect for family names, monograms, wedding dates, or custom artwork. These boards are thick, durable, and built to last generations.</p>
+            <p class="catalog-card__note">Available in multiple sizes and wood types</p>
+            <a href="index.html#contact?product=cutting-board" class="btn btn--gold">Request a Quote for This</a>
+          </div>
+        </div>
+
+        <!-- Slate Coasters -->
+        <div class="catalog-card reveal">
+          <div class="catalog-card__image">
+            <img src="assets/images/products/slate-coasters.jpg" alt="Natural slate coasters for custom laser engraving" loading="lazy">
+          </div>
+          <div class="catalog-card__body">
+            <h2 class="catalog-card__name">Slate Coasters</h2>
+            <p class="catalog-card__material">Natural Slate</p>
+            <p class="catalog-card__desc">Natural slate coasters. Elegant, durable, and stunning when engraved. The dark surface creates beautiful contrast with laser-engraved designs. Sold as sets of 4 &mdash; perfect for restaurants, breweries, corporate gifts, or personalized home d&eacute;cor.</p>
+            <p class="catalog-card__note">Sold as sets of 4</p>
+            <a href="index.html#contact?product=slate-coasters" class="btn btn--gold">Request a Quote for This</a>
+          </div>
+        </div>
+
+        <!-- Marble Coasters -->
+        <div class="catalog-card reveal">
+          <div class="catalog-card__image">
+            <img src="assets/images/products/marble-coasters.jpg" alt="Genuine marble coasters for custom laser engraving" loading="lazy">
+          </div>
+          <div class="catalog-card__body">
+            <h2 class="catalog-card__name">Marble Coasters</h2>
+            <p class="catalog-card__material">Genuine Marble</p>
+            <p class="catalog-card__desc">Genuine marble coasters with a smooth surface that takes engraving beautifully. Each piece has natural veining that makes it one-of-a-kind. Sets of 4 &mdash; ideal for upscale gifts, real estate closings, and high-end corporate branding.</p>
+            <p class="catalog-card__note">Sold as sets of 4 &middot; Natural veining varies</p>
+            <a href="index.html#contact?product=marble-coasters" class="btn btn--gold">Request a Quote for This</a>
+          </div>
+        </div>
+
+        <!-- Charcuterie / Serving Board -->
+        <div class="catalog-card reveal">
+          <div class="catalog-card__image">
+            <img src="assets/images/products/catch-all.jpg" alt="Rustic hardwood charcuterie and serving board" loading="lazy">
+          </div>
+          <div class="catalog-card__body">
+            <h2 class="catalog-card__name">Charcuterie / Serving Board</h2>
+            <p class="catalog-card__material">Rustic Hardwood</p>
+            <p class="catalog-card__desc">Rustic hardwood charcuterie and serving boards. Great for wedding gifts, housewarmings, and restaurant branding. These boards are designed to be displayed and used &mdash; engrave a family name, a business logo, or a custom message that turns a serving piece into a conversation starter.</p>
+            <p class="catalog-card__note">Multiple shapes and sizes available</p>
+            <a href="index.html#contact?product=charcuterie-board" class="btn btn--gold">Request a Quote for This</a>
+          </div>
+        </div>
+
+        <!-- Stainless Steel Flask -->
+        <div class="catalog-card reveal">
+          <div class="catalog-card__image">
+            <img src="assets/images/products/flasks.jpg" alt="6oz stainless steel hip flask for custom engraving" loading="lazy">
+          </div>
+          <div class="catalog-card__body">
+            <h2 class="catalog-card__name">Stainless Steel Flask</h2>
+            <p class="catalog-card__material">Stainless Steel &middot; 6oz</p>
+            <p class="catalog-card__desc">6oz stainless steel hip flask. Timeless and personal &mdash; engrave a name, date, or meaningful quote. A perennial favorite for groomsmen gifts, birthdays, retirements, and Father's Day. Clean lines and a mirror finish that engraves with precision.</p>
+            <a href="index.html#contact?product=flask" class="btn btn--gold">Request a Quote for This</a>
+          </div>
+        </div>
+
+        <!-- Bottle Opener -->
+        <div class="catalog-card reveal">
+          <div class="catalog-card__image">
+            <div class="catalog-card__placeholder"><span>Bottle Opener</span></div>
+          </div>
+          <div class="catalog-card__body">
+            <h2 class="catalog-card__name">Stainless Steel Bottle Opener</h2>
+            <p class="catalog-card__material">Stainless Steel &middot; 7"</p>
+            <p class="catalog-card__desc">Heavy-duty 7" stainless steel bottle opener. Popular for weddings, bars, and corporate gifts. Engrave a logo or message on the handle. Built to last and designed to be used every day &mdash; your brand stays in hand, literally.</p>
+            <a href="index.html#contact?product=bottle-opener" class="btn btn--gold">Request a Quote for This</a>
+          </div>
+        </div>
+
+        <!-- Notebook -->
+        <div class="catalog-card reveal">
+          <div class="catalog-card__image">
+            <div class="catalog-card__placeholder"><span>Notebook</span></div>
+          </div>
+          <div class="catalog-card__body">
+            <h2 class="catalog-card__name">Notebook</h2>
+            <p class="catalog-card__material">Leather / Faux-Leather Hardcover</p>
+            <p class="catalog-card__desc">Leather or faux-leather hardcover notebooks. Engrave a name, monogram, or inspirational quote on the cover. A thoughtful corporate gift, journal, or personal keepsake that feels premium from the moment you pick it up.</p>
+            <a href="index.html#contact?product=notebook" class="btn btn--gold">Request a Quote for This</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       BOTTOM CTA
+       ============================================ -->
+  <section class="products-bottom-cta">
+    <div class="container">
+      <p class="eyebrow" style="margin-bottom: 1rem;">Custom Requests</p>
+      <h2 class="section-title">Don't see what you're<br>looking for?</h2>
+      <p>Ask us &mdash; if we can engrave it, we will. We're always adding new products and materials to our catalog.</p>
+      <a href="index.html#contact" class="btn btn--gold btn--lg">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">After Six Engraving</a>
+          <p class="footer__tagline">Custom laser engraving in Fredericksburg, VA. Coasters, cutting boards, charcuterie boards, flasks, corporate gifts, and more. Most orders ready in 2-3 days.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Services</h4>
+          <a href="index.html#services">Laser Engraving</a>
+          <a href="index.html#services">Coasters &amp; Barware</a>
+          <a href="index.html#services">Cutting Boards</a>
+          <a href="index.html#services">Corporate Gifts</a>
+          <a href="index.html#services">Custom Signage</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Company</h4>
+          <a href="index.html#about">About Us</a>
+          <a href="products.html">Products</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <a href="tel:5403002566">(540) 300-2566</a>
+          <a href="mailto:aftersixengraving@gmail.com">aftersixengraving@gmail.com</a>
+          <a href="#">Fredericksburg, VA</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 After Six Engraving &middot; Fredericksburg, VA</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook">&#9638;</a>
+          <a href="#" aria-label="Instagram">&#9673;</a>
+          <a href="#" aria-label="Google Business">G</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       SCRIPTS
+       ============================================ -->
+  <script>
+    // ---- Mobile Nav ----
+    const hamburger = document.getElementById('navHamburger');
+    const mobileNav = document.getElementById('navMobile');
+    const navClose = document.getElementById('navClose');
+    hamburger.addEventListener('click', () => { mobileNav.classList.add('active'); });
+    navClose.addEventListener('click', () => { mobileNav.classList.remove('active'); });
+    function closeMobileNav() { mobileNav.classList.remove('active'); }
+
+    // ---- Scroll Reveal (Intersection Observer) ----
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+    revealElements.forEach(el => revealObserver.observe(el));
+  </script>
+
+</body>
+</html>
