@@ -53,7 +53,7 @@
       <div class="nav__links">
         <a href="#services">Services</a>
         <a href="products.html">Products</a>
-        <a href="gallery.html">Gallery</a>
+        <a href="gallery.html">Design Templates</a>
         <a href="#about">About</a>
         <a href="#contact" class="btn btn--gold">Get a Quote</a>
       </div>
@@ -68,7 +68,7 @@
     <button class="nav__mobile-close" id="navClose" aria-label="Close menu">&times;</button>
     <a href="#services" onclick="closeMobileNav()">Services</a>
     <a href="products.html">Products</a>
-    <a href="gallery.html">Gallery</a>
+    <a href="gallery.html">Design Templates</a>
     <a href="#about" onclick="closeMobileNav()">About</a>
     <a href="#contact" onclick="closeMobileNav()">Get a Quote</a>
   </div>
@@ -209,10 +209,11 @@
     <div class="container">
       <div class="gallery-preview__header reveal">
         <div>
-          <p class="eyebrow">Recent Work</p>
+          <p class="eyebrow">Design Templates</p>
           <h2 class="section-title">Crafted with care.</h2>
+          <p class="section-subtitle" style="margin-top: 0.25rem;">Browse our library of engraving designs &mdash; we can engrave any of these on your product of choice.</p>
         </div>
-        <a href="gallery.html" class="btn btn--outline-dark">View Full Gallery &rarr;</a>
+        <a href="gallery.html" class="btn btn--outline-dark">View All Templates &rarr;</a>
       </div>
 
       <div class="gallery-grid">
@@ -261,7 +262,7 @@
       </div>
 
       <div class="gallery-preview__cta reveal">
-        <a href="gallery.html" class="btn btn--gold">View Full Gallery &rarr;</a>
+        <a href="gallery.html" class="btn btn--gold">View All Design Templates &rarr;</a>
       </div>
     </div>
   </section>
@@ -505,45 +506,22 @@
           </div>
         </div>
 
+        <div class="product-card reveal reveal-delay-1">
+          <div class="product-card__image">
+            <div class="product-card__placeholder"><span>Golf Club Bottle Opener</span></div>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__badge">Retail Item</span>
+            <h3 class="product-card__name">Golf Club Bottle Opener</h3>
+            <p class="product-card__desc">Novelty golf club-shaped bottle openers. A hole-in-one gift for golfers. Available plain or custom engraved.</p>
+            <a href="#contact?product=golf-club-bottle-opener" class="product-card__cta">Order Now &rarr;</a>
+          </div>
+        </div>
+
       </div>
 
       <div style="text-align: center; margin-top: 3rem;" class="reveal">
         <a href="products.html" class="btn btn--outline-dark">View All Products &rarr;</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       TESTIMONIALS
-       ============================================ -->
-  <section class="testimonials">
-    <div class="container">
-      <div class="testimonials__header reveal">
-        <p class="eyebrow">Testimonials</p>
-        <h2 class="section-title">What our clients say.</h2>
-      </div>
-      <div class="testimonials__grid">
-        <div class="testimonial-card reveal reveal-delay-1">
-          <span class="testimonial-card__quote-mark">&ldquo;</span>
-          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="testimonial-card__text">We ordered 200 engraved tumblers for a corporate event and they turned out incredible. The turnaround was exactly as promised and the quality blew our expectations away.</p>
-          <p class="testimonial-card__author">Sarah M.</p>
-          <p class="testimonial-card__role">The Rustic Spoon Restaurant</p>
-        </div>
-        <div class="testimonial-card reveal reveal-delay-2">
-          <span class="testimonial-card__quote-mark">&ldquo;</span>
-          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="testimonial-card__text">After Six did all the awards for our annual gala. Crystal plaques with our logo and custom text. Every single one was perfect. They've been our go-to ever since.</p>
-          <p class="testimonial-card__author">David K.</p>
-          <p class="testimonial-card__role">Keller Williams Fredericksburg</p>
-        </div>
-        <div class="testimonial-card reveal reveal-delay-3">
-          <span class="testimonial-card__quote-mark">&ldquo;</span>
-          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="testimonial-card__text">I needed a personalized cutting board for a wedding gift, last minute. They had it ready the next day. Beautiful work, and Steve was incredibly helpful throughout.</p>
-          <p class="testimonial-card__author">Jennifer L.</p>
-          <p class="testimonial-card__role">Spotsylvania, VA</p>
-        </div>
       </div>
     </div>
   </section>
@@ -606,56 +584,39 @@
 
           <div class="contact__form-row">
             <div class="form-field">
-              <label for="name">Name</label>
+              <label for="name">Name *</label>
               <input type="text" id="name" name="name" placeholder="Your name" required>
             </div>
             <div class="form-field">
-              <label for="email">Email</label>
+              <label for="email">Email *</label>
               <input type="email" id="email" name="email" placeholder="you@company.com" required>
             </div>
           </div>
 
-          <div class="contact__form-row">
-            <div class="form-field">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
-            </div>
-            <div class="form-field">
-              <label for="project-type">Project Type</label>
-              <select id="project-type" name="project-type">
-                <option value="" disabled selected>Select a category</option>
-                <option value="coasters">Coasters</option>
-                <option value="cutting-boards">Cutting Board / Charcuterie Board</option>
-                <option value="flasks">Flask / Drinkware</option>
-                <option value="tumblers">Tumbler</option>
-                <option value="key-chains">Key Chain</option>
-                <option value="corporate-gifts">Corporate Gifts / Branding</option>
-                <option value="bridal">Wedding / Bridal</option>
-                <option value="awards">Awards &amp; Recognition</option>
-                <option value="maps">Laser Engraved Map</option>
-                <option value="other">Other (I'll describe below)</option>
-              </select>
+          <div class="form-field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+          </div>
+
+          <!-- Product Checkboxes -->
+          <div class="form-field">
+            <label class="form-field__section-label">What products are you interested in? (check all that apply)</label>
+            <div class="form-checkbox-grid">
+              <label class="form-checkbox"><input type="checkbox" name="products" value="20oz Tumbler"><span class="form-checkbox__mark"></span>20oz Tumbler</label>
+              <label class="form-checkbox"><input type="checkbox" name="products" value="Cutting Board"><span class="form-checkbox__mark"></span>Cutting Board</label>
+              <label class="form-checkbox"><input type="checkbox" name="products" value="Slate Coasters"><span class="form-checkbox__mark"></span>Slate Coasters</label>
+              <label class="form-checkbox"><input type="checkbox" name="products" value="Marble Coasters"><span class="form-checkbox__mark"></span>Marble Coasters</label>
+              <label class="form-checkbox"><input type="checkbox" name="products" value="Charcuterie Board"><span class="form-checkbox__mark"></span>Charcuterie Board</label>
+              <label class="form-checkbox"><input type="checkbox" name="products" value="Stainless Steel Flask"><span class="form-checkbox__mark"></span>Stainless Steel Flask</label>
+              <label class="form-checkbox"><input type="checkbox" name="products" value="Bottle Opener"><span class="form-checkbox__mark"></span>Bottle Opener</label>
+              <label class="form-checkbox"><input type="checkbox" name="products" value="Notebook"><span class="form-checkbox__mark"></span>Notebook</label>
+              <label class="form-checkbox"><input type="checkbox" name="products" value="Golf Club Bottle Opener"><span class="form-checkbox__mark"></span>Golf Club Bottle Opener</label>
+              <label class="form-checkbox"><input type="checkbox" name="products" value="Custom Logo Item"><span class="form-checkbox__mark"></span>Custom Logo Item</label>
+              <label class="form-checkbox"><input type="checkbox" name="products" value="Other"><span class="form-checkbox__mark"></span>Other</label>
             </div>
           </div>
 
-          <div class="contact__form-row">
-            <div class="form-field">
-              <label for="product">Product</label>
-              <select id="product" name="product">
-                <option value="" disabled selected>Select a product (optional)</option>
-                <option value="tumbler">20oz Tumbler</option>
-                <option value="cutting-board">Cutting Board</option>
-                <option value="slate-coasters">Slate Coasters</option>
-                <option value="marble-coasters">Marble Coasters</option>
-                <option value="charcuterie-board">Charcuterie / Serving Board</option>
-                <option value="flask">Stainless Steel Flask</option>
-                <option value="bottle-opener">Bottle Opener</option>
-                <option value="notebook">Notebook</option>
-                <option value="other">Something else (I'll describe below)</option>
-              </select>
-            </div>
-          </div>
-
+          <!-- Project Description -->
           <div class="form-field">
             <label for="description">Tell Us About Your Project</label>
             <textarea id="description" name="description" placeholder="What are you looking to create? Include quantity, materials, and any deadlines if you know them." rows="5"></textarea>
@@ -666,7 +627,19 @@
             <input type="file" id="logo-upload" name="logo-upload" accept=".png,.jpg,.jpeg,.svg,.pdf,.ai,.eps">
           </div>
 
-          <button type="submit" class="btn btn--gold" style="width: 100%; margin-top: 0.5rem;">Send Quote Request</button>
+          <!-- How did you hear about us -->
+          <div class="form-field">
+            <label class="form-field__section-label">How did you hear about us?</label>
+            <div class="form-radio-group">
+              <label class="form-radio"><input type="radio" name="referral" value="Google Search"><span class="form-radio__mark"></span>Google Search</label>
+              <label class="form-radio"><input type="radio" name="referral" value="Referral"><span class="form-radio__mark"></span>Referral</label>
+              <label class="form-radio"><input type="radio" name="referral" value="Social Media"><span class="form-radio__mark"></span>Social Media</label>
+              <label class="form-radio"><input type="radio" name="referral" value="Returning Customer"><span class="form-radio__mark"></span>Returning Customer</label>
+              <label class="form-radio"><input type="radio" name="referral" value="Other"><span class="form-radio__mark"></span>Other</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn--gold" style="width: 100%; margin-top: 0.5rem;">Send Request</button>
         </form>
       </div>
     </div>
@@ -694,7 +667,7 @@
           <h4 class="footer__col-title">Company</h4>
           <a href="#about">About Us</a>
           <a href="products.html">Products</a>
-          <a href="gallery.html">Gallery</a>
+          <a href="gallery.html">Design Templates</a>
           <a href="#contact">Contact</a>
           <a href="#contact">Get a Quote</a>
         </div>
@@ -790,10 +763,25 @@
       }
 
       if (product) {
-        const productSelect = document.getElementById('product');
-        if (productSelect) {
-          productSelect.value = product;
-        }
+        // Map URL param values to checkbox label text
+        const productMap = {
+          'tumbler': '20oz Tumbler',
+          'cutting-board': 'Cutting Board',
+          'slate-coasters': 'Slate Coasters',
+          'marble-coasters': 'Marble Coasters',
+          'charcuterie-board': 'Charcuterie Board',
+          'flask': 'Stainless Steel Flask',
+          'bottle-opener': 'Bottle Opener',
+          'notebook': 'Notebook',
+          'golf-club-bottle-opener': 'Golf Club Bottle Opener',
+          'Golf+Club+Bottle+Opener': 'Golf Club Bottle Opener',
+          'custom-logo': 'Custom Logo Item'
+        };
+        const checkValue = productMap[product] || product;
+        const checkboxes = document.querySelectorAll('input[name="products"]');
+        checkboxes.forEach(cb => {
+          if (cb.value === checkValue) cb.checked = true;
+        });
       }
 
       if (interest === 'maps') {

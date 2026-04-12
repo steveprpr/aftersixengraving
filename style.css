@@ -726,70 +726,7 @@ input, textarea, select { font-family: inherit; }
   box-shadow: 0 4px 16px rgba(196,149,58,0.15);
 }
 
-/* ============================================
-   TESTIMONIALS
-   ============================================ */
-.testimonials {
-  padding: 7rem 0;
-  background: var(--dark-alt);
-}
-.testimonials__header {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-.testimonials__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-.testimonial-card {
-  background: var(--surface);
-  padding: 2.5rem;
-  border-radius: 4px;
-  border: 1px solid var(--border);
-  position: relative;
-  transition: all var(--transition);
-}
-.testimonial-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-}
-.testimonial-card__quote-mark {
-  font-family: var(--font-heading);
-  font-size: 4rem;
-  color: var(--gold);
-  opacity: 0.3;
-  line-height: 1;
-  position: absolute;
-  top: 1.5rem;
-  left: 2rem;
-}
-.testimonial-card__stars {
-  color: var(--gold);
-  font-size: 0.875rem;
-  margin-bottom: 1rem;
-  letter-spacing: 0.15em;
-}
-.testimonial-card__text {
-  font-size: 0.9375rem;
-  line-height: 1.8;
-  color: var(--text-muted);
-  margin-bottom: 1.5rem;
-  font-style: italic;
-}
-.testimonial-card__author {
-  font-weight: 600;
-  font-size: 0.875rem;
-  color: var(--text);
-}
-.testimonial-card__role {
-  font-size: 0.75rem;
-  color: var(--text-dim);
-}
-
-@media (max-width: 968px) {
-  .testimonials__grid { grid-template-columns: 1fr; max-width: 600px; margin: 0 auto; }
-}
+/* (Testimonials section removed) */
 
 /* ============================================
    ABOUT
@@ -943,6 +880,118 @@ input, textarea, select { font-family: inherit; }
   cursor: pointer;
   margin-right: 0.75rem;
 }
+/* --- Checkbox Grid (Quote Form) --- */
+.form-field__section-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 0.5rem;
+}
+.form-checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 1.5rem;
+  margin-top: 0.25rem;
+}
+.form-checkbox,
+.form-radio {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  padding: 0.375rem 0;
+  transition: color var(--transition);
+}
+.form-checkbox:hover,
+.form-radio:hover {
+  color: var(--text-light);
+}
+.form-checkbox input,
+.form-radio input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.form-checkbox__mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: 3px;
+  background: rgba(255,255,255,0.04);
+  flex-shrink: 0;
+  transition: all var(--transition);
+}
+.form-checkbox__mark::after {
+  content: '';
+  width: 10px;
+  height: 6px;
+  border-left: 2px solid var(--dark);
+  border-bottom: 2px solid var(--dark);
+  transform: rotate(-45deg) translate(1px, -1px);
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+.form-checkbox input:checked + .form-checkbox__mark {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+.form-checkbox input:checked + .form-checkbox__mark::after {
+  opacity: 1;
+}
+.form-checkbox input:focus-visible + .form-checkbox__mark {
+  box-shadow: 0 0 0 2px rgba(196,149,58,0.5);
+}
+.form-radio__mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: 50%;
+  background: rgba(255,255,255,0.04);
+  flex-shrink: 0;
+  transition: all var(--transition);
+}
+.form-radio__mark::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--dark);
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+.form-radio input:checked + .form-radio__mark {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+.form-radio input:checked + .form-radio__mark::after {
+  opacity: 1;
+}
+.form-radio input:focus-visible + .form-radio__mark {
+  box-shadow: 0 0 0 2px rgba(196,149,58,0.5);
+}
+.form-radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 480px) {
+  .form-checkbox-grid { grid-template-columns: 1fr; }
+  .form-radio-group { flex-direction: column; }
+}
+
 .ohnohoney { display: none !important; }
 
 @media (max-width: 768px) {
@@ -1271,6 +1320,22 @@ input, textarea, select { font-family: inherit; }
 /* ============================================
    GALLERY CARD GRID (dynamic gallery.html)
    ============================================ */
+/* Gallery info bar */
+.gallery-info-bar {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.gallery-info-bar p {
+  font-size: 0.875rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin: 0;
+}
+
 .gallery-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -1506,6 +1571,19 @@ input, textarea, select { font-family: inherit; }
   color: var(--gold);
   opacity: 0.85;
 }
+/* Product card badge (e.g., "Retail Item") */
+.product-card__badge {
+  display: inline-block;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--dark);
+  background: var(--gold);
+  padding: 0.25rem 0.625rem;
+  border-radius: 3px;
+  margin-bottom: 0.5rem;
+}
 .product-card__body {
   padding: 1.25rem 1.5rem 1.5rem;
   flex: 1;
@@ -1659,6 +1737,19 @@ input, textarea, select { font-family: inherit; }
   font-size: 1.5rem;
   color: var(--gold);
   opacity: 0.85;
+}
+/* Catalog card badge (e.g., "Also Available — Retail Item") */
+.catalog-card__badge {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dark);
+  background: var(--gold);
+  padding: 0.3125rem 0.75rem;
+  border-radius: 3px;
+  margin-bottom: 0.75rem;
 }
 .catalog-card__body {
   padding: 2rem;
