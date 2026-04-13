@@ -1914,3 +1914,130 @@ input, textarea, select { font-family: inherit; }
     gap: 2rem;
   }
 }
+
+/* ============================================
+   FREDERICKSBURG LANDING PAGE
+   ============================================ */
+
+/* Intro Section */
+.lp-intro {
+  padding: 5rem 0;
+  background: var(--dark-alt);
+}
+.lp-intro__content {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+.lp-intro__content p {
+  font-size: 1.0625rem;
+  color: var(--text-muted);
+  line-height: 1.85;
+  margin-bottom: 1.5rem;
+}
+.lp-intro__content p:last-child { margin-bottom: 0; }
+
+/* Why Section (dark) */
+.lp-why {
+  padding: 7rem 0;
+  background: var(--surface);
+}
+.lp-why__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.lp-why__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.lp-why__card {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: var(--dark);
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  transition: all var(--transition);
+}
+.lp-why__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+  border-color: var(--gold);
+}
+.lp-why__icon {
+  color: var(--gold);
+  margin-bottom: 1.25rem;
+}
+.lp-why__icon svg {
+  stroke: var(--gold);
+}
+.lp-why__card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+.lp-why__card p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .lp-why__grid { grid-template-columns: 1fr; }
+}
+
+/* Services Section (light bg) */
+.lp-services {
+  padding: 7rem 0;
+  background: var(--bg);
+}
+.lp-services__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.lp-services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .lp-services__grid { grid-template-columns: 1fr; }
+}
+
+/* Service Area Section */
+.lp-area {
+  padding: 6rem 0;
+  text-align: center;
+  background: var(--bg);
+}
+.lp-area__header {
+  margin-bottom: 1rem;
+}
+
+/* CTA Section (dark) */
+.lp-cta {
+  padding: 6rem 0;
+  background: var(--surface);
+  text-align: center;
+}
+.lp-cta__content {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.lp-cta__sub {
+  font-size: 1.0625rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+.lp-cta__phone {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: var(--text-dim);
+}
+.lp-cta__phone a {
+  color: var(--gold);
+  font-weight: 600;
+}
