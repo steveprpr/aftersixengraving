@@ -166,6 +166,21 @@
   </div>
 
   <!-- ============================================
+       DOWNLOAD PASSWORD MODAL
+       ============================================ -->
+  <div id="download-modal" class="download-modal" hidden>
+    <div class="download-modal__backdrop"></div>
+    <div class="download-modal__box">
+      <h3>Enter Download Password</h3>
+      <p>Downloads are available for After Six Engraving clients.</p>
+      <input type="password" id="download-password" placeholder="Password" autocomplete="off">
+      <p class="download-modal__error" id="download-error" hidden>Incorrect password. Please try again.</p>
+      <button class="btn btn--gold" id="download-submit">Unlock Downloads</button>
+      <a href="#" class="download-modal__cancel" id="download-cancel">Cancel</a>
+    </div>
+  </div>
+
+  <!-- ============================================
        GALLERY DATA + SCRIPTS
        ============================================ -->
   <script src="assets/gallery_data.js"></script>
@@ -249,10 +264,14 @@
           </div>
           <div class="gallery-card__hover">
             <button class="btn btn--gold btn--sm">Request This Design</button>
+            <button class="btn btn--sm gallery-card__download" data-file="${design.file}" data-name="${design.name}">&#8595; Download</button>
           </div>
         `;
 
-        card.addEventListener('click', () => openDesignLightbox(design));
+        card.addEventListener('click', (e) => {
+          if (e.target.closest('.gallery-card__download')) return;
+          openDesignLightbox(design);
+        });
         galleryGrid.appendChild(card);
       });
     }
@@ -320,6 +339,106 @@
         renderCards(matchBtn.dataset.filter);
       }
     }
+
+    // ---- Password-Protected SVG Downloads ----
+    const DOWNLOAD_PASSWORD = 'ase';
+    const STORAGE_KEY = 'ase_unlocked';
+    let pendingDownload = null;
+
+    const dlModal = document.getElementById('download-modal');
+    const dlBackdrop = dlModal.querySelector('.download-modal__backdrop');
+    const dlPasswordInput = document.getElementById('download-password');
+    const dlError = document.getElementById('download-error');
+    const dlSubmit = document.getElementById('download-submit');
+    const dlCancel = document.getElementById('download-cancel');
+
+    function isDlUnlocked() {
+      return localStorage.getItem(STORAGE_KEY) === 'true';
+    }
+
+    function dlUnlock() {
+      localStorage.setItem(STORAGE_KEY, 'true');
+    }
+
+    function downloadSVG(filePath, displayName) {
+      fetch(filePath)
+        .then(r => r.blob())
+        .then(blob => {
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = displayName + '.svg';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+        });
+    }
+
+    function showDlModal() {
+      dlModal.hidden = false;
+      dlError.hidden = true;
+      dlPasswordInput.value = '';
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => dlPasswordInput.focus(), 50);
+    }
+
+    function hideDlModal() {
+      dlModal.hidden = true;
+      document.body.style.overflow = '';
+      pendingDownload = null;
+    }
+
+    function handleDownloadClick(filePath, displayName) {
+      if (isDlUnlocked()) {
+        downloadSVG(filePath, displayName);
+      } else {
+        pendingDownload = { filePath, displayName };
+        showDlModal();
+      }
+    }
+
+    // Delegate click for download buttons (since cards are rendered dynamically)
+    document.getElementById('galleryGrid').addEventListener('click', (e) => {
+      const dlBtn = e.target.closest('.gallery-card__download');
+      if (!dlBtn) return;
+      e.preventDefault();
+      e.stopPropagation();
+      handleDownloadClick(dlBtn.dataset.file, dlBtn.dataset.name);
+    });
+
+    // Submit password
+    dlSubmit.addEventListener('click', () => {
+      const input = dlPasswordInput.value.trim().toLowerCase();
+      if (input === DOWNLOAD_PASSWORD) {
+        dlUnlock();
+        hideDlModal();
+        if (pendingDownload) {
+          downloadSVG(pendingDownload.filePath, pendingDownload.displayName);
+          pendingDownload = null;
+        }
+      } else {
+        dlPasswordInput.classList.add('shake');
+        setTimeout(() => dlPasswordInput.classList.remove('shake'), 500);
+        dlError.hidden = false;
+        dlPasswordInput.value = '';
+        dlPasswordInput.focus();
+      }
+    });
+
+    // Enter key submits password
+    dlPasswordInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') dlSubmit.click();
+    });
+
+    // Cancel / backdrop close
+    dlCancel.addEventListener('click', (e) => { e.preventDefault(); hideDlModal(); });
+    dlBackdrop.addEventListener('click', hideDlModal);
+
+    // Escape key closes download modal too
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !dlModal.hidden) hideDlModal();
+    });
   </script>
 
 </body>

@@ -1398,8 +1398,10 @@ input, textarea, select { font-family: inherit; }
   inset: 0;
   background: rgba(26, 26, 26, 0.75);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -1409,6 +1411,113 @@ input, textarea, select { font-family: inherit; }
 .btn--sm {
   padding: 0.625rem 1.25rem;
   font-size: 0.75rem;
+}
+
+/* Download button (outlined variant on gallery cards) */
+.gallery-card__download {
+  background: transparent;
+  color: var(--gold);
+  border: 1.5px solid var(--gold);
+  border-radius: 6px;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  font-family: inherit;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.gallery-card__download:hover {
+  background: var(--gold);
+  color: #1A1A1A;
+}
+
+/* ============================
+   Download Password Modal
+   ============================ */
+.download-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.download-modal[hidden] {
+  display: none;
+}
+.download-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.download-modal__box {
+  position: relative;
+  background: #2A2A2A;
+  border: 1.5px solid var(--gold);
+  border-radius: 12px;
+  padding: 2.5rem 2rem 2rem;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  z-index: 1;
+}
+.download-modal__box h3 {
+  font-family: 'DM Serif Display', serif;
+  color: #fff;
+  font-size: 1.35rem;
+  margin: 0 0 0.5rem;
+}
+.download-modal__box > p {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin: 0 0 1.5rem;
+  line-height: 1.5;
+}
+.download-modal__box input[type="password"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #1A1A1A;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+.download-modal__box input[type="password"]:focus {
+  border-color: var(--gold);
+}
+.download-modal__error {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin: 0 0 0.75rem;
+}
+.download-modal__box .btn--gold {
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+.download-modal__cancel {
+  color: #888;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.download-modal__cancel:hover {
+  color: #ccc;
+}
+
+/* Shake animation for wrong password */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-8px); }
+  40%, 80% { transform: translateX(8px); }
+}
+.shake {
+  animation: shake 0.4s ease;
 }
 
 /* Gallery empty state (Maps coming soon, etc.) */
