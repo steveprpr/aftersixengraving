@@ -69,21 +69,24 @@
   </section>
 
   <!-- ============================================
-       INTERACTIVE PREVIEW
+       PREVIEW INPUT + SELECTED FONT STRIP
        ============================================ -->
-  <section class="fonts-preview" style="padding: 3rem 0; background: var(--surface); border-bottom: 1px solid var(--border);">
+  <section class="fonts-input-section">
     <div class="container">
-      <label for="fontPreviewInput" style="display:block; font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Type to preview</label>
-      <input type="text" id="fontPreviewInput" placeholder="After Six Engraving" style="width:100%; padding: 0.75rem 1rem; background: var(--dark); border: 1px solid var(--border); border-radius: 6px; color: var(--text); font-size: 1rem; margin-bottom: 1.5rem;">
-      <div id="fontPreviewDisplay" style="font-size: clamp(2rem, 5vw, 3.5rem); color: var(--gold); min-height: 80px; display:flex; align-items:center; font-family: 'Playfair Display', serif; word-break: break-word;">After Six Engraving</div>
-      <p id="fontPreviewName" style="color: var(--text-dim); font-size: 0.875rem; margin-top: 0.5rem;">Playfair Display &mdash; Elegant Serif</p>
+      <label for="fontPreviewInput" class="fonts-input-label">Type to preview all fonts</label>
+      <input type="text" id="fontPreviewInput" placeholder="After Six Engraving" class="fonts-input">
+      <!-- Selected font strip (appears when a card is clicked) -->
+      <div id="selectedStrip" class="selected-strip" style="display:none;">
+        <p class="selected-strip__name" id="selectedName"></p>
+        <div class="selected-strip__preview" id="selectedPreview"></div>
+      </div>
     </div>
   </section>
 
   <!-- ============================================
-       FONT CARDS GRID
+       FONT CARDS GRID — all update simultaneously
        ============================================ -->
-  <section class="fonts-grid-section" style="padding: 4rem 0;">
+  <section class="fonts-grid-section">
     <div class="container">
       <div class="fonts-grid" id="fontsGrid">
         <!-- Cards injected by JS -->
@@ -164,7 +167,7 @@
     function closeMobileNav() { mobileNav.classList.remove('active'); }
     mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMobileNav));
 
-    // --- Font Data ---
+    // --- Font Data (22 fonts) ---
     const FONTS = [
       { name: 'Playfair Display', family: "'Playfair Display', serif", tag: 'Elegant Serif' },
       { name: 'Cinzel', family: "'Cinzel', serif", tag: 'Classical Formal' },
@@ -190,86 +193,203 @@
       { name: 'Oswald', family: "'Oswald', sans-serif", tag: 'Bold Display' }
     ];
 
-    // --- Render Font Cards ---
+    // --- State ---
     const grid = document.getElementById('fontsGrid');
     const previewInput = document.getElementById('fontPreviewInput');
-    const previewDisplay = document.getElementById('fontPreviewDisplay');
-    const previewName = document.getElementById('fontPreviewName');
+    const selectedStrip = document.getElementById('selectedStrip');
+    const selectedName = document.getElementById('selectedName');
+    const selectedPreview = document.getElementById('selectedPreview');
+    const sampleElements = []; // references to each card's preview text element
     let activeCard = null;
+    const defaultText = 'After Six Engraving';
 
+    // --- Build compact cards ---
     FONTS.forEach((font, i) => {
       const card = document.createElement('div');
-      card.className = 'font-card' + (i === 0 ? ' font-card--active' : '');
-      if (i === 0) activeCard = card;
+      card.className = 'font-card';
 
-      card.innerHTML =
-        '<p class="font-card__name">' + font.name + '</p>' +
-        '<p class="font-card__sample" style="font-family: ' + font.family + '; font-size: 2.25rem; line-height: 1.2; margin: 0.75rem 0 0.25rem;">After Six Engraving</p>' +
-        '<p class="font-card__sample-small" style="font-family: ' + font.family + '; font-size: 1.125rem; color: var(--text-muted); margin-bottom: 0.75rem;">The Johnson Family &middot; Est. 2024</p>' +
-        '<span class="font-card__tag">' + font.tag + '</span>' +
-        '<p class="font-card__desc">' + font.desc + '</p>';
+      const header = document.createElement('div');
+      header.className = 'font-card__header';
 
+      const nameEl = document.createElement('span');
+      nameEl.className = 'font-card__name';
+      nameEl.textContent = font.name;
+
+      const tagEl = document.createElement('span');
+      tagEl.className = 'font-card__tag';
+      tagEl.textContent = font.tag;
+
+      header.appendChild(nameEl);
+      header.appendChild(tagEl);
+
+      const sample = document.createElement('p');
+      sample.className = 'font-card__sample';
+      sample.style.fontFamily = font.family;
+      sample.textContent = defaultText;
+      sampleElements.push(sample);
+
+      card.appendChild(header);
+      card.appendChild(sample);
+
+      // Click to select / highlight
       card.addEventListener('click', () => {
         if (activeCard) activeCard.classList.remove('font-card--active');
         card.classList.add('font-card--active');
         activeCard = card;
-        const text = previewInput.value.trim() || 'After Six Engraving';
-        previewDisplay.style.fontFamily = font.family;
-        previewDisplay.textContent = text;
-        previewName.innerHTML = font.name + ' &mdash; ' + font.tag;
+        // Show selected strip
+        const text = previewInput.value.trim() || defaultText;
+        selectedName.innerHTML = font.name + ' <span class="selected-strip__tag">' + font.tag + '</span>';
+        selectedPreview.style.fontFamily = font.family;
+        selectedPreview.textContent = text;
+        selectedStrip.style.display = 'block';
       });
 
       grid.appendChild(card);
     });
 
-    // --- Live Preview Input ---
+    // --- Live input updates ALL cards simultaneously ---
     previewInput.addEventListener('input', () => {
-      previewDisplay.textContent = previewInput.value.trim() || 'After Six Engraving';
+      const text = previewInput.value.trim() || defaultText;
+      sampleElements.forEach(el => { el.textContent = text; });
+      // Also update selected strip if visible
+      if (selectedStrip.style.display !== 'none') {
+        selectedPreview.textContent = text;
+      }
     });
   </script>
 
   <style>
-    .fonts-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-    }
-    @media (max-width: 900px) { .fonts-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 560px) { .fonts-grid { grid-template-columns: 1fr; } }
-
-    .font-card {
+    /* --- Input section --- */
+    .fonts-input-section {
+      padding: 2.5rem 0 2rem;
       background: var(--surface);
-      border: 2px solid var(--border);
-      border-radius: 10px;
-      padding: 1.5rem;
-      cursor: pointer;
-      transition: border-color var(--transition), box-shadow var(--transition);
+      border-bottom: 1px solid var(--border);
     }
-    .font-card:hover { border-color: rgba(196, 149, 58, 0.4); }
-    .font-card--active { border-color: var(--gold); box-shadow: 0 0 0 1px var(--gold); }
-    .font-card__name {
+    .fonts-input-label {
+      display: block;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.75rem;
+    }
+    .fonts-input {
+      width: 100%;
+      padding: 0.875rem 1.25rem;
+      background: var(--dark);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 1.125rem;
+      font-family: var(--font-body);
+      transition: border-color var(--transition);
+    }
+    .fonts-input:focus {
+      outline: none;
+      border-color: var(--gold);
+    }
+
+    /* --- Selected font strip --- */
+    .selected-strip {
+      margin-top: 1.5rem;
+      padding: 1.25rem 1.5rem;
+      background: var(--dark);
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+    }
+    .selected-strip__name {
       font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       color: var(--gold);
       font-weight: 600;
-    }
-    .font-card__tag {
-      display: inline-block;
-      background: rgba(196, 149, 58, 0.15);
-      color: var(--gold);
-      font-size: 0.6875rem;
-      padding: 0.2em 0.6em;
-      border-radius: 4px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 600;
       margin-bottom: 0.5rem;
     }
-    .font-card__desc {
-      font-size: 0.8125rem;
+    .selected-strip__tag {
+      font-weight: 400;
       color: var(--text-dim);
-      line-height: 1.5;
+      text-transform: none;
+      letter-spacing: 0;
+      margin-left: 0.5rem;
+      font-size: 0.75rem;
+    }
+    .selected-strip__preview {
+      font-size: clamp(1.75rem, 4vw, 3rem);
+      color: var(--gold);
+      word-break: break-word;
+      line-height: 1.3;
+    }
+
+    /* --- Grid section --- */
+    .fonts-grid-section {
+      padding: 3rem 0 4rem;
+    }
+
+    /* --- 4-column compact grid --- */
+    .fonts-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+    @media (max-width: 1024px) { .fonts-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 768px)  { .fonts-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px)  { .fonts-grid { grid-template-columns: 1fr; } }
+
+    /* --- Compact font card --- */
+    .font-card {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.125rem;
+      cursor: pointer;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .font-card:hover {
+      border-color: rgba(196, 149, 58, 0.4);
+    }
+    .font-card--active {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 1px var(--gold);
+    }
+    .font-card__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 0.625rem;
+    }
+    .font-card__name {
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--gold);
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .font-card__tag {
+      flex-shrink: 0;
+      background: rgba(196, 149, 58, 0.12);
+      color: var(--text-dim);
+      font-size: 0.5625rem;
+      padding: 0.15em 0.5em;
+      border-radius: 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .font-card__sample {
+      font-size: 1.375rem;
+      line-height: 1.3;
+      color: var(--text);
+      word-break: break-word;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      min-height: 2.75rem;
     }
   </style>
 
