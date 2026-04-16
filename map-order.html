@@ -106,12 +106,54 @@
         <!-- ====== SECTION 2: Size ====== -->
         <div class="form-section">
           <h2 class="form-section__title">2. Size</h2>
-          <div class="form-radio-group">
-            <label class="form-radio"><input type="radio" name="size" value='12" x 12"' checked><span class="form-radio__mark"></span>12" &times; 12" &mdash; Maximum size</label>
-            <label class="form-radio"><input type="radio" name="size" value='10" x 10"'><span class="form-radio__mark"></span>10" &times; 10"</label>
-            <label class="form-radio"><input type="radio" name="size" value='8" x 8"'><span class="form-radio__mark"></span>8" &times; 8"</label>
-            <label class="form-radio"><input type="radio" name="size" value='6" x 6"'><span class="form-radio__mark"></span>6" &times; 6"</label>
-            <label class="form-radio"><input type="radio" name="size" value="Custom"><span class="form-radio__mark"></span>Custom size</label>
+          <div class="size-cards">
+
+            <label class="size-card size-card--active">
+              <input type="radio" name="size" value='12" x 12"' checked>
+              <div class="size-card__img" aria-label="12 by 12 inch map"><span>12&times;12</span></div>
+              <div class="size-card__info">
+                <span class="size-card__label">12" &times; 12"</span>
+                <span class="size-card__note">Maximum size</span>
+                <span class="size-card__price">$80</span>
+              </div>
+            </label>
+
+            <label class="size-card">
+              <input type="radio" name="size" value='10" x 10"'>
+              <div class="size-card__img" aria-label="10 by 10 inch map"><span>10&times;10</span></div>
+              <div class="size-card__info">
+                <span class="size-card__label">10" &times; 10"</span>
+                <span class="size-card__price">$60</span>
+              </div>
+            </label>
+
+            <label class="size-card">
+              <input type="radio" name="size" value='8" x 8"'>
+              <div class="size-card__img" aria-label="8 by 8 inch map"><span>8&times;8</span></div>
+              <div class="size-card__info">
+                <span class="size-card__label">8" &times; 8"</span>
+                <span class="size-card__price">$40</span>
+              </div>
+            </label>
+
+            <label class="size-card">
+              <input type="radio" name="size" value='6" x 6"'>
+              <div class="size-card__img" aria-label="6 by 6 inch map"><span>6&times;6</span></div>
+              <div class="size-card__info">
+                <span class="size-card__label">6" &times; 6"</span>
+                <span class="size-card__price">$20</span>
+              </div>
+            </label>
+
+            <label class="size-card">
+              <input type="radio" name="size" value="Custom">
+              <div class="size-card__img size-card__img--custom" aria-label="Custom size map"><span>Custom</span></div>
+              <div class="size-card__info">
+                <span class="size-card__label">Custom size</span>
+                <span class="size-card__price size-card__price--quote">Contact for a quote</span>
+              </div>
+            </label>
+
           </div>
           <div class="form-field" id="customSizeField" style="display:none; margin-top: 1rem;">
             <label for="customSizeInput">Describe your size (must be 12" or smaller)</label>
@@ -423,10 +465,12 @@
     });
 
     // =============================================
-    // SECTION 2: Custom Size toggle
+    // SECTION 2: Size cards — active state + custom toggle
     // =============================================
     document.querySelectorAll('input[name="size"]').forEach(radio => {
       radio.addEventListener('change', function() {
+        document.querySelectorAll('.size-card').forEach(c => c.classList.remove('size-card--active'));
+        this.closest('.size-card').classList.add('size-card--active');
         document.getElementById('customSizeField').style.display = this.value === 'Custom' ? 'block' : 'none';
       });
     });
@@ -716,6 +760,83 @@
     .border-text-preview__bottom { bottom: 8px; left: 50%; transform: translateX(-50%); }
     .border-text-preview__left { left: 8px; top: 50%; transform: translateY(-50%) rotate(-90deg); transform-origin: left center; max-width: 140px; }
     .border-text-preview__right { right: 8px; top: 50%; transform: translateY(-50%) rotate(90deg); transform-origin: right center; max-width: 140px; }
+
+    /* Size option cards */
+    .size-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1rem;
+    }
+    .size-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: 8px;
+      padding: 0.75rem;
+      cursor: pointer;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      text-align: center;
+    }
+    .size-card:hover { border-color: rgba(196, 149, 58, 0.4); }
+    .size-card--active,
+    .size-card--active:hover {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 1px var(--gold);
+    }
+    .size-card input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .size-card__img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      max-height: 110px;
+      background: #2a2a2a;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.625rem;
+      border: 1px dashed var(--border);
+    }
+    .size-card__img span {
+      font-size: 1rem;
+      color: var(--text-dim);
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+    .size-card__img--custom {
+      border-style: dotted;
+      background: #222;
+    }
+    .size-card__info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .size-card__label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .size-card__note {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+    }
+    .size-card__price {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-top: 0.25rem;
+    }
+    .size-card__price--quote {
+      font-size: 0.75rem;
+      font-weight: 500;
+      font-style: italic;
+    }
 
     /* Leaflet z-index fix */
     .leaflet-top, .leaflet-bottom { z-index: 999 !important; }
