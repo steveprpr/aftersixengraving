@@ -394,6 +394,27 @@
       }, 400);
     });
 
+    // Intercept Enter key — trigger geocode search instead of advancing form
+    searchInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        const q = this.value.trim();
+        if (q.length < 2) return;
+        fetch('https://nominatim.openstreetmap.org/search?q=' + encodeURIComponent(q) + '&format=json&limit=1')
+          .then(r => r.json())
+          .then(results => {
+            if (results.length) {
+              const r = results[0];
+              searchInput.value = r.display_name;
+              document.getElementById('mapLocationDisplay').value = r.display_name;
+              map.setView([parseFloat(r.lat), parseFloat(r.lon)], 14);
+            }
+            suggestionsDiv.style.display = 'none';
+          })
+          .catch(() => { suggestionsDiv.style.display = 'none'; });
+      }
+    });
+
     // Close suggestions on outside click
     document.addEventListener('click', function(e) {
       if (!suggestionsDiv.contains(e.target) && e.target !== searchInput) {
@@ -562,7 +583,11 @@
       border-radius: 0 0 6px 6px;
       max-height: 220px;
       overflow-y: auto;
-      z-index: 200;
+      z-index: 9999;
+    }
+    /* Ensure the address field's parent escapes the map stacking context */
+    .form-section .form-field[style*="position: relative"] {
+      z-index: 1001;
     }
     .map-suggestion {
       padding: 0.625rem 0.75rem;
