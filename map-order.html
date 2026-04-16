@@ -95,7 +95,7 @@
           </div>
 
           <div id="mapContainer" class="map-container">
-            <div id="leafletMap" style="width:100%; height:100%;"></div>
+            <div id="leafletMap"></div>
             <div class="map-overlay-border"></div>
           </div>
           <p style="font-size: 0.8125rem; color: var(--text-dim); margin-top: 0.5rem; text-align: center;">Drag the map to center your desired area within the gold border.</p>
@@ -120,11 +120,11 @@
         <!-- ====== SECTION 3: Material ====== -->
         <div class="form-section">
           <h2 class="form-section__title">3. Material</h2>
+          <p class="form-section__desc">Maps are typically engraved on hardwood or slate coasters. Want it on something different? Choose &ldquo;Other&rdquo; and describe it in your notes.</p>
           <div class="form-radio-group">
-            <label class="form-radio"><input type="radio" name="material" value="Hardwood" checked><span class="form-radio__mark"></span>Hardwood (most popular)</label>
-            <label class="form-radio"><input type="radio" name="material" value="Slate"><span class="form-radio__mark"></span>Slate</label>
-            <label class="form-radio"><input type="radio" name="material" value="Bamboo"><span class="form-radio__mark"></span>Bamboo</label>
-            <label class="form-radio"><input type="radio" name="material" value="Not sure"><span class="form-radio__mark"></span>Not sure &mdash; recommend one for me</label>
+            <label class="form-radio"><input type="radio" name="material" value="Hardwood" checked><span class="form-radio__mark"></span>Hardwood</label>
+            <label class="form-radio"><input type="radio" name="material" value="Slate Coaster"><span class="form-radio__mark"></span>Slate Coaster</label>
+            <label class="form-radio"><input type="radio" name="material" value="Other"><span class="form-radio__mark"></span>Other &mdash; I&rsquo;ll describe it in notes</label>
           </div>
         </div>
 
@@ -336,6 +336,10 @@
       maxZoom: 19
     }).addTo(map);
 
+    // Force tile repaint after DOM is fully rendered
+    setTimeout(function() { map.invalidateSize(true); }, 250);
+    window.addEventListener('load', function() { map.invalidateSize(true); });
+
     // Update hidden fields on move
     function updateLatLng() {
       const c = map.getCenter();
@@ -511,11 +515,16 @@
       height: 500px;
       margin: 1rem auto 0;
       border-radius: 8px;
-      overflow: hidden;
       border: 2px solid var(--border);
+    }
+    #leafletMap {
+      width: 100%;
+      height: 500px;
+      border-radius: 6px;
     }
     @media (max-width: 560px) {
       .map-container { height: 350px; max-width: 100%; }
+      #leafletMap { height: 350px; }
     }
 
     /* Gold dashed overlay */
