@@ -77,9 +77,11 @@
   <section style="padding: 4rem 0;">
     <div class="container" style="max-width: 800px;">
 
+      <!-- Netlify Forms: configure email notifications in Netlify dashboard → Forms → map-order → Notifications → Email Steve at aftersixengraving@gmail.com -->
       <form class="map-order-form" name="map-order" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
         <p class="hidden" style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
         <input type="hidden" name="form-name" value="map-order">
+        <input type="hidden" name="_replyto" value="aftersixengraving@gmail.com">
         <input type="hidden" name="center-lat" id="centerLat" value="">
         <input type="hidden" name="center-lng" id="centerLng" value="">
         <input type="hidden" name="map-location-display" id="mapLocationDisplay" value="">
@@ -315,7 +317,6 @@
         </div>
         <div class="footer__col">
           <h4 class="footer__col-title">Contact</h4>
-          <a href="tel:5403002566">(540) 300-2566</a>
           <a href="mailto:aftersixengraving@gmail.com">aftersixengraving@gmail.com</a>
           <a href="fredericksburg.html">Fredericksburg, VA</a>
         </div>
