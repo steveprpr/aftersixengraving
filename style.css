@@ -822,11 +822,18 @@ input, textarea, select { font-family: inherit; }
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  min-width: 0;
+  overflow: hidden;
 }
 .contact__form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.25rem;
+  min-width: 0;
+}
+.contact__form-row > .form-field {
+  min-width: 0;
+  overflow: hidden;
 }
 .form-field {
   display: flex;
@@ -850,6 +857,10 @@ input, textarea, select { font-family: inherit; }
   color: var(--text-light);
   font-size: 0.9375rem;
   transition: border-color var(--transition);
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .form-field input::placeholder,
 .form-field textarea::placeholder {
