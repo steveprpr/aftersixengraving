@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Engraving Fonts | After Six Engraving</title>
-  <meta name="description" content="Browse 12 engraving font styles for your custom laser engraving project. Serifs, scripts, modern sans, and gothic — preview each font and choose your favorite.">
+  <meta name="description" content="Browse 22 engraving font styles for your custom laser engraving project. Serifs, scripts, and modern sans — preview each font and choose your favorite.">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Engraving Fonts | After Six Engraving">
-  <meta property="og:description" content="Browse 12 engraving font styles for your custom laser engraving project. Preview each font live and choose your favorite.">
+  <meta property="og:description" content="Browse 22 engraving font styles for your custom laser engraving project. Preview each font live and choose your favorite.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://aftersixengraving.com/fonts.html">
   <meta property="og:locale" content="en_US">
 
-  <!-- Fonts — site defaults + all 12 engraving fonts -->
+  <!-- Fonts — site defaults + all 22 engraving fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@400;600&family=IM+Fell+English&family=Montserrat:wght@400;600&family=Raleway:wght@400;600&family=Josefin+Sans:wght@400;600&family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Pacifico&family=Oswald:wght@400;600&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@400;600&family=IM+Fell+English&family=EB+Garamond:wght@400;600&family=Lora:wght@400;600&family=Merriweather:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;600&family=Italiana&family=Philosopher:wght@400;700&family=Montserrat:wght@400;600&family=Raleway:wght@400;600&family=Josefin+Sans:wght@400;600&family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Pacifico&family=Pinyon+Script&family=Sacramento&family=Alex+Brush&family=Allura&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
@@ -166,18 +166,28 @@
 
     // --- Font Data ---
     const FONTS = [
-      { name: 'Playfair Display', family: "'Playfair Display', serif", tag: 'Elegant Serif', desc: 'Perfect for wedding gifts, wine accessories, and formal keepsakes.' },
-      { name: 'Cinzel', family: "'Cinzel', serif", tag: 'Classical Formal', desc: 'Ideal for awards, plaques, and commemorative pieces.' },
-      { name: 'Cormorant Garamond', family: "'Cormorant Garamond', serif", tag: 'Refined Serif', desc: 'Great for book-lovers\u2019 gifts, journals, and literary quotes.' },
-      { name: 'IM Fell English', family: "'IM Fell English', serif", tag: 'Old World Serif', desc: 'Suits historical themes, family crests, and antique-style pieces.' },
-      { name: 'Montserrat', family: "'Montserrat', sans-serif", tag: 'Modern Sans', desc: 'Clean and versatile \u2014 works for corporate logos and modern decor.' },
-      { name: 'Raleway', family: "'Raleway', sans-serif", tag: 'Geometric Sans', desc: 'Elegant simplicity for minimalist designs and monograms.' },
-      { name: 'Josefin Sans', family: "'Josefin Sans', sans-serif", tag: 'Minimal Modern', desc: 'Contemporary feel for address signs and modern home decor.' },
-      { name: 'Dancing Script', family: "'Dancing Script', cursive", tag: 'Flowing Script', desc: 'Lovely for personalized messages, love notes, and recipe boards.' },
-      { name: 'Great Vibes', family: "'Great Vibes', cursive", tag: 'Elegant Script', desc: 'Beautiful for wedding items, anniversary gifts, and formal invitations.' },
-      { name: 'Pacifico', family: "'Pacifico', cursive", tag: 'Friendly Script', desc: 'Fun and casual \u2014 great for bar signs, kids\u2019 items, and nicknames.' },
-      { name: 'Oswald', family: "'Oswald', sans-serif", tag: 'Bold Display', desc: 'Strong and commanding \u2014 perfect for bold statements and sports themes.' },
-      { name: 'UnifrakturMaguntia', family: "'UnifrakturMaguntia', cursive", tag: 'Gothic / Blackletter', desc: 'Old English style for brewery themes, gaming, and dramatic flair.' }
+      { name: 'Playfair Display', family: "'Playfair Display', serif", tag: 'Elegant Serif' },
+      { name: 'Cinzel', family: "'Cinzel', serif", tag: 'Classical Formal' },
+      { name: 'Cormorant Garamond', family: "'Cormorant Garamond', serif", tag: 'Refined Serif' },
+      { name: 'IM Fell English', family: "'IM Fell English', serif", tag: 'Old World Serif' },
+      { name: 'EB Garamond', family: "'EB Garamond', serif", tag: 'Classic Serif' },
+      { name: 'Lora', family: "'Lora', serif", tag: 'Warm Serif' },
+      { name: 'Merriweather', family: "'Merriweather', serif", tag: 'Readable Serif' },
+      { name: 'Libre Baskerville', family: "'Libre Baskerville', serif", tag: 'Traditional Serif' },
+      { name: 'Spectral', family: "'Spectral', serif", tag: 'Refined Serif' },
+      { name: 'Italiana', family: "'Italiana', serif", tag: 'Thin Serif' },
+      { name: 'Philosopher', family: "'Philosopher', sans-serif", tag: 'Distinctive Serif' },
+      { name: 'Montserrat', family: "'Montserrat', sans-serif", tag: 'Modern Sans' },
+      { name: 'Raleway', family: "'Raleway', sans-serif", tag: 'Geometric Sans' },
+      { name: 'Josefin Sans', family: "'Josefin Sans', sans-serif", tag: 'Minimal Modern' },
+      { name: 'Dancing Script', family: "'Dancing Script', cursive", tag: 'Flowing Script' },
+      { name: 'Great Vibes', family: "'Great Vibes', cursive", tag: 'Elegant Script' },
+      { name: 'Pacifico', family: "'Pacifico', cursive", tag: 'Friendly Script' },
+      { name: 'Pinyon Script', family: "'Pinyon Script', cursive", tag: 'Formal Script' },
+      { name: 'Sacramento', family: "'Sacramento', cursive", tag: 'Handwritten Script' },
+      { name: 'Alex Brush', family: "'Alex Brush', cursive", tag: 'Brush Script' },
+      { name: 'Allura', family: "'Allura', cursive", tag: 'Graceful Script' },
+      { name: 'Oswald', family: "'Oswald', sans-serif", tag: 'Bold Display' }
     ];
 
     // --- Render Font Cards ---
