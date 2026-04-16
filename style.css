@@ -2041,3 +2041,35 @@ input, textarea, select { font-family: inherit; }
   color: var(--gold);
   font-weight: 600;
 }
+
+/* -------------------------------------------------------
+   Font Selector (shared: index.html, map-order.html)
+   ------------------------------------------------------- */
+.font-selector {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  -webkit-overflow-scrolling: touch;
+}
+.font-selector::-webkit-scrollbar { height: 4px; }
+.font-selector::-webkit-scrollbar-track { background: var(--dark); }
+.font-selector::-webkit-scrollbar-thumb { background: var(--surface-alt); border-radius: 2px; }
+.font-pill {
+  flex-shrink: 0;
+  padding: 0.4rem 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.font-pill:hover { border-color: rgba(196, 149, 58, 0.4); color: var(--text); }
+.font-pill--active {
+  border-color: var(--gold);
+  background: rgba(196, 149, 58, 0.15);
+  color: var(--gold);
+}

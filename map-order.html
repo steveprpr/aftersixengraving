@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order a Custom Laser Engraved Map | After Six Engraving</title>
+  <meta name="description" content="Order a custom laser engraved map from After Six Engraving in Fredericksburg, VA. Choose any city or address, size up to 12&quot;&times;12&quot;, with optional markers and border text.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Order a Custom Laser Engraved Map | After Six Engraving">
+  <meta property="og:description" content="Order a custom laser engraved map from After Six Engraving in Fredericksburg, VA. Choose any city or address, size up to 12x12, with optional markers and border text.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aftersixengraving.com/map-order.html">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Fonts — site defaults + engraving fonts for border text preview -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@400;600&family=IM+Fell+English&family=Montserrat:wght@400;600&family=Raleway:wght@400;600&family=Josefin+Sans:wght@400;600&family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Pacifico&family=Oswald:wght@400;600&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================
+       NAV
+       ============================================ -->
+  <nav class="nav nav--scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">After Six Engraving</a>
+      <div class="nav__links">
+        <a href="index.html#services">Services</a>
+        <a href="products.html">Products</a>
+        <a href="map-order.html">Maps</a>
+        <a href="gallery.html">Design Templates</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact" class="btn btn--gold">Get a Quote</a>
+      </div>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav__mobile" id="navMobile">
+    <button class="nav__mobile-close" id="navClose" aria-label="Close menu">&times;</button>
+    <a href="index.html#services">Services</a>
+    <a href="products.html">Products</a>
+    <a href="map-order.html">Maps</a>
+    <a href="gallery.html">Design Templates</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Get a Quote</a>
+  </div>
+
+  <!-- ============================================
+       HERO
+       ============================================ -->
+  <section class="gallery-hero" style="min-height: 280px;">
+    <div class="gallery-hero__bg" style="background-image: url('assets/images/products/hero-large.jpg');" role="img" aria-label="Laser engraved map detail"></div>
+    <div class="gallery-hero__content">
+      <p class="eyebrow" style="margin-bottom: 1rem;">Custom Maps</p>
+      <h1 class="gallery-hero__title">Order a Custom Laser Engraved Map</h1>
+      <p class="gallery-hero__sub">Your city, your neighborhood, your story &mdash; engraved forever.</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ORDER FORM
+       ============================================ -->
+  <section style="padding: 4rem 0;">
+    <div class="container" style="max-width: 800px;">
+
+      <form class="map-order-form" name="map-order" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
+        <p class="hidden" style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+        <input type="hidden" name="form-name" value="map-order">
+        <input type="hidden" name="center-lat" id="centerLat" value="">
+        <input type="hidden" name="center-lng" id="centerLng" value="">
+        <input type="hidden" name="map-location-display" id="mapLocationDisplay" value="">
+        <input type="hidden" name="selected-font" id="selectedFontField" value="">
+
+        <!-- ====== SECTION 1: Location + Map ====== -->
+        <div class="form-section">
+          <h2 class="form-section__title">1. Location</h2>
+          <p class="form-section__desc">Search for a city, address, or place name. Then drag the map to center your desired area.</p>
+
+          <div class="form-field" style="position: relative;">
+            <label for="mapSearch">Address or City *</label>
+            <input type="text" id="mapSearch" name="map-location" placeholder="e.g. Fredericksburg, VA" autocomplete="off" required>
+            <div id="mapSuggestions" class="map-suggestions" style="display:none;"></div>
+          </div>
+
+          <div id="mapContainer" class="map-container">
+            <div id="leafletMap" style="width:100%; height:100%;"></div>
+            <div class="map-overlay-border"></div>
+          </div>
+          <p style="font-size: 0.8125rem; color: var(--text-dim); margin-top: 0.5rem; text-align: center;">Drag the map to center your desired area within the gold border.</p>
+        </div>
+
+        <!-- ====== SECTION 2: Size ====== -->
+        <div class="form-section">
+          <h2 class="form-section__title">2. Size</h2>
+          <div class="form-radio-group">
+            <label class="form-radio"><input type="radio" name="size" value='12" x 12"' checked><span class="form-radio__mark"></span>12" &times; 12" &mdash; Maximum size</label>
+            <label class="form-radio"><input type="radio" name="size" value='10" x 10"'><span class="form-radio__mark"></span>10" &times; 10"</label>
+            <label class="form-radio"><input type="radio" name="size" value='8" x 8"'><span class="form-radio__mark"></span>8" &times; 8"</label>
+            <label class="form-radio"><input type="radio" name="size" value='6" x 6"'><span class="form-radio__mark"></span>6" &times; 6"</label>
+            <label class="form-radio"><input type="radio" name="size" value="Custom"><span class="form-radio__mark"></span>Custom size</label>
+          </div>
+          <div class="form-field" id="customSizeField" style="display:none; margin-top: 1rem;">
+            <label for="customSizeInput">Describe your size (must be 12" or smaller)</label>
+            <input type="text" id="customSizeInput" name="custom-size" placeholder='e.g. 9" x 7"'>
+          </div>
+        </div>
+
+        <!-- ====== SECTION 3: Material ====== -->
+        <div class="form-section">
+          <h2 class="form-section__title">3. Material</h2>
+          <div class="form-radio-group">
+            <label class="form-radio"><input type="radio" name="material" value="Hardwood" checked><span class="form-radio__mark"></span>Hardwood (most popular)</label>
+            <label class="form-radio"><input type="radio" name="material" value="Slate"><span class="form-radio__mark"></span>Slate</label>
+            <label class="form-radio"><input type="radio" name="material" value="Bamboo"><span class="form-radio__mark"></span>Bamboo</label>
+            <label class="form-radio"><input type="radio" name="material" value="Not sure"><span class="form-radio__mark"></span>Not sure &mdash; recommend one for me</label>
+          </div>
+        </div>
+
+        <!-- ====== SECTION 4: Map Markers (collapsible) ====== -->
+        <div class="form-section">
+          <h2 class="form-section__title">4. Map Markers</h2>
+          <label class="form-checkbox" style="margin-bottom: 1rem;">
+            <input type="checkbox" id="enableMarkers">
+            <span class="form-checkbox__mark"></span>
+            Add markers to specific locations
+          </label>
+          <div id="markersContainer" style="display:none;">
+            <div id="markerEntries"></div>
+            <button type="button" id="addMarkerBtn" class="btn btn--outline" style="margin-top: 0.75rem; font-size: 0.875rem; padding: 0.5rem 1rem;">+ Add Marker</button>
+          </div>
+        </div>
+
+        <!-- ====== SECTION 5: Border Text (collapsible) ====== -->
+        <div class="form-section">
+          <h2 class="form-section__title">5. Border Text</h2>
+          <label class="form-checkbox" style="margin-bottom: 1rem;">
+            <input type="checkbox" id="enableBorderText">
+            <span class="form-checkbox__mark"></span>
+            Add personalized border text
+          </label>
+          <div id="borderTextContainer" style="display:none;">
+            <div class="form-field">
+              <label for="borderTop">Top text <span class="char-counter" id="borderTopCounter">0 / 30</span></label>
+              <input type="text" id="borderTop" name="border-top" maxlength="30" placeholder="e.g. The Johnson Family">
+            </div>
+            <div class="form-field">
+              <label for="borderBottom">Bottom text <span class="char-counter" id="borderBottomCounter">0 / 30</span></label>
+              <input type="text" id="borderBottom" name="border-bottom" maxlength="30" placeholder="e.g. Fredericksburg, Virginia">
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-field">
+                <label for="borderLeft">Left text (optional) <span class="char-counter" id="borderLeftCounter">0 / 20</span></label>
+                <input type="text" id="borderLeft" name="border-left" maxlength="20">
+              </div>
+              <div class="form-field">
+                <label for="borderRight">Right text (optional) <span class="char-counter" id="borderRightCounter">0 / 20</span></label>
+                <input type="text" id="borderRight" name="border-right" maxlength="20">
+              </div>
+            </div>
+
+            <!-- Font Selector -->
+            <div class="form-field" style="margin-top: 1rem;">
+              <label>Font style</label>
+              <div class="font-selector" id="borderFontSelector"></div>
+            </div>
+
+            <!-- Border Text Preview -->
+            <div class="border-text-preview" id="borderTextPreview" style="margin-top: 1rem;">
+              <div class="border-text-preview__box">
+                <span class="border-text-preview__top" id="previewTop"></span>
+                <span class="border-text-preview__bottom" id="previewBottom"></span>
+                <span class="border-text-preview__left" id="previewLeft"></span>
+                <span class="border-text-preview__right" id="previewRight"></span>
+                <span class="border-text-preview__center">MAP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ====== SECTION 6: Contact ====== -->
+        <div class="form-section">
+          <h2 class="form-section__title">6. Contact Information</h2>
+          <div class="contact__form-row">
+            <div class="form-field">
+              <label for="contactName">Name *</label>
+              <input type="text" id="contactName" name="name" required>
+            </div>
+            <div class="form-field">
+              <label for="contactEmail">Email *</label>
+              <input type="email" id="contactEmail" name="email" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="contactPhone">Phone</label>
+            <input type="tel" id="contactPhone" name="phone">
+          </div>
+          <div class="form-field">
+            <label class="form-field__section-label">How did you hear about us?</label>
+            <div class="form-radio-group">
+              <label class="form-radio"><input type="radio" name="referral" value="Google Search"><span class="form-radio__mark"></span>Google Search</label>
+              <label class="form-radio"><input type="radio" name="referral" value="Referral"><span class="form-radio__mark"></span>Referral</label>
+              <label class="form-radio"><input type="radio" name="referral" value="Social Media"><span class="form-radio__mark"></span>Social Media</label>
+              <label class="form-radio"><input type="radio" name="referral" value="Returning Customer"><span class="form-radio__mark"></span>Returning Customer</label>
+              <label class="form-radio"><input type="radio" name="referral" value="Other"><span class="form-radio__mark"></span>Other</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- ====== SECTION 7: Additional Notes ====== -->
+        <div class="form-section">
+          <h2 class="form-section__title">7. Additional Notes</h2>
+          <div class="form-field">
+            <label for="notes">Special requests or instructions</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Any details about your project..."></textarea>
+          </div>
+          <div class="form-field">
+            <label for="refUpload">Upload reference image (optional)</label>
+            <input type="file" id="refUpload" name="reference-image" accept=".png,.jpg,.jpeg,.svg,.pdf">
+          </div>
+        </div>
+
+        <!-- ====== SUBMIT ====== -->
+        <button type="submit" class="btn btn--gold" style="width: 100%; margin-top: 1rem; font-size: 1.0625rem; padding: 1rem 2rem;">Submit Map Order Request</button>
+        <p style="text-align: center; font-size: 0.8125rem; color: var(--text-dim); margin-top: 1rem;">We will send a design proof within 2 business days. You will receive a quote before any work begins.</p>
+
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">After Six Engraving</a>
+          <p class="footer__tagline">Custom laser engraving in Fredericksburg, VA. Coasters, cutting boards, charcuterie boards, flasks, corporate gifts, and more. Most orders ready in 2-3 days.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Services</h4>
+          <a href="index.html#services">Laser Engraving</a>
+          <a href="index.html#services">Coasters &amp; Barware</a>
+          <a href="index.html#services">Cutting Boards</a>
+          <a href="index.html#services">Corporate Gifts</a>
+          <a href="index.html#services">Custom Signage</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Company</h4>
+          <a href="index.html#about">About Us</a>
+          <a href="products.html">Products</a>
+          <a href="gallery.html">Design Templates</a>
+          <a href="fonts.html">Engraving Fonts</a>
+          <a href="map-order.html">Order a Map</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="index.html#contact">Get a Quote</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <a href="tel:5403002566">(540) 300-2566</a>
+          <a href="mailto:aftersixengraving@gmail.com">aftersixengraving@gmail.com</a>
+          <a href="fredericksburg.html">Fredericksburg, VA</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 After Six Engraving &middot; Fredericksburg, VA</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook">&#9638;</a>
+          <a href="#" aria-label="Instagram">&#9673;</a>
+          <a href="#" aria-label="Google Business">G</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       LEAFLET JS
+       ============================================ -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- ============================================
+       SCRIPTS
+       ============================================ -->
+  <script>
+    // --- Mobile Nav ---
+    (function() {
+      const hamburger = document.getElementById('navHamburger');
+      const mobileNav = document.getElementById('navMobile');
+      const navClose = document.getElementById('navClose');
+      hamburger.addEventListener('click', () => { mobileNav.classList.add('active'); });
+      navClose.addEventListener('click', () => { mobileNav.classList.remove('active'); });
+      function closeMobileNav() { mobileNav.classList.remove('active'); }
+      mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMobileNav));
+    })();
+
+    // --- Font Data (shared) ---
+    const FONTS = [
+      { name: 'Playfair Display', family: "'Playfair Display', serif" },
+      { name: 'Cinzel', family: "'Cinzel', serif" },
+      { name: 'Cormorant Garamond', family: "'Cormorant Garamond', serif" },
+      { name: 'IM Fell English', family: "'IM Fell English', serif" },
+      { name: 'Montserrat', family: "'Montserrat', sans-serif" },
+      { name: 'Raleway', family: "'Raleway', sans-serif" },
+      { name: 'Josefin Sans', family: "'Josefin Sans', sans-serif" },
+      { name: 'Dancing Script', family: "'Dancing Script', cursive" },
+      { name: 'Great Vibes', family: "'Great Vibes', cursive" },
+      { name: 'Pacifico', family: "'Pacifico', cursive" },
+      { name: 'Oswald', family: "'Oswald', sans-serif" },
+      { name: 'UnifrakturMaguntia', family: "'UnifrakturMaguntia', cursive" }
+    ];
+
+    // =============================================
+    // SECTION 1: Leaflet Map + Nominatim Search
+    // =============================================
+    const map = L.map('leafletMap', {
+      center: [38.3032, -77.4605], // Fredericksburg, VA
+      zoom: 14,
+      zoomControl: true
+    });
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors',
+      maxZoom: 19
+    }).addTo(map);
+
+    // Update hidden fields on move
+    function updateLatLng() {
+      const c = map.getCenter();
+      document.getElementById('centerLat').value = c.lat.toFixed(6);
+      document.getElementById('centerLng').value = c.lng.toFixed(6);
+    }
+    map.on('moveend', updateLatLng);
+    updateLatLng();
+
+    // Nominatim autocomplete
+    const searchInput = document.getElementById('mapSearch');
+    const suggestionsDiv = document.getElementById('mapSuggestions');
+    let debounceTimer = null;
+
+    searchInput.addEventListener('input', function() {
+      clearTimeout(debounceTimer);
+      const q = this.value.trim();
+      if (q.length < 3) { suggestionsDiv.style.display = 'none'; return; }
+      debounceTimer = setTimeout(() => {
+        fetch('https://nominatim.openstreetmap.org/search?q=' + encodeURIComponent(q) + '&format=json&limit=5')
+          .then(r => r.json())
+          .then(results => {
+            if (!results.length) { suggestionsDiv.style.display = 'none'; return; }
+            suggestionsDiv.innerHTML = '';
+            results.forEach(r => {
+              const div = document.createElement('div');
+              div.className = 'map-suggestion';
+              div.textContent = r.display_name;
+              div.addEventListener('click', () => {
+                searchInput.value = r.display_name;
+                document.getElementById('mapLocationDisplay').value = r.display_name;
+                map.setView([parseFloat(r.lat), parseFloat(r.lon)], 14);
+                suggestionsDiv.style.display = 'none';
+              });
+              suggestionsDiv.appendChild(div);
+            });
+            suggestionsDiv.style.display = 'block';
+          })
+          .catch(() => { suggestionsDiv.style.display = 'none'; });
+      }, 400);
+    });
+
+    // Close suggestions on outside click
+    document.addEventListener('click', function(e) {
+      if (!suggestionsDiv.contains(e.target) && e.target !== searchInput) {
+        suggestionsDiv.style.display = 'none';
+      }
+    });
+
+    // =============================================
+    // SECTION 2: Custom Size toggle
+    // =============================================
+    document.querySelectorAll('input[name="size"]').forEach(radio => {
+      radio.addEventListener('change', function() {
+        document.getElementById('customSizeField').style.display = this.value === 'Custom' ? 'block' : 'none';
+      });
+    });
+
+    // =============================================
+    // SECTION 4: Map Markers
+    // =============================================
+    const enableMarkers = document.getElementById('enableMarkers');
+    const markersContainer = document.getElementById('markersContainer');
+    const markerEntries = document.getElementById('markerEntries');
+    const addMarkerBtn = document.getElementById('addMarkerBtn');
+    let markerCount = 0;
+
+    enableMarkers.addEventListener('change', function() {
+      markersContainer.style.display = this.checked ? 'block' : 'none';
+      if (this.checked && markerCount === 0) addMarker();
+    });
+
+    function addMarker() {
+      if (markerCount >= 5) return;
+      markerCount++;
+      const idx = markerCount;
+      const entry = document.createElement('div');
+      entry.className = 'marker-entry';
+      entry.innerHTML =
+        '<div class="marker-entry__header"><strong>Marker ' + idx + '</strong>' +
+        (idx > 1 ? '<button type="button" class="marker-entry__remove" onclick="this.closest(\'.marker-entry\').remove(); markerCount--; if(markerCount < 5) addMarkerBtn.style.display=\'\';">&times;</button>' : '') +
+        '</div>' +
+        '<div class="form-field"><label>Address</label><input type="text" name="marker-' + idx + '-address" placeholder="e.g. 123 Main St, Fredericksburg, VA"></div>' +
+        '<div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1rem;">' +
+        '<div class="form-field"><label>Symbol</label><select name="marker-' + idx + '-symbol">' +
+        '<option value="Heart">Heart &#9829;</option><option value="Star">Star &#9733;</option><option value="Diamond">Diamond &#9670;</option>' +
+        '<option value="Pin">Pin &#128205;</option><option value="Home">Home &#8962;</option><option value="Custom">Custom</option>' +
+        '</select></div>' +
+        '<div class="form-field"><label>Meaning (optional)</label><input type="text" name="marker-' + idx + '-meaning" placeholder="e.g. Our first home"></div>' +
+        '</div>';
+      markerEntries.appendChild(entry);
+      if (markerCount >= 5) addMarkerBtn.style.display = 'none';
+    }
+
+    addMarkerBtn.addEventListener('click', addMarker);
+
+    // =============================================
+    // SECTION 5: Border Text
+    // =============================================
+    const enableBorderText = document.getElementById('enableBorderText');
+    const borderTextContainer = document.getElementById('borderTextContainer');
+
+    enableBorderText.addEventListener('change', function() {
+      borderTextContainer.style.display = this.checked ? 'block' : 'none';
+    });
+
+    // Character counters
+    ['borderTop', 'borderBottom'].forEach(id => {
+      const input = document.getElementById(id);
+      const counter = document.getElementById(id + 'Counter');
+      input.addEventListener('input', function() {
+        counter.textContent = this.value.length + ' / 30';
+        updateBorderPreview();
+      });
+    });
+    ['borderLeft', 'borderRight'].forEach(id => {
+      const input = document.getElementById(id);
+      const counter = document.getElementById(id + 'Counter');
+      input.addEventListener('input', function() {
+        counter.textContent = this.value.length + ' / 20';
+        updateBorderPreview();
+      });
+    });
+
+    function updateBorderPreview() {
+      document.getElementById('previewTop').textContent = document.getElementById('borderTop').value;
+      document.getElementById('previewBottom').textContent = document.getElementById('borderBottom').value;
+      document.getElementById('previewLeft').textContent = document.getElementById('borderLeft').value;
+      document.getElementById('previewRight').textContent = document.getElementById('borderRight').value;
+    }
+
+    // Font Selector for border text
+    (function() {
+      const container = document.getElementById('borderFontSelector');
+      const hiddenField = document.getElementById('selectedFontField');
+      const previewBox = document.getElementById('borderTextPreview');
+      let activeBtn = null;
+
+      FONTS.forEach((font, i) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'font-pill' + (i === 0 ? ' font-pill--active' : '');
+        btn.style.fontFamily = font.family;
+        btn.textContent = font.name;
+        if (i === 0) {
+          activeBtn = btn;
+          hiddenField.value = font.name;
+          previewBox.style.fontFamily = font.family;
+        }
+
+        btn.addEventListener('click', function() {
+          if (activeBtn) activeBtn.classList.remove('font-pill--active');
+          btn.classList.add('font-pill--active');
+          activeBtn = btn;
+          hiddenField.value = font.name;
+          previewBox.style.fontFamily = font.family;
+        });
+
+        container.appendChild(btn);
+      });
+    })();
+  </script>
+
+  <!-- ============================================
+       PAGE-SPECIFIC STYLES
+       ============================================ -->
+  <style>
+    /* Map container */
+    .map-container {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      height: 500px;
+      margin: 1rem auto 0;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 2px solid var(--border);
+    }
+    @media (max-width: 560px) {
+      .map-container { height: 350px; max-width: 100%; }
+    }
+
+    /* Gold dashed overlay */
+    .map-overlay-border {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70%; height: 70%;
+      border: 3px dashed var(--gold);
+      border-radius: 4px;
+      pointer-events: none;
+      z-index: 1000;
+      box-shadow: 0 0 0 2000px rgba(26, 26, 26, 0.3);
+    }
+
+    /* Autocomplete suggestions */
+    .map-suggestions {
+      position: absolute;
+      top: 100%;
+      left: 0; right: 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0 0 6px 6px;
+      max-height: 220px;
+      overflow-y: auto;
+      z-index: 200;
+    }
+    .map-suggestion {
+      padding: 0.625rem 0.75rem;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      border-bottom: 1px solid var(--border);
+    }
+    .map-suggestion:hover { background: var(--dark); color: var(--gold); }
+    .map-suggestion:last-child { border-bottom: none; }
+
+    /* Form sections */
+    .form-section {
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .form-section:last-of-type { border-bottom: none; }
+    .form-section__title {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+    .form-section__desc {
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      margin-bottom: 1.25rem;
+    }
+
+    /* Marker entries */
+    .marker-entry {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .marker-entry__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.75rem;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+    .marker-entry__remove {
+      color: var(--text-dim);
+      font-size: 1.25rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0 0.25rem;
+    }
+    .marker-entry__remove:hover { color: #e55; }
+
+    /* Character counter */
+    .char-counter {
+      float: right;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      font-weight: 400;
+    }
+
+    /* Font selector strip */
+    .font-selector {
+      display: flex;
+      gap: 0.5rem;
+      overflow-x: auto;
+      padding-bottom: 0.5rem;
+      -webkit-overflow-scrolling: touch;
+    }
+    .font-selector::-webkit-scrollbar { height: 4px; }
+    .font-selector::-webkit-scrollbar-track { background: var(--dark); }
+    .font-selector::-webkit-scrollbar-thumb { background: var(--surface-alt); border-radius: 2px; }
+
+    .font-pill {
+      flex-shrink: 0;
+      padding: 0.4rem 0.75rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      color: var(--text-muted);
+      font-size: 0.8125rem;
+      cursor: pointer;
+      transition: all var(--transition);
+      white-space: nowrap;
+    }
+    .font-pill:hover { border-color: rgba(196, 149, 58, 0.4); color: var(--text); }
+    .font-pill--active {
+      border-color: var(--gold);
+      background: rgba(196, 149, 58, 0.15);
+      color: var(--gold);
+    }
+
+    /* Border text preview */
+    .border-text-preview__box {
+      position: relative;
+      width: 220px;
+      height: 220px;
+      margin: 0 auto;
+      border: 2px dashed var(--gold);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .border-text-preview__center {
+      color: var(--text-dim);
+      font-size: 1.25rem;
+      letter-spacing: 0.15em;
+    }
+    .border-text-preview__top,
+    .border-text-preview__bottom,
+    .border-text-preview__left,
+    .border-text-preview__right {
+      position: absolute;
+      color: var(--gold);
+      font-size: 0.8125rem;
+      white-space: nowrap;
+      max-width: 180px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .border-text-preview__top { top: 8px; left: 50%; transform: translateX(-50%); }
+    .border-text-preview__bottom { bottom: 8px; left: 50%; transform: translateX(-50%); }
+    .border-text-preview__left { left: 8px; top: 50%; transform: translateY(-50%) rotate(-90deg); transform-origin: left center; max-width: 140px; }
+    .border-text-preview__right { right: 8px; top: 50%; transform: translateY(-50%) rotate(90deg); transform-origin: right center; max-width: 140px; }
+
+    /* Leaflet z-index fix */
+    .leaflet-top, .leaflet-bottom { z-index: 999 !important; }
+  </style>
+
+</body>
+</html>

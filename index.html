@@ -16,7 +16,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@400;600&family=IM+Fell+English&family=Montserrat:wght@400;600&family=Raleway:wght@400;600&family=Josefin+Sans:wght@400;600&family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Pacifico&family=Oswald:wght@400;600&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
@@ -53,7 +53,9 @@
       <div class="nav__links">
         <a href="#services">Services</a>
         <a href="products.html">Products</a>
+        <a href="map-order.html">Maps</a>
         <a href="gallery.html">Design Templates</a>
+        <a href="fonts.html">Fonts</a>
         <a href="#about">About</a>
         <a href="#contact" class="btn btn--gold">Get a Quote</a>
       </div>
@@ -68,7 +70,9 @@
     <button class="nav__mobile-close" id="navClose" aria-label="Close menu">&times;</button>
     <a href="#services" onclick="closeMobileNav()">Services</a>
     <a href="products.html">Products</a>
+    <a href="map-order.html">Maps</a>
     <a href="gallery.html">Design Templates</a>
+    <a href="fonts.html">Fonts</a>
     <a href="#about" onclick="closeMobileNav()">About</a>
     <a href="#contact" onclick="closeMobileNav()">Get a Quote</a>
   </div>
@@ -627,6 +631,13 @@
             <input type="file" id="logo-upload" name="logo-upload" accept=".png,.jpg,.jpeg,.svg,.pdf,.ai,.eps">
           </div>
 
+          <!-- Font Style Preference -->
+          <div class="form-field">
+            <label>Preferred font style (optional) — <a href="fonts.html" target="_blank" style="color:var(--gold);font-weight:600;">view all fonts →</a></label>
+            <div class="font-selector" id="quoteFontSelector"></div>
+            <input type="hidden" name="preferred-font" id="quoteFontField" value="">
+          </div>
+
           <!-- How did you hear about us -->
           <div class="form-field">
             <label class="form-field__section-label">How did you hear about us?</label>
@@ -795,5 +806,41 @@
     })();
   </script>
 
+  <script>
+    (function() {
+      var FONTS = [
+        { name: 'Playfair Display', family: "'Playfair Display', serif" },
+        { name: 'Cinzel', family: "'Cinzel', serif" },
+        { name: 'Cormorant Garamond', family: "'Cormorant Garamond', serif" },
+        { name: 'IM Fell English', family: "'IM Fell English', serif" },
+        { name: 'Montserrat', family: "'Montserrat', sans-serif" },
+        { name: 'Raleway', family: "'Raleway', sans-serif" },
+        { name: 'Josefin Sans', family: "'Josefin Sans', sans-serif" },
+        { name: 'Dancing Script', family: "'Dancing Script', cursive" },
+        { name: 'Great Vibes', family: "'Great Vibes', cursive" },
+        { name: 'Pacifico', family: "'Pacifico', cursive" },
+        { name: 'Oswald', family: "'Oswald', sans-serif" },
+        { name: 'UnifrakturMaguntia', family: "'UnifrakturMaguntia', cursive" }
+      ];
+      var container = document.getElementById('quoteFontSelector');
+      var hiddenField = document.getElementById('quoteFontField');
+      if (!container) return;
+      var activeBtn = null;
+      FONTS.forEach(function(font) {
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'font-pill';
+        btn.style.fontFamily = font.family;
+        btn.textContent = font.name;
+        btn.addEventListener('click', function() {
+          if (activeBtn) activeBtn.classList.remove('font-pill--active');
+          btn.classList.add('font-pill--active');
+          activeBtn = btn;
+          hiddenField.value = font.name;
+        });
+        container.appendChild(btn);
+      });
+    })();
+  </script>
 </body>
 </html>

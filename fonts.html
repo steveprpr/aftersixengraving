@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engraving Fonts | After Six Engraving</title>
+  <meta name="description" content="Browse 12 engraving font styles for your custom laser engraving project. Serifs, scripts, modern sans, and gothic — preview each font and choose your favorite.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Engraving Fonts | After Six Engraving">
+  <meta property="og:description" content="Browse 12 engraving font styles for your custom laser engraving project. Preview each font live and choose your favorite.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aftersixengraving.com/fonts.html">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Fonts — site defaults + all 12 engraving fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@400;600&family=IM+Fell+English&family=Montserrat:wght@400;600&family=Raleway:wght@400;600&family=Josefin+Sans:wght@400;600&family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Pacifico&family=Oswald:wght@400;600&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================
+       NAV
+       ============================================ -->
+  <nav class="nav nav--scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">After Six Engraving</a>
+      <div class="nav__links">
+        <a href="index.html#services">Services</a>
+        <a href="products.html">Products</a>
+        <a href="map-order.html">Maps</a>
+        <a href="gallery.html">Design Templates</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact" class="btn btn--gold">Get a Quote</a>
+      </div>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav__mobile" id="navMobile">
+    <button class="nav__mobile-close" id="navClose" aria-label="Close menu">&times;</button>
+    <a href="index.html#services">Services</a>
+    <a href="products.html">Products</a>
+    <a href="map-order.html">Maps</a>
+    <a href="gallery.html">Design Templates</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Get a Quote</a>
+  </div>
+
+  <!-- ============================================
+       HERO
+       ============================================ -->
+  <section class="gallery-hero" style="min-height: 280px;">
+    <div class="gallery-hero__bg" style="background-image: url('assets/images/products/hero-large.jpg');" role="img" aria-label="Close-up of precision engraving work"></div>
+    <div class="gallery-hero__content">
+      <p class="eyebrow" style="margin-bottom: 1rem;">Typography</p>
+      <h1 class="gallery-hero__title">Engraving Fonts</h1>
+      <p class="gallery-hero__sub">Choose the perfect lettering style for your project</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       INTERACTIVE PREVIEW
+       ============================================ -->
+  <section class="fonts-preview" style="padding: 3rem 0; background: var(--surface); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <label for="fontPreviewInput" style="display:block; font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Type to preview</label>
+      <input type="text" id="fontPreviewInput" placeholder="After Six Engraving" style="width:100%; padding: 0.75rem 1rem; background: var(--dark); border: 1px solid var(--border); border-radius: 6px; color: var(--text); font-size: 1rem; margin-bottom: 1.5rem;">
+      <div id="fontPreviewDisplay" style="font-size: clamp(2rem, 5vw, 3.5rem); color: var(--gold); min-height: 80px; display:flex; align-items:center; font-family: 'Playfair Display', serif; word-break: break-word;">After Six Engraving</div>
+      <p id="fontPreviewName" style="color: var(--text-dim); font-size: 0.875rem; margin-top: 0.5rem;">Playfair Display &mdash; Elegant Serif</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FONT CARDS GRID
+       ============================================ -->
+  <section class="fonts-grid-section" style="padding: 4rem 0;">
+    <div class="container">
+      <div class="fonts-grid" id="fontsGrid">
+        <!-- Cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CTA
+       ============================================ -->
+  <section style="padding: 4rem 0; background: var(--surface); text-align: center;">
+    <div class="container">
+      <h2 class="section-title section-title--light" style="margin-bottom: 1rem;">Ready to order?</h2>
+      <p style="color: var(--text-muted); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">Pick your font, then tell us about your project. We handle the rest.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="index.html#contact" class="btn btn--gold">Get a Free Quote &rarr;</a>
+        <a href="map-order.html" class="btn btn--outline">Order a Custom Map &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">After Six Engraving</a>
+          <p class="footer__tagline">Custom laser engraving in Fredericksburg, VA. Coasters, cutting boards, charcuterie boards, flasks, corporate gifts, and more. Most orders ready in 2-3 days.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Services</h4>
+          <a href="index.html#services">Laser Engraving</a>
+          <a href="index.html#services">Coasters &amp; Barware</a>
+          <a href="index.html#services">Cutting Boards</a>
+          <a href="index.html#services">Corporate Gifts</a>
+          <a href="index.html#services">Custom Signage</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Company</h4>
+          <a href="index.html#about">About Us</a>
+          <a href="products.html">Products</a>
+          <a href="gallery.html">Design Templates</a>
+          <a href="fonts.html">Engraving Fonts</a>
+          <a href="map-order.html">Order a Map</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="index.html#contact">Get a Quote</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <a href="tel:5403002566">(540) 300-2566</a>
+          <a href="mailto:aftersixengraving@gmail.com">aftersixengraving@gmail.com</a>
+          <a href="fredericksburg.html">Fredericksburg, VA</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 After Six Engraving &middot; Fredericksburg, VA</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook">&#9638;</a>
+          <a href="#" aria-label="Instagram">&#9673;</a>
+          <a href="#" aria-label="Google Business">G</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       SCRIPTS
+       ============================================ -->
+  <script>
+    // --- Mobile Nav ---
+    const hamburger = document.getElementById('navHamburger');
+    const mobileNav = document.getElementById('navMobile');
+    const navClose = document.getElementById('navClose');
+    hamburger.addEventListener('click', () => { mobileNav.classList.add('active'); });
+    navClose.addEventListener('click', () => { mobileNav.classList.remove('active'); });
+    function closeMobileNav() { mobileNav.classList.remove('active'); }
+    mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMobileNav));
+
+    // --- Font Data ---
+    const FONTS = [
+      { name: 'Playfair Display', family: "'Playfair Display', serif", tag: 'Elegant Serif', desc: 'Perfect for wedding gifts, wine accessories, and formal keepsakes.' },
+      { name: 'Cinzel', family: "'Cinzel', serif", tag: 'Classical Formal', desc: 'Ideal for awards, plaques, and commemorative pieces.' },
+      { name: 'Cormorant Garamond', family: "'Cormorant Garamond', serif", tag: 'Refined Serif', desc: 'Great for book-lovers\u2019 gifts, journals, and literary quotes.' },
+      { name: 'IM Fell English', family: "'IM Fell English', serif", tag: 'Old World Serif', desc: 'Suits historical themes, family crests, and antique-style pieces.' },
+      { name: 'Montserrat', family: "'Montserrat', sans-serif", tag: 'Modern Sans', desc: 'Clean and versatile \u2014 works for corporate logos and modern decor.' },
+      { name: 'Raleway', family: "'Raleway', sans-serif", tag: 'Geometric Sans', desc: 'Elegant simplicity for minimalist designs and monograms.' },
+      { name: 'Josefin Sans', family: "'Josefin Sans', sans-serif", tag: 'Minimal Modern', desc: 'Contemporary feel for address signs and modern home decor.' },
+      { name: 'Dancing Script', family: "'Dancing Script', cursive", tag: 'Flowing Script', desc: 'Lovely for personalized messages, love notes, and recipe boards.' },
+      { name: 'Great Vibes', family: "'Great Vibes', cursive", tag: 'Elegant Script', desc: 'Beautiful for wedding items, anniversary gifts, and formal invitations.' },
+      { name: 'Pacifico', family: "'Pacifico', cursive", tag: 'Friendly Script', desc: 'Fun and casual \u2014 great for bar signs, kids\u2019 items, and nicknames.' },
+      { name: 'Oswald', family: "'Oswald', sans-serif", tag: 'Bold Display', desc: 'Strong and commanding \u2014 perfect for bold statements and sports themes.' },
+      { name: 'UnifrakturMaguntia', family: "'UnifrakturMaguntia', cursive", tag: 'Gothic / Blackletter', desc: 'Old English style for brewery themes, gaming, and dramatic flair.' }
+    ];
+
+    // --- Render Font Cards ---
+    const grid = document.getElementById('fontsGrid');
+    const previewInput = document.getElementById('fontPreviewInput');
+    const previewDisplay = document.getElementById('fontPreviewDisplay');
+    const previewName = document.getElementById('fontPreviewName');
+    let activeCard = null;
+
+    FONTS.forEach((font, i) => {
+      const card = document.createElement('div');
+      card.className = 'font-card' + (i === 0 ? ' font-card--active' : '');
+      if (i === 0) activeCard = card;
+
+      card.innerHTML =
+        '<p class="font-card__name">' + font.name + '</p>' +
+        '<p class="font-card__sample" style="font-family: ' + font.family + '; font-size: 2.25rem; line-height: 1.2; margin: 0.75rem 0 0.25rem;">After Six Engraving</p>' +
+        '<p class="font-card__sample-small" style="font-family: ' + font.family + '; font-size: 1.125rem; color: var(--text-muted); margin-bottom: 0.75rem;">The Johnson Family &middot; Est. 2024</p>' +
+        '<span class="font-card__tag">' + font.tag + '</span>' +
+        '<p class="font-card__desc">' + font.desc + '</p>';
+
+      card.addEventListener('click', () => {
+        if (activeCard) activeCard.classList.remove('font-card--active');
+        card.classList.add('font-card--active');
+        activeCard = card;
+        const text = previewInput.value.trim() || 'After Six Engraving';
+        previewDisplay.style.fontFamily = font.family;
+        previewDisplay.textContent = text;
+        previewName.innerHTML = font.name + ' &mdash; ' + font.tag;
+      });
+
+      grid.appendChild(card);
+    });
+
+    // --- Live Preview Input ---
+    previewInput.addEventListener('input', () => {
+      previewDisplay.textContent = previewInput.value.trim() || 'After Six Engraving';
+    });
+  </script>
+
+  <style>
+    .fonts-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 900px) { .fonts-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .fonts-grid { grid-template-columns: 1fr; } }
+
+    .font-card {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: 10px;
+      padding: 1.5rem;
+      cursor: pointer;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    .font-card:hover { border-color: rgba(196, 149, 58, 0.4); }
+    .font-card--active { border-color: var(--gold); box-shadow: 0 0 0 1px var(--gold); }
+    .font-card__name {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gold);
+      font-weight: 600;
+    }
+    .font-card__tag {
+      display: inline-block;
+      background: rgba(196, 149, 58, 0.15);
+      color: var(--gold);
+      font-size: 0.6875rem;
+      padding: 0.2em 0.6em;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .font-card__desc {
+      font-size: 0.8125rem;
+      color: var(--text-dim);
+      line-height: 1.5;
+    }
+  </style>
+
+</body>
+</html>
