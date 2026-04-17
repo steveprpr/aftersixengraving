@@ -108,11 +108,40 @@
         <!-- ====== SECTION 2: Size ====== -->
         <div class="form-section">
           <h2 class="form-section__title">2. Size</h2>
+
+          <!-- Sample map gallery — swap src values when real photos are ready -->
+          <div class="map-samples">
+            <div class="map-sample map-sample--placeholder">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <defs><linearGradient id="sg1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#C4953A;stop-opacity:0.55"/><stop offset="100%" style="stop-color:#C4953A;stop-opacity:0.1"/></linearGradient></defs>
+                <g stroke="url(#sg1)" stroke-width="1" fill="none"><path d="M20,60 Q200,55 380,62"/><path d="M20,120 Q200,118 380,124"/><path d="M20,180 Q200,184 380,178"/><path d="M20,240 Q200,238 380,244"/><path d="M80,20 Q78,150 82,280"/><path d="M160,20 Q162,150 158,280"/><path d="M240,20 Q238,150 244,280"/><path d="M320,20 Q322,150 318,280"/><path d="M30,260 Q120,190 200,140 T370,40" stroke-width="2" stroke-dasharray="7,4"/></g>
+                <g fill="#C4953A" opacity="0.45"><circle cx="80" cy="60" r="3"/><circle cx="160" cy="120" r="3"/><circle cx="240" cy="180" r="2.5"/><circle cx="320" cy="240" r="3"/></g>
+                <g transform="translate(160,140)"><path d="M0,-18 C-10,-18 -15,-10 -15,-3 C-15,8 0,20 0,20 C0,20 15,8 15,-3 C15,-10 10,-18 0,-18 Z" fill="#C4953A" opacity="0.8"/><circle cx="0" cy="-4" r="5" fill="#1A1A1A"/></g>
+              </svg>
+            </div>
+            <div class="map-sample map-sample--placeholder">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <defs><linearGradient id="sg2" x1="100%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#C4953A;stop-opacity:0.5"/><stop offset="100%" style="stop-color:#C4953A;stop-opacity:0.08"/></linearGradient></defs>
+                <g stroke="url(#sg2)" stroke-width="1.5" fill="none"><path d="M20,150 Q100,100 200,150 T380,150" stroke-width="2.5" stroke-dasharray="10,5"/><path d="M20,80 Q200,76 380,82"/><path d="M20,220 Q200,216 380,222"/><path d="M100,20 Q98,150 102,280"/><path d="M200,20 Q202,150 198,280"/><path d="M300,20 Q298,150 304,280"/></g>
+                <g fill="#C4953A" opacity="0.4"><circle cx="100" cy="80" r="3"/><circle cx="200" cy="150" r="3.5"/><circle cx="300" cy="220" r="3"/><circle cx="100" cy="220" r="2.5"/><circle cx="300" cy="80" r="2.5"/></g>
+                <g transform="translate(260,100)"><path d="M0,-18 C-10,-18 -15,-10 -15,-3 C-15,8 0,20 0,20 C0,20 15,8 15,-3 C15,-10 10,-18 0,-18 Z" fill="#C4953A" opacity="0.8"/><circle cx="0" cy="-4" r="5" fill="#1A1A1A"/></g>
+              </svg>
+            </div>
+            <div class="map-sample map-sample--placeholder">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <defs><linearGradient id="sg3" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" style="stop-color:#C4953A;stop-opacity:0.6"/><stop offset="100%" style="stop-color:#C4953A;stop-opacity:0.12"/></linearGradient></defs>
+                <g stroke="url(#sg3)" stroke-width="1" fill="none"><path d="M20,50 Q100,48 200,54 T380,50"/><path d="M20,110 Q100,108 200,116 T380,112"/><path d="M20,170 Q100,174 200,168 T380,172"/><path d="M20,230 Q100,228 200,236 T380,232"/><path d="M70,20 Q68,150 74,280"/><path d="M150,20 Q152,150 148,280"/><path d="M230,20 Q228,150 234,280"/><path d="M310,20 Q312,150 308,280"/></g>
+                <g fill="#C4953A" opacity="0.45"><circle cx="70" cy="50" r="2.5"/><circle cx="150" cy="110" r="3"/><circle cx="230" cy="170" r="2.5"/><circle cx="310" cy="230" r="3"/><circle cx="70" cy="170" r="2.5"/><circle cx="310" cy="110" r="2.5"/></g>
+                <g transform="translate(200,150)"><path d="M0,-18 C-10,-18 -15,-10 -15,-3 C-15,8 0,20 0,20 C0,20 15,8 15,-3 C15,-10 10,-18 0,-18 Z" fill="#C4953A" opacity="0.8"/><circle cx="0" cy="-4" r="5" fill="#1A1A1A"/></g>
+              </svg>
+            </div>
+          </div>
+          <p style="font-size: 0.75rem; color: var(--text-dim); text-align: center; margin-bottom: 1.25rem;">Sample maps — yours will be centered on your chosen location</p>
+
           <div class="size-cards">
 
             <label class="size-card size-card--active">
               <input type="radio" name="size" value='12" x 12"' checked>
-              <div class="size-card__img" aria-label="12 by 12 inch map"><span>12&times;12</span></div>
               <div class="size-card__info">
                 <span class="size-card__label">12" &times; 12"</span>
                 <span class="size-card__note">Maximum size</span>
@@ -122,7 +151,6 @@
 
             <label class="size-card">
               <input type="radio" name="size" value='10" x 10"'>
-              <div class="size-card__img" aria-label="10 by 10 inch map"><span>10&times;10</span></div>
               <div class="size-card__info">
                 <span class="size-card__label">10" &times; 10"</span>
                 <span class="size-card__price">$70</span>
@@ -131,7 +159,6 @@
 
             <label class="size-card">
               <input type="radio" name="size" value='8" x 8"'>
-              <div class="size-card__img" aria-label="8 by 8 inch map"><span>8&times;8</span></div>
               <div class="size-card__info">
                 <span class="size-card__label">8" &times; 8"</span>
                 <span class="size-card__price">$60</span>
@@ -140,7 +167,6 @@
 
             <label class="size-card">
               <input type="radio" name="size" value='6" x 6"'>
-              <div class="size-card__img" aria-label="6 by 6 inch map"><span>6&times;6</span></div>
               <div class="size-card__info">
                 <span class="size-card__label">6" &times; 6"</span>
                 <span class="size-card__price">$50</span>
@@ -149,7 +175,6 @@
 
             <label class="size-card">
               <input type="radio" name="size" value="Custom">
-              <div class="size-card__img size-card__img--custom" aria-label="Custom size map"><span>Custom</span></div>
               <div class="size-card__info">
                 <span class="size-card__label">Custom size</span>
                 <span class="size-card__price size-card__price--quote">Contact for a quote</span>
@@ -763,20 +788,42 @@
     .border-text-preview__left { left: 8px; top: 50%; transform: translateY(-50%) rotate(-90deg); transform-origin: left center; max-width: 140px; }
     .border-text-preview__right { right: 8px; top: 50%; transform: translateY(-50%) rotate(90deg); transform-origin: right center; max-width: 140px; }
 
+    /* Sample map gallery */
+    .map-samples {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.625rem;
+      margin-bottom: 0.5rem;
+    }
+    .map-sample {
+      border-radius: 6px;
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+    }
+    .map-sample--placeholder {
+      background: #1e1e1e;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     /* Size option cards */
     .size-cards {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+      gap: 0.75rem;
     }
     .size-card {
       position: relative;
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
       background: var(--surface);
       border: 2px solid var(--border);
       border-radius: 8px;
-      padding: 0.75rem;
+      padding: 1rem 0.75rem;
       cursor: pointer;
       transition: border-color 0.2s, box-shadow 0.2s;
       text-align: center;
@@ -791,28 +838,6 @@
       position: absolute;
       opacity: 0;
       pointer-events: none;
-    }
-    .size-card__img {
-      width: 100%;
-      aspect-ratio: 1 / 1;
-      max-height: 110px;
-      background: #2a2a2a;
-      border-radius: 4px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 0.625rem;
-      border: 1px dashed var(--border);
-    }
-    .size-card__img span {
-      font-size: 1rem;
-      color: var(--text-dim);
-      font-weight: 600;
-      letter-spacing: 0.04em;
-    }
-    .size-card__img--custom {
-      border-style: dotted;
-      background: #222;
     }
     .size-card__info {
       display: flex;

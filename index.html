@@ -271,73 +271,91 @@
   </section>
 
   <!-- ============================================
-       LASER ENGRAVED MAPS — Coming Soon
+       LASER ENGRAVED MAPS
        ============================================ -->
   <section class="maps-section" id="maps">
     <div class="container">
       <div class="maps-section__inner">
         <div class="maps-section__text reveal">
-          <p class="eyebrow maps-section__eyebrow">New &middot; Coming Soon</p>
+          <p class="eyebrow maps-section__eyebrow">Custom Maps</p>
           <h2 class="section-title section-title--light">Your World,<br>Engraved.</h2>
-          <p class="maps-section__desc">We're now offering custom laser-engraved maps &mdash; city streets, hiking trails, lake contours, neighborhood outlines. Any geography, engraved on wood, slate, or metal. Perfect for gifts, home d&eacute;cor, and office art.</p>
-          <a href="#contact?interest=maps" class="btn btn--gold" style="margin-top: 1.5rem;">Get Notified When Available</a>
+          <p class="maps-section__desc">Custom laser-engraved maps &mdash; city streets, hiking trails, lake contours, neighborhood outlines. Any geography, engraved on wood, slate, or metal. Perfect for gifts, home d&eacute;cor, and office art.</p>
+          <a href="map-order.html" class="btn btn--gold" style="margin-top: 1.5rem;">Order a Custom Map</a>
         </div>
         <div class="maps-section__visual reveal reveal-delay-2">
-          <div class="maps-placeholder">
-            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" class="maps-placeholder__svg">
-              <!-- Abstract map grid pattern in gold -->
-              <defs>
-                <linearGradient id="mapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#C4953A;stop-opacity:0.6" />
-                  <stop offset="100%" style="stop-color:#C4953A;stop-opacity:0.15" />
-                </linearGradient>
-              </defs>
-              <!-- Grid lines (streets) -->
-              <g stroke="url(#mapGrad)" stroke-width="1" fill="none">
-                <!-- Horizontal roads -->
-                <path d="M20,80 Q100,75 200,82 T380,78" />
-                <path d="M20,140 Q150,135 250,145 T380,138" />
-                <path d="M20,200 Q80,205 180,195 T380,202" />
-                <path d="M20,260 Q130,255 230,265 T380,258" />
-                <path d="M20,320 Q100,325 200,318 T380,322" />
-                <!-- Vertical roads -->
-                <path d="M80,20 Q75,100 82,200 T78,380" />
-                <path d="M150,20 Q148,120 155,220 T148,380" />
-                <path d="M220,20 Q225,100 218,200 T222,380" />
-                <path d="M290,20 Q288,100 295,200 T288,380" />
-                <path d="M350,20 Q355,100 348,200 T352,380" />
-                <!-- Diagonal (river/trail) -->
-                <path d="M40,350 Q120,280 200,220 T360,50" stroke-width="2.5" stroke-dasharray="8,4" />
-              </g>
-              <!-- Intersection dots -->
-              <g fill="#C4953A" opacity="0.5">
-                <circle cx="80" cy="80" r="3" />
-                <circle cx="150" cy="80" r="2.5" />
-                <circle cx="220" cy="82" r="3" />
-                <circle cx="290" cy="78" r="2" />
-                <circle cx="80" cy="140" r="2.5" />
-                <circle cx="150" cy="138" r="3" />
-                <circle cx="220" cy="142" r="2" />
-                <circle cx="290" cy="140" r="3" />
-                <circle cx="80" cy="200" r="3" />
-                <circle cx="150" cy="198" r="2" />
-                <circle cx="220" cy="202" r="3" />
-                <circle cx="290" cy="200" r="2.5" />
-                <circle cx="80" cy="260" r="2" />
-                <circle cx="150" cy="258" r="3" />
-                <circle cx="220" cy="262" r="2.5" />
-                <circle cx="290" cy="260" r="3" />
-                <circle cx="80" cy="320" r="3" />
-                <circle cx="150" cy="322" r="2" />
-                <circle cx="220" cy="318" r="3" />
-                <circle cx="290" cy="320" r="2.5" />
-              </g>
-              <!-- Map pin -->
-              <g transform="translate(200,180)">
-                <path d="M0,-24 C-13,-24 -20,-14 -20,-4 C-20,10 0,28 0,28 C0,28 20,10 20,-4 C20,-14 13,-24 0,-24 Z" fill="#C4953A" opacity="0.8"/>
-                <circle cx="0" cy="-6" r="7" fill="#1A1A1A"/>
-              </g>
-            </svg>
+          <div class="maps-gallery">
+            <div class="maps-gallery__main maps-gallery__tile">
+              <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <defs>
+                  <linearGradient id="mapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#C4953A;stop-opacity:0.6" />
+                    <stop offset="100%" style="stop-color:#C4953A;stop-opacity:0.15" />
+                  </linearGradient>
+                </defs>
+                <g stroke="url(#mapGrad)" stroke-width="1" fill="none">
+                  <path d="M20,80 Q100,75 200,82 T380,78" />
+                  <path d="M20,160 Q150,155 250,165 T380,158" />
+                  <path d="M20,240 Q80,245 180,235 T380,242" />
+                  <path d="M20,320 Q130,315 230,325 T380,318" />
+                  <path d="M20,400 Q100,405 200,398 T380,402" />
+                  <path d="M80,20 Q75,120 82,250 T78,480" />
+                  <path d="M160,20 Q158,140 165,270 T158,480" />
+                  <path d="M240,20 Q245,120 238,250 T242,480" />
+                  <path d="M320,20 Q318,120 325,250 T318,480" />
+                  <path d="M40,450 Q130,350 210,270 T370,60" stroke-width="2.5" stroke-dasharray="8,4" />
+                </g>
+                <g fill="#C4953A" opacity="0.5">
+                  <circle cx="80" cy="80" r="3" /><circle cx="160" cy="80" r="2.5" /><circle cx="240" cy="82" r="3" /><circle cx="320" cy="78" r="2" />
+                  <circle cx="80" cy="160" r="2.5" /><circle cx="160" cy="158" r="3" /><circle cx="240" cy="162" r="2" /><circle cx="320" cy="160" r="3" />
+                  <circle cx="80" cy="240" r="3" /><circle cx="160" cy="238" r="2" /><circle cx="240" cy="242" r="3" /><circle cx="320" cy="240" r="2.5" />
+                  <circle cx="80" cy="320" r="2" /><circle cx="160" cy="318" r="3" /><circle cx="240" cy="322" r="2.5" /><circle cx="320" cy="320" r="3" />
+                </g>
+                <g transform="translate(200,220)">
+                  <path d="M0,-28 C-15,-28 -24,-16 -24,-4 C-24,12 0,32 0,32 C0,32 24,12 24,-4 C24,-16 15,-28 0,-28 Z" fill="#C4953A" opacity="0.85"/>
+                  <circle cx="0" cy="-6" r="8" fill="#1A1A1A"/>
+                </g>
+              </svg>
+            </div>
+            <div class="maps-gallery__thumbs">
+              <div class="maps-gallery__tile maps-gallery__tile--thumb">
+                <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                  <defs><linearGradient id="mapGrad2" x1="100%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#C4953A;stop-opacity:0.5" /><stop offset="100%" style="stop-color:#C4953A;stop-opacity:0.1" /></linearGradient></defs>
+                  <g stroke="url(#mapGrad2)" stroke-width="1.5" fill="none">
+                    <path d="M20,60 Q200,55 380,62" /><path d="M20,120 Q200,118 380,122" /><path d="M20,180 Q200,184 380,178" /><path d="M20,240 Q200,238 380,244" /><path d="M20,300 Q200,298 380,304" /><path d="M20,360 Q200,362 380,358" />
+                    <path d="M60,20 Q58,200 62,380" /><path d="M140,20 Q142,200 138,380" /><path d="M220,20 Q218,200 224,380" /><path d="M300,20 Q302,200 298,380" /><path d="M360,20 Q358,200 362,380" />
+                  </g>
+                  <g fill="#C4953A" opacity="0.4">
+                    <circle cx="60" cy="60" r="3" /><circle cx="140" cy="120" r="3" /><circle cx="220" cy="180" r="3" /><circle cx="300" cy="240" r="3" /><circle cx="360" cy="300" r="3" />
+                  </g>
+                  <g transform="translate(140,180)">
+                    <path d="M0,-20 C-11,-20 -17,-12 -17,-3 C-17,9 0,24 0,24 C0,24 17,9 17,-3 C17,-12 11,-20 0,-20 Z" fill="#C4953A" opacity="0.75"/>
+                    <circle cx="0" cy="-5" r="6" fill="#1A1A1A"/>
+                  </g>
+                </svg>
+              </div>
+              <div class="maps-gallery__tile maps-gallery__tile--thumb">
+                <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                  <defs><linearGradient id="mapGrad3" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" style="stop-color:#C4953A;stop-opacity:0.55" /><stop offset="100%" style="stop-color:#C4953A;stop-opacity:0.12" /></linearGradient></defs>
+                  <g stroke="url(#mapGrad3)" stroke-width="1" fill="none">
+                    <path d="M20,200 Q100,150 200,200 T380,200" stroke-width="3" stroke-dasharray="10,5" />
+                    <path d="M20,100 Q80,95 150,105 T300,98 T380,102" />
+                    <path d="M20,300 Q90,295 170,308 T330,298 T380,302" />
+                    <path d="M100,20 Q98,100 104,200 T98,380" />
+                    <path d="M200,20 Q202,100 198,200 T202,380" />
+                    <path d="M300,20 Q298,100 304,200 T298,380" />
+                  </g>
+                  <g fill="#C4953A" opacity="0.45">
+                    <circle cx="100" cy="100" r="3" /><circle cx="200" cy="100" r="2.5" /><circle cx="300" cy="100" r="3" />
+                    <circle cx="100" cy="200" r="2.5" /><circle cx="200" cy="200" r="3.5" /><circle cx="300" cy="200" r="2.5" />
+                    <circle cx="100" cy="300" r="3" /><circle cx="200" cy="300" r="2.5" /><circle cx="300" cy="300" r="3" />
+                  </g>
+                  <g transform="translate(260,140)">
+                    <path d="M0,-20 C-11,-20 -17,-12 -17,-3 C-17,9 0,24 0,24 C0,24 17,9 17,-3 C17,-12 11,-20 0,-20 Z" fill="#C4953A" opacity="0.75"/>
+                    <circle cx="0" cy="-5" r="6" fill="#1A1A1A"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
